@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap");
+
+.active_class {
+  font-weight: bold;
+}
+
+.grid_col-fix {
+  display: grid;
+  grid-template-columns: 22.5% 48% 22.5%;
+  place-items: center center;
+  gap: 3rem;
+}
