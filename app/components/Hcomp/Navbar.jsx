@@ -32,7 +32,7 @@ const Navbar = () => {
   // }, []);
   // // HANDLE SCROLL
   return (
-    <nav className="bg-primary_dark px-12 py-5 grid_col-fix text-[#fffff2]">
+    <nav className="bg-primary_dark px-12 py-2 grid_col-fix text-[#fffff2]">
       <div>
         <img
           src="https://res.cloudinary.com/juadeb/image/upload/v1701434801/BMT/bmt_logo_blxacb.png"
@@ -43,9 +43,9 @@ const Navbar = () => {
 
       <ul className="flex items-center justify-center gap-16 group:cursor-pointer font-lexend w-full pl-5">
         <Link
-          href="/home"
+          href="/"
           className={
-            pathname == "/home"
+            pathname == "/"
               ? "active_class"
               : "hover:text-slate-300 duration-200 transition-all ease-linear"
           }
@@ -88,7 +88,7 @@ const Navbar = () => {
         </div>
       </ul>
 
-      <div className="w-full pl-24">
+      <div className="w-full pl-28">
         <button className="px-[28px] py-[8px] bg-primary_red font-lexend font-normal">
           Donate Now
         </button>
