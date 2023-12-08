@@ -66,7 +66,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-primary_dark px-10 py-3 grid_col-fix text-[#fffff2] w-full text-[16.5px] sticky top-0 z-50 ${
+      className={`bg-primary_dark px-14 py-3 grid_col-fix text-[#fffff2] w-full text-[16.5px] sticky top-0 z-50 ${
         isScrolled ? "opacity-[0.98]" : "" // Apply opacity class based on scroll state
       }`}
     >
@@ -137,9 +137,9 @@ const Navbar = () => {
               Donation
             </Link>
             <Link
-              href="/edu_aware"
+              href="/education"
               className={
-                pathname == "/edu_aware"
+                pathname == "/education"
                   ? "active_class"
                   : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
               }
@@ -167,9 +167,9 @@ const Navbar = () => {
               Patient Information
             </Link>
             <Link
-              href="/FAQ"
+              href="/faq"
               className={
-                pathname == "/FAQ"
+                pathname == "/faq"
                   ? "active_class"
                   : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
               }
@@ -180,7 +180,7 @@ const Navbar = () => {
         </div>
       </ul>
 
-      <div className="w-max pl-20">
+      <div className="w-max pl-24">
         <Button
           classes="px-[28px] py-[8px] bg-primary_red font-lexend font-bold rounded-[4px] text-[15px] hover:bg-primary_red/80 trans_animate"
           text="Donate Now"

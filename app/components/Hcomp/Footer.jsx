@@ -31,7 +31,7 @@ const Footer = () => {
         <ul className="flex flex-col w-max space-y-5">
           <Link href="/">About</Link>
           <Link href="/">Donation</Link>
-          <Link href="/">Education & Awareness</Link>
+          <Link href="/education">Education & Awareness</Link>
           <Link href="/">Research & Innovation</Link>
           <Link href="/">Patient Information</Link>
         </ul>
@@ -49,64 +49,68 @@ const Footer = () => {
         <span className="font-bold">Contact Us</span>
         <ul className="flex flex-col w-max space-y-5">
           <Link
-            href="/"
+            href="tel:+2347086622570"
             className="flex items-center justify-start w-full h-max gap-2"
           >
             <MdOutlinePhoneInTalk className="text-2xl" />
 
             <div>
-              <a href="tel:+2347086622570" className="flex flex-col">
+              <span className="flex flex-col">
                 <span>+234 708 662 2570</span>
                 <span className="capitalize font-bold">SEYE KOLAWOLE</span>
-              </a>
+              </span>
             </div>
           </Link>
           <Link
-            href="/"
+            href="https://twitter.com/sicklecellnig"
+            target="_blank"
             className="flex items-center justify-start w-full h-max gap-2"
           >
             <CiTwitter className="text-3xl" />
 
             <div className="w-full">
-              <a href="tel:+2347086622570">
+              <span>
                 <span className="">sicklecellnig</span>
-              </a>
+              </span>
             </div>
           </Link>
           <Link
-            href="/"
+            href="https://instagram.com/sicklecellfoundationng?igshid=MzMyNGUyNmU2YQ=="
+            target="_blank"
             className="flex items-center justify-start w-full h-max gap-2"
           >
             <PiInstagramLogoLight className="text-3xl" />
 
             <div className="w-full">
-              <a href="tel:+2347086622570">
+              <div>
                 <span className="">sicklecellfoundationng</span>
-              </a>
+              </div>
             </div>
           </Link>
           <Link
-            href="/"
+            href="https://www.facebook.com/sicklecellfoundation?mibextid=ZbWKwL"
+            target="_blank"
             className="flex items-center justify-start w-full h-max gap-2"
           >
             <PiFacebookLogo className="text-3xl" />
 
             <div className="w-full">
-              <a href="tel:+2347086622570">
+              <span>
                 <span className="">sicklecellfoundation</span>
-              </a>
+              </span>
             </div>
           </Link>
           <Link
-            href="/"
+            href="mailto:info@sicklecellfoundation.com"
+            target="_blank"
             className="flex items-center justify-start w-full h-max gap-2"
           >
             <CiMail className="text-3xl" />
 
             <div className="w-full">
-              <a href="mailto:info@sicklecellfoundation.com">
+              <div>
                 <span className="">sicklecellfoundation</span>
-              </a>
+              </div>
             </div>
           </Link>
         </ul>

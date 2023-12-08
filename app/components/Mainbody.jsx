@@ -23,16 +23,16 @@ const Mainbody = () => {
       <div className="relative">
         <Slider slides={slides} />
         <div className="absolute top-[25%] z-20 w-1/2 h-auto pl-14 text-white">
-          <h1 className="text-[44px] leading-[3rem] capitalize font-bold">
+          <h1 className="text-[44px] leading-[3rem] capitalize font-bold text_shadow_">
             Providing, safe, quality, affordable healthcare for persons leaving
             with sickle cell
           </h1>
-          <p className="text-[18px] my-8 w-full">
+          <p className="text-[20px] my-8 w-full text_shadow_">
             Be part of a Mission dedicated to making a lasting impact in
             healthcare.
           </p>
           <Button
-            classes="px-[68px] py-[10px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/80 trans_animate"
+            classes="px-[75px] py-[14px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide"
             text="Donate Now"
           />
         </div>
