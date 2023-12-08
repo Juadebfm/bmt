@@ -44,25 +44,17 @@ const Navbar = () => {
 
   return (
     <nav className="bg-primary_dark px-10 py-3 grid_col-fix text-[#fffff2] w-full text-[16.5px] sticky top-0 z-50">
-      <div>
-        <img
-          src="https://res.cloudinary.com/juadeb/image/upload/v1701434801/BMT/bmt_logo_blxacb.png"
-          alt="BMT Logo"
-          className=""
-        />
-      </div>
+      <Link href="/">
+        <div>
+          <img
+            src="https://res.cloudinary.com/juadeb/image/upload/v1701434801/BMT/bmt_logo_blxacb.png"
+            alt="BMT Logo"
+            className=""
+          />
+        </div>
+      </Link>
 
-      <ul className="flex items-center justify-center gap-12 group:cursor-pointer font-lexend w-full pl-5 ml-10">
-        <Link
-          href="/"
-          className={
-            pathname == "/"
-              ? "active_class"
-              : "hover:text-slate-200 duration-200 transition-all ease-linear w-max"
-          }
-        >
-          Home
-        </Link>
+      <ul className="flex items-center justify-center gap-12 group:cursor-pointer font-lexend w-full ml-10">
         <Link
           href="/about"
           className={
