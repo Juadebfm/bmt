@@ -12,8 +12,16 @@
 
 .grid_col-fix {
   display: grid;
-  grid-template-columns: 22.5% 48% 22.5%;
+  grid-template-columns: 22.5% 50% 22.5%;
   place-items: center center;
+  gap: 3rem;
+}
+
+.grid_special {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 3rem;
 }
 

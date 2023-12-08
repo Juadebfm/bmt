@@ -9,7 +9,7 @@ const SuccessStory = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-      className="mt-28 h-screen relative p-14"
+      className="mt-28 mb-14 h-screen relative p-14"
     >
       <img
         src="./assets/bmt/playIcon.png"
