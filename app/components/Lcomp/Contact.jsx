@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Contact = () => {
   return (
-    <section className="h-max flex items-center justify-center px-10 gap-10 mt-28">
+    <section className="h-max flex items-center justify-center px-14 gap-10 mt-28">
       <div className="w-1/2 h-full p-10">
         <img
           src="./assets/bmt/smiling_family.png"

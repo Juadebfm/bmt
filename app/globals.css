@@ -19,13 +19,11 @@
 
 @layer components {
   .grid_col_footer {
-    width: 100vh;
     display: grid;
     grid-template-columns: repeat(
       5,
       1fr
     ); /* Adjust the column percentages as needed */
-    gap: 1rem;
   }
   .box_shadow {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Horizontal offset, Vertical offset, Blur radius, Color */

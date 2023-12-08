@@ -5,13 +5,15 @@ import { LiaTwitterSquare } from "react-icons/lia";
 import { RiLinkedinBoxLine } from "react-icons/ri";
 import { CiTwitter } from "react-icons/ci";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
+import { PiFacebookLogo, PiInstagramLogoLight } from "react-icons/pi";
+import { CiMail } from "react-icons/ci";
 
 import Link from "next/link";
 import Button from "../Lcomp/Button";
 
 const Footer = () => {
   return (
-    <footer className="grid_col_footer px-10 py-14 w-full">
+    <footer className="grid_col_footer gap-8 px-10 py-14 w-full">
       <div>
         <img src="./assets/bmt/logo_footer.png" alt="BMT Logo" className="" />
         <p className="w-[95%] mt-8 text-[18px]">
@@ -24,9 +26,9 @@ const Footer = () => {
           <RiLinkedinBoxLine className="cursor-pointer" />
         </div>
       </div>
-      <div className="space-y-4">
+      <div className="space-y-3">
         <span className="font-bold">Platforms</span>
-        <ul className="flex flex-col w-full space-y-5">
+        <ul className="flex flex-col w-max space-y-5">
           <Link href="/">About</Link>
           <Link href="/">Donation</Link>
           <Link href="/">Education & Awareness</Link>
@@ -34,18 +36,18 @@ const Footer = () => {
           <Link href="/">Patient Information</Link>
         </ul>
       </div>
-      <div className="space-y-4">
+      <div className="space-y-3">
         <span className="font-bold">Advancements</span>
-        <ul className="flex flex-col w-full space-y-5">
+        <ul className="flex flex-col w-max space-y-5">
           <Link href="/">Haploidentical BMT</Link>
           <Link href="/">Cord blood transplantation</Link>
           <Link href="/">CAR-T cell therapy</Link>
           <Link href="/">Gene editing</Link>
         </ul>
       </div>
-      <div className="space-y-4">
+      <div className="space-y-3">
         <span className="font-bold">Contact Us</span>
-        <ul className="flex flex-col w-full space-y-5">
+        <ul className="flex flex-col w-max space-y-5">
           <Link
             href="/"
             className="flex items-center justify-start w-full h-max gap-2"
@@ -75,7 +77,7 @@ const Footer = () => {
             href="/"
             className="flex items-center justify-start w-full h-max gap-2"
           >
-            <CiTwitter className="text-3xl" />
+            <PiInstagramLogoLight className="text-3xl" />
 
             <div className="w-full">
               <a href="tel:+2347086622570">
@@ -87,7 +89,7 @@ const Footer = () => {
             href="/"
             className="flex items-center justify-start w-full h-max gap-2"
           >
-            <CiTwitter className="text-3xl" />
+            <PiFacebookLogo className="text-3xl" />
 
             <div className="w-full">
               <a href="tel:+2347086622570">
@@ -99,7 +101,7 @@ const Footer = () => {
             href="/"
             className="flex items-center justify-start w-full h-max gap-2"
           >
-            <CiTwitter className="text-3xl" />
+            <CiMail className="text-3xl" />
 
             <div className="w-full">
               <a href="mailto:info@sicklecellfoundation.com">
@@ -109,8 +111,7 @@ const Footer = () => {
           </Link>
         </ul>
       </div>
-
-      <div className="space-y-5 ">
+      <div className="space-y-5">
         <span className="font-bold">Subscribe</span>
         <p>
           Lorem ipsum dolor sit amet consectetur. Euismod amet in mi integer
@@ -122,13 +123,13 @@ const Footer = () => {
         >
           <input
             type="email"
-            placeholder="Email Address"
+            placeholder="Enter your email address"
             required
-            className="px-[28px] py-[8px] w-full"
+            className="px-[28px] py-[8px] w-full border-[1px] border-primary_red/50 rounded-lg"
           />
           <Button
-            classes="px-[28px] py-[8px] bg-primary_red font-lexend font-bold rounded-[4px] w-full text-white"
-            text="Donate Now"
+            classes="px-[68px] py-[10px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/80 trans_animate block text-white mt-5 text-[15px] w-full"
+            text="Subscribe"
           />
         </form>
       </div>
