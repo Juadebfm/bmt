@@ -72,11 +72,7 @@ const Navbar = () => {
     >
       <Link href="/">
         <div>
-          <img
-            src="https://res.cloudinary.com/juadeb/image/upload/v1701434801/BMT/bmt_logo_blxacb.png"
-            alt="BMT Logo"
-            className=""
-          />
+          <img src="./assets/bmt/Group 20653.png" alt="BMT Logo" className="" />
         </div>
       </Link>
 
