@@ -45,4 +45,9 @@
   .text_shadow_ {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   }
+  .show_more_nav {
+    position: absolute;
+    top: 80%;
+    z-index: 50;
+  }
 }

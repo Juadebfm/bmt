@@ -3,14 +3,17 @@
 import Link from "next/link";
 import React, { useEffect, useState, useRef } from "react";
 import { usePathname } from "next/navigation";
-import { FaChevronDown } from "react-icons/fa6";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 import Button from "../Lcomp/Button";
 
 const Navbar = () => {
+  const [showMoreDropdown, setShowMoreDropdown] = useState(false);
+  const [showChevronUp, setShowChevronUp] = useState(false); // Added state for chevron direction
+
   const pathname = usePathname();
 
   return (
-    <nav className="bg-primary_dark px-10 py-3 grid_col-fix text-[#fffff2] w-full text-[16.5px]">
+    <nav className="bg-primary_dark px-10 py-3 grid_col-fix text-[#fffff2] w-full text-[16.5px] sticky top-0 z-50">
       <div>
         <img
           src="https://res.cloudinary.com/juadeb/image/upload/v1701434801/BMT/bmt_logo_blxacb.png"
@@ -19,7 +22,7 @@ const Navbar = () => {
         />
       </div>
 
-      <ul className="flex items-center justify-center gap-10 group:cursor-pointer font-lexend w-full pl-5 ml-10">
+      <ul className="flex items-center justify-center gap-12 group:cursor-pointer font-lexend w-full pl-5 ml-10">
         <Link
           href="/"
           className={
@@ -60,9 +63,82 @@ const Navbar = () => {
         >
           Contact Us
         </Link>
-        <div className="flex items-center justify-center gap-3 cursor-pointer hover:text-slate-200 duration-200 transition-all ease-linear w-max">
-          <span>More</span>
-          <FaChevronDown />
+        <div
+          className="cursor-pointer hover:text-slate-200 duration-200 transition-all ease-linear w-max"
+          onMouseEnter={() => {
+            setShowMoreDropdown(true);
+            setShowChevronUp(true); // Add state for chevron direction
+          }}
+          onMouseLeave={() => {
+            setShowMoreDropdown(false);
+            setShowChevronUp(false); // Reset state for chevron direction
+          }}
+          onClick={() => {
+            setShowMoreDropdown(!showMoreDropdown);
+            setShowChevronUp(!showChevronUp); // Toggle chevron direction on click
+          }}
+        >
+          <div className="flex items-center justify-center gap-3">
+            <span>More</span>
+            {showChevronUp ? <FaChevronUp /> : <FaChevronDown />}{" "}
+            {/* Render chevron based on state */}
+          </div>
+          <div
+            className={`flex flex-col bg-white text-primary_dark font-lexend p-8 font-normal rounded-[16px] trans_animate space-y-4 ${
+              showMoreDropdown ? "show_more_nav" : "hidden"
+            }`}
+          >
+            <Link
+              href="/donation"
+              className={
+                pathname == "/donation"
+                  ? "active_class"
+                  : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
+              }
+            >
+              Donation
+            </Link>
+            <Link
+              href="/edu_aware"
+              className={
+                pathname == "/edu_aware"
+                  ? "active_class"
+                  : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
+              }
+            >
+              Education & Awareness
+            </Link>
+            <Link
+              href="/research_inno"
+              className={
+                pathname == "/research_inno"
+                  ? "active_class"
+                  : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
+              }
+            >
+              Research & Innovation{" "}
+            </Link>
+            <Link
+              href="/patient-info"
+              className={
+                pathname == "/patient-info"
+                  ? "active_class"
+                  : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
+              }
+            >
+              Patient Information
+            </Link>
+            <Link
+              href="/FAQ"
+              className={
+                pathname == "/FAQ"
+                  ? "active_class"
+                  : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
+              }
+            >
+              FAQ{" "}
+            </Link>
+          </div>
         </div>
       </ul>
 

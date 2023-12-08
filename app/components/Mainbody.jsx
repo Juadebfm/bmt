@@ -22,12 +22,12 @@ const Mainbody = () => {
     <section className="font-lexend">
       <div className="relative">
         <Slider slides={slides} />
-        <div className="absolute top-[25%] z-20 w-1/2 h-auto px-14 text-white">
+        <div className="absolute top-[25%] z-20 w-1/2 h-auto pl-14 text-white">
           <h1 className="text-[44px] leading-[3rem] capitalize font-bold">
             Providing, safe, quality, affordable healthcare for persons leaving
             with sickle cell
           </h1>
-          <p className="text-[18px] my-8 ">
+          <p className="text-[18px] my-8 w-full">
             Be part of a Mission dedicated to making a lasting impact in
             healthcare.
           </p>
