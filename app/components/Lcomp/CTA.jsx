@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const CTA = () => {
   return (
-    <section className="h-max flex items-center justify-center px-10 gap-10 mt-28">
+    <section className="h-max flex items-center justify-center px-14 gap-20 mt-28">
       <div className="w-1/2 h-full p-10">
         <img src="./assets/bmt/cta_img.png" alt="" className="object-cover" />
       </div>
@@ -16,10 +16,12 @@ const CTA = () => {
           Your contributions will help subsidies this life-saving procedure for
           the vast majority of Nigerians living with sickle cell disorder,
           giving them the opportunity for a cure.
-          <br /><br /> Help make this cure a reality for many! 
-          <br /><br /> THANK YOU!
+          <br />
+          <br /> Help make this cure a reality for many! 
+          <br />
+          <br /> THANK YOU!
           <Button
-            classes="px-[48px] py-[10px] bg-primary_red font-lexend font-bold rounded-[4px] text-white block text-[16px] mt-8"
+            classes="px-[68px] py-[10px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/80 trans_animate block text-white mt-5 text-[16.5px]"
             text="Donate Now"
           />
         </p>

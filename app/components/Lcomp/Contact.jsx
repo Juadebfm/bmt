@@ -13,11 +13,12 @@ const Contact = () => {
       </div>
       <div className="w-1/2 flex flex-col justify-center">
         <h2 className="w-full text-[40px] leading-[1.2] capitalize font-[600] text-primary_red">
-        Do u live with sickle cell disorder? Or seeking support for a loved one? Click on the contact us button below.
+          Do u live with sickle cell disorder? Or seeking support for a loved
+          one? Click on the contact us button below.
         </h2>
         <div className="w-full text-[18px] leading-normal mt-1">
           <Button
-            classes="px-[48px] py-[10px] bg-primary_red font-lexend font-bold rounded-[4px] text-white block text-[16px] mt-8"
+            classes="px-[68px] py-[10px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/80 trans_animate block text-white mt-5 text-[16.5px]"
             text="Contact Us"
           />
         </div>

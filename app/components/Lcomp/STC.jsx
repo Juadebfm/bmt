@@ -2,10 +2,13 @@ import React from "react";
 
 const STC = () => {
   return (
-    <section className="h-max flex items-center justify-center px-10 mt-28">
+    <section className="h-max flex items-center justify-center px-14 mt-28">
       <div className="w-1/2 flex flex-col justify-center">
         <h2 className="w-full text-[40px] leading-[1.2] capitalize font-[600] text-primary_red">
-          Understanding stem cell transplantation (bone marrow transplantation)
+          Understanding stem cell transplantation
+          <span className="text-[20px] font-normal ml-2">
+            (Bone marrow transplantation)
+          </span>
         </h2>
         <p className="w-full text-[18px] leading-normal mt-8">
           Access in-depth disease information on conditions like Sickle Cell

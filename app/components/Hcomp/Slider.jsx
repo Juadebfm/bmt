@@ -29,7 +29,7 @@ export default function App() {
         className="mySwiper"
       >
         {slides.map((slide, index) => (
-          <SwiperSlide key={index} className="h-[70vh]">
+          <SwiperSlide key={index}>
             <div className="slide-container">
               <div className="image-container">
                 <img

@@ -9,7 +9,7 @@ const Documentary = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-      className="mt-28 h-screen relative p-10"
+      className="mt-28 h-screen relative p-14"
     >
       <img
         src="./assets/bmt/playIcon.png"
@@ -17,10 +17,10 @@ const Documentary = () => {
         className="w-[80px] h-[80px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:box_shadow_hover rounded-full trans_animate"
       />
       <div className="absolute bottom-10">
-        <h2 className="w-max text-[40px] leading-[1.2] capitalize font-[600] text-primary_red ">
+        <h2 className="w-max text-[40px] leading-[1.2] capitalize font-[600] text-primary_red text_shadow_">
           Documentary
         </h2>
-        <p className="text-[18px]">Lorem ipsum dolor sit amet consectetur.</p>
+        <p className="text-[18px] text_shadow_">Lorem ipsum dolor sit amet consectetur.</p>
       </div>
     </section>
   );

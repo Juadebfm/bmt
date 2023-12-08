@@ -2,8 +2,8 @@ import React from "react";
 
 const SupportServices = () => {
   return (
-    <section className="h-[70vh] px-10 mt-10">
-      <h2 className="w-full text-[44px] leading-[1.2] text-center capitalize font-[600] text-primary_red">
+    <section className="h-[70vh] px-14 mt-10">
+      <h2 className="w-full text-[40px] leading-[1.2] text-center capitalize font-[600] text-primary_red">
         Our Support Services
       </h2>
       <div className="mt-10 flex items-center justify-center gap-10">

@@ -2,7 +2,7 @@ import React from "react";
 
 const Research = () => {
   return (
-    <section className="h-max flex items-center justify-center px-10 gap-10 mt-28">
+    <section className="h-max flex items-center justify-center px-14 gap-10 mt-28">
       <div className="w-1/2 flex flex-col justify-center">
         <h2 className="w-full text-[40px] leading-[1.2] capitalize font-[600] text-primary_red">
           Research and Innovations

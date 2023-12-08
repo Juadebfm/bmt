@@ -10,7 +10,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-primary_dark px-12 py-2 grid_col-fix text-[#fffff2]">
+    <nav className="bg-primary_dark px-12 py-3 grid_col-fix text-[#fffff2] w-full text-[16.5px]">
       <div>
         <img
           src="https://res.cloudinary.com/juadeb/image/upload/v1701434801/BMT/bmt_logo_blxacb.png"
@@ -19,13 +19,13 @@ const Navbar = () => {
         />
       </div>
 
-      <ul className="flex items-center justify-center gap-16 group:cursor-pointer font-lexend w-full pl-5">
+      <ul className="flex items-center justify-center gap-16 group:cursor-pointer font-lexend w-full pl-5 ml-10">
         <Link
           href="/"
           className={
             pathname == "/"
               ? "active_class"
-              : "hover:text-slate-300 duration-200 transition-all ease-linear"
+              : "hover:text-slate-200 duration-200 transition-all ease-linear"
           }
         >
           Home
@@ -35,7 +35,7 @@ const Navbar = () => {
           className={
             pathname == "/about"
               ? "active_class"
-              : "hover:text-slate-300 duration-200 transition-all ease-linear"
+              : "hover:text-slate-200 duration-200 transition-all ease-linear"
           }
         >
           About Us
@@ -45,7 +45,7 @@ const Navbar = () => {
           className={
             pathname == "/services"
               ? "active_class"
-              : "hover:text-slate-300 duration-200 transition-all ease-linear"
+              : "hover:text-slate-200 duration-200 transition-all ease-linear"
           }
         >
           Services
@@ -55,20 +55,20 @@ const Navbar = () => {
           className={
             pathname == "/contact"
               ? "active_class"
-              : "hover:text-slate-300 duration-200 transition-all ease-linear"
+              : "hover:text-slate-200 duration-200 transition-all ease-linear"
           }
         >
           Contact Us
         </Link>
-        <div className="flex items-center justify-center gap-3 cursor-pointer hover:text-slate-300 duration-200 transition-all ease-linear">
+        <div className="flex items-center justify-center gap-3 cursor-pointer hover:text-slate-200 duration-200 transition-all ease-linear">
           <span>More</span>
           <FaChevronDown />
         </div>
       </ul>
 
-      <div className="w-full pl-28">
+      <div className="w-max pl-28">
         <Button
-          classes="px-[28px] py-[8px] bg-primary_red font-lexend font-bold rounded-[4px]"
+          classes="px-[28px] py-[8px] bg-primary_red font-lexend font-bold rounded-[4px] text-[15px] hover:bg-primary_red/80 trans_animate"
           text="Donate Now"
         />
       </div>
