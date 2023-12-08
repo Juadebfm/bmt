@@ -1,68 +1,56 @@
 import React from "react";
 import Slider from "./Hcomp/Slider";
-
-const slides = [
-  {
-    image:
-      "https://res.cloudinary.com/juadeb/image/upload/v1701439724/BMT/bmt_landpage_h2ec10.png",
-    title:
-      "Providing, safe, quality, affordable healthcare for sickle cell patients",
-    subTitle:
-      "Be part of a Mission dedicated to making a lasting impact in healthcare,",
-    interval: 1500,
-  },
-  {
-    image:
-      "https://res.cloudinary.com/juadeb/image/upload/v1701442187/BMT/bmt_landpage2_thhopr.png",
-    title:
-      "Providing, safe, quality, affordable healthcare for sickle cell patients",
-    subTitle:
-      "Be part of a Mission dedicated to making a lasting impact in healthcare,",
-    interval: 1500,
-  },
-  {
-    image:
-      "https://res.cloudinary.com/juadeb/image/upload/v1701442178/BMT/bmt_landpage3_vdx8mb.png",
-    title:
-      "Providing, safe, quality, affordable healthcare for sickle cell patients",
-    subTitle:
-      "Be part of a Mission dedicated to making a lasting impact in healthcare,",
-    interval: 1500,
-  },
-  {
-    image:
-      "https://res.cloudinary.com/juadeb/image/upload/v1701439724/BMT/bmt_landpage_h2ec10.png",
-    title:
-      "Providing, safe, quality, affordable healthcare for sickle cell patients",
-    subTitle:
-      "Be part of a Mission dedicated to making a lasting impact in healthcare,",
-    interval: 1500,
-  },
-  {
-    image:
-      "https://res.cloudinary.com/juadeb/image/upload/v1701442178/BMT/bmt_landpage4_hmg1ac.png",
-    title:
-      "Providing, safe, quality, affordable healthcare for sickle cell patients",
-    subTitle:
-      "Be part of a Mission dedicated to making a lasting impact in healthcare,",
-    interval: 1500,
-  },
-  {
-    image:
-      "https://res.cloudinary.com/juadeb/image/upload/v1701442178/BMT/bmt_landpage5_eszs01.png",
-    title:
-      "Providing, safe, quality, affordable healthcare for sickle cell patients",
-    subTitle:
-      "Be part of a Mission dedicated to making a lasting impact in healthcare,",
-    interval: 1500,
-  },
-];
+import slides from "./Lcomp/SlidesData";
+import Button from "./Lcomp/Button";
+import Badge from "./Lcomp/Badge";
+import Footer from "./Hcomp/Footer";
+import MultiServices from "./Lcomp/MultiServices";
+import SupportServices from "./Lcomp/SupportServices";
+import About from "./Lcomp/About";
+import OurSponsors from "./Lcomp/OurSponsors";
+import Documentary from "./Lcomp/Documentary";
+import STC from "./Lcomp/STC";
+import WhatToExpect from "./Lcomp/WhatToExpect";
+import Research from "./Lcomp/Research";
+import CTA from "./Lcomp/CTA";
+import SuccessStory from "./Lcomp/SuccessStory";
+import Contact from "./Lcomp/Contact";
+import LatestNews from "./Hcomp/LatestNews";
 
 const Mainbody = () => {
   return (
-    <div>
-      <Slider slides={slides} />
-    </div>
+    <section className="font-lexend">
+      <div className="relative">
+        <Slider slides={slides} />
+        <div className="absolute top-[120px] z-20 w-1/2 h-auto px-10 text-white">
+          <h1 className="text-[44px] leading-[3rem] capitalize font-bold">
+            Providing, safe, quality, affordable healthcare for persons leaving
+            with sickle cell
+          </h1>
+          <p className="text-[18px] my-8">
+            Be part of a Mission dedicated to making a lasting impact in
+            healthcare.
+          </p>
+          <Button
+            classes="px-[48px] py-[10px] bg-primary_red font-lexend font-bold rounded-[4px]"
+            text="Donate Now"
+          />
+        </div>
+      </div>
+      <Badge />
+      <MultiServices />
+      <SupportServices />
+      <About />
+      <OurSponsors />
+      <Documentary />
+      <STC />
+      <WhatToExpect />
+      <Research />
+      <CTA />
+      <SuccessStory />
+      <Contact />
+      <LatestNews />
+    </section>
   );
 };
 

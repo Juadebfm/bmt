@@ -1,35 +1,47 @@
 "use client";
 
+import React, { useRef, useState } from "react";
+// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
 import "swiper/css";
-import "@/styles/slider.css"; // Import custom styles for the slider
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-const Slider = ({ slides }) => {
+import "../../../styles/slider.css";
+import slides from "../Lcomp/SlidesData";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+export default function App() {
   return (
-    <Swiper
-      spaceBetween={0}
-      slidesPerView={1} // Show one slide at a time to cover the entire screen
-      effect={"cube"}
-      cubeEffect={{
-        shadow: true,
-        slideShadows: true,
-        shadowOffset: 20,
-        shadowScale: 0.94,
-      }}
-    >
-      {slides.map((slide) => (
-        <SwiperSlide key={slide.image}>
-          <div className="slide-container">
-            <img className="slide-image" src={slide.image} alt={slide.title} />
-            <div className="slide-content">
-              <h2 className="slide-title">{slide.title}</h2>
-              <p className="slide-subtitle">{slide.subTitle}</p>
+    <>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {slides.map((slide, index) => (
+          <SwiperSlide key={index} className="h-[70vh]">
+            <div className="slide-container">
+              <div className="image-container">
+                <img
+                  className="slide-image"
+                  src={slide.image}
+                  alt={`Slide ${index + 1}`}
+                />
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
   );
-};
-
-export default Slider;
+}

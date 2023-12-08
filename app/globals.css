@@ -14,3 +14,21 @@
   place-items: center center;
   gap: 3rem;
 }
+
+@layer components {
+  .grid_col_footer {
+    display: grid;
+    grid-template-columns: 25% 12% 12% 12% 29%; /* Adjust the column percentages as needed */
+    place-items: start center;
+    gap: 2rem;
+  }
+  .box_shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Horizontal offset, Vertical offset, Blur radius, Color */
+  }
+  .box_shadow_hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Horizontal offset, Vertical offset, Blur radius, Color */
+  }
+  .trans_animate {
+    @apply duration-150 ease-in-out transition-all;
+  }
+}

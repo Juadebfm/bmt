@@ -4,33 +4,11 @@ import Link from "next/link";
 import React, { useEffect, useState, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { FaChevronDown } from "react-icons/fa6";
+import Button from "../Lcomp/Button";
 
 const Navbar = () => {
   const pathname = usePathname();
 
-  // // HANDLE SCROLL
-  // const navMenuRef = useRef(null); // Create a reference to the navigation menu
-
-  // const scrollThreshold = 200; // Adjust the threshold as needed (in pixels)
-
-  // const handleScroll = () => {
-  //   if (window.scrollY > scrollThreshold) {
-  //     // When the user has scrolled down beyond the threshold
-  //     navMenuRef.current.style.position = "fixed";
-  //     navMenuRef.current.style.top = "0";
-  //   } else {
-  //     // When the user is above the thr3shold
-  //     navMenuRef.current.style.position = "static"; // or "relative" if you prefer
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-  // // HANDLE SCROLL
   return (
     <nav className="bg-primary_dark px-12 py-2 grid_col-fix text-[#fffff2]">
       <div>
@@ -89,9 +67,10 @@ const Navbar = () => {
       </ul>
 
       <div className="w-full pl-28">
-        <button className="px-[28px] py-[8px] bg-primary_red font-lexend font-normal">
-          Donate Now
-        </button>
+        <Button
+          classes="px-[28px] py-[8px] bg-primary_red font-lexend font-bold rounded-[4px]"
+          text="Donate Now"
+        />
       </div>
     </nav>
   );
