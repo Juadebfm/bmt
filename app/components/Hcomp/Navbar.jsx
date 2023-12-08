@@ -12,6 +12,28 @@ const Navbar = () => {
   const dropdownRef = useRef(null);
   const timeoutRef = useRef(null);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      // Set a threshold value for scroll position when you want the opacity change to occur
+      const threshold = 50; // Adjust this value according to your design
+
+      if (scrollPosition > threshold) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const handleMouseEnter = () => {
     clearTimeout(timeoutRef.current);
     setShowMoreDropdown(true);
@@ -43,7 +65,11 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-primary_dark px-10 py-3 grid_col-fix text-[#fffff2] w-full text-[16.5px] sticky top-0 z-50">
+    <nav
+      className={`bg-primary_dark px-10 py-3 grid_col-fix text-[#fffff2] w-full text-[16.5px] sticky top-0 z-50 ${
+        isScrolled ? "opacity-[0.98]" : "" // Apply opacity class based on scroll state
+      }`}
+    >
       <Link href="/">
         <div>
           <img

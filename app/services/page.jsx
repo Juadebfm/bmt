@@ -7,7 +7,7 @@ import Transplant from "../components/Lcomp/Transplant";
 const page = () => {
   return (
     <>
-      <section className="h-max flex items-center justify-center pr-14 gap-10 mt-28">
+      <section className="h-max flex items-center justify-center pr-14 gap-10 mt-16">
         <div className="w-1/2 h-full p-10 pl-0">
           <img src="./assets/bmt/service.png" alt="" className="object-cover" />
         </div>
