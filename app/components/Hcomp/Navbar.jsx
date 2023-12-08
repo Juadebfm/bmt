@@ -9,6 +9,36 @@ import Button from "../Lcomp/Button";
 const Navbar = () => {
   const [showMoreDropdown, setShowMoreDropdown] = useState(false);
   const [showChevronUp, setShowChevronUp] = useState(false); // Added state for chevron direction
+  const dropdownRef = useRef(null);
+  const timeoutRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    clearTimeout(timeoutRef.current);
+    setShowMoreDropdown(true);
+    setShowChevronUp(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setShowMoreDropdown(false);
+      setShowChevronUp(false);
+    }, 200); // Adjust this delay (in milliseconds) as needed
+  };
+
+  const handleDropdownMouseEnter = () => {
+    clearTimeout(timeoutRef.current);
+  };
+
+  const handleDropdownMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setShowMoreDropdown(false);
+      setShowChevronUp(false);
+    }, 200);
+  };
+
+  useEffect(() => {
+    return () => clearTimeout(timeoutRef.current);
+  }, []);
 
   const pathname = usePathname();
 
@@ -65,14 +95,8 @@ const Navbar = () => {
         </Link>
         <div
           className="cursor-pointer hover:text-slate-200 duration-200 transition-all ease-linear w-max"
-          onMouseEnter={() => {
-            setShowMoreDropdown(true);
-            setShowChevronUp(true); // Add state for chevron direction
-          }}
-          onMouseLeave={() => {
-            setShowMoreDropdown(false);
-            setShowChevronUp(false); // Reset state for chevron direction
-          }}
+          onMouseEnter={handleDropdownMouseEnter}
+          onMouseLeave={handleDropdownMouseLeave}
           onClick={() => {
             setShowMoreDropdown(!showMoreDropdown);
             setShowChevronUp(!showChevronUp); // Toggle chevron direction on click
