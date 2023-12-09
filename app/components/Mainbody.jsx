@@ -24,12 +24,12 @@ const Mainbody = () => {
       <div className="relative">
         <Slider slides={slides} />
         <div className="absolute top-[25%] z-20 w-1/2 h-auto pl-14 text-white">
-          <h1 className="text-[44px] leading-[3rem] capitalize font-bold text_shadow_">
+          <h1 className="text-[48px] leading-[3.2rem] capitalize font-bold text_shadow_">
             Providing, safe, quality, affordable healthcare for persons leaving
             with sickle cell
           </h1>
-          <p className="text-[20px] my-8 w-full text_shadow_">
-            Be part of a Mission dedicated to making a lasting impact in
+          <p className="text-[20px] my-8 w-full text_shadow_ tracking-wide">
+            Be part of a mission dedicated to making a lasting impact in
             healthcare.
           </p>
           <Link href="/donation">

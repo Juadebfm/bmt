@@ -6,7 +6,7 @@ const OurSponsors = () => {
       <h2 className="text-[44px] leading-[1.2] capitalize font-[600] text-primary_red w-max">
         Our Sponsors
       </h2>
-      <div className="w-1/2 h-full p-10 pl-28 mt-20 self-end">
+      <div className="w-1/2 h-full p-10 pl-10 mt-20 self-end">
         <img
           src="./assets/bmt/logos_nnpc.png"
           alt=""

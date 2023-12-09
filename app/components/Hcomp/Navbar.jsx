@@ -66,7 +66,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-primary_dark px-14 py-3 grid_col-fix text-[#fffff2] w-full text-[16.5px] sticky top-0 z-50 ${
+      className={`font-lexend bg-primary_dark px-14 py-3 grid_col-fix text-[#fffff2] w-full text-[16.5px] sticky top-0 z-50 ${
         isScrolled ? "opacity-[0.98]" : "" // Apply opacity class based on scroll state
       }`}
     >
