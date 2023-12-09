@@ -22,10 +22,12 @@ const page = () => {
             with upcoming webinars and workshops, fostering knowledge of BMT and
             related health topics.
           </p>
-          <Button
-            classes="px-[75px] py-[14px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-8 w-max text-white"
-            text="Donate Now"
-          />
+          <Link href="/donation">
+            <Button
+              classes="px-[75px] py-[14px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-8 w-max text-white"
+              text="Donate Now"
+            />
+          </Link>
         </div>
         <div className="w-1/2 h-full p-10 pl-28 relative">
           <img
@@ -215,19 +217,20 @@ const page = () => {
             cells. There are two main types of BMT:
             <ul className="p-8 px-10">
               <li className="list-disc">
-                <b>Autologous BMT</b> uses the patient&apos;s own bone marrow. The
-                bone marrow is collected from the patient and then stored. The
-                patient then receives high-dose chemotherapy or radiation
+                <b>Autologous BMT</b> uses the patient&apos;s own bone marrow.
+                The bone marrow is collected from the patient and then stored.
+                The patient then receives high-dose chemotherapy or radiation
                 therapy to destroy the diseased bone marrow. The stored bone
                 marrow is then infused back into the patient.
               </li>
 
               <li className="list-disc mt-8">
                 <b>Allogeneic BMT</b> uses bone marrow from a donor. The donor
-                must have a tissue type that is compatible with the patient&apos;s
-                tissue type. The patient then receives high-dose chemotherapy or
-                radiation therapy to destroy the diseased bone marrow. The
-                donor&apos;s bone marrow is then infused into the patient.
+                must have a tissue type that is compatible with the
+                patient&apos;s tissue type. The patient then receives high-dose
+                chemotherapy or radiation therapy to destroy the diseased bone
+                marrow. The donor&apos;s bone marrow is then infused into the
+                patient.
               </li>
             </ul>
             BMT is a complex procedure with a number of risks and side effects.

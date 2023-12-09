@@ -35,7 +35,7 @@ const page = () => {
         </div>
       </section>
       <Badge />
-      <div className="px-14">
+      <div className="px-14 mt-16">
         <h2 className="text-[40px] leading-[1.2] capitalize font-bold text-primary_red text-center">
           Stem Cell Transplantation Stages
         </h2>
