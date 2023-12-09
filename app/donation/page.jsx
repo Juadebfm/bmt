@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Button from "../components/Lcomp/Button";
 import Badge from "../components/Lcomp/Badge";
+import LatestNews from "../components/Hcomp/LatestNews";
 
 const page = () => {
   const [activeButton, setActiveButton] = useState("enterAmount");
@@ -199,6 +200,30 @@ const page = () => {
           <img src="./assets/bmt/donation.png" alt="" />
         </div>
       </div>
+      <section className="h-max flex items-center justify-center px-14 gap-20 my-20">
+        <div className="w-1/2 flex flex-col justify-center">
+          <span className="text-[18px] text-primary_red font-bold">
+            See what Happens When You Help
+          </span>
+          <h2 className="w-[90%] text-[24px] leading-[1.2] capitalize font-bold text-primary_dark">
+            What We Do When You Donate us
+          </h2>
+          <p className="w-full text-[20px] leading-normal mt-3">
+            Your donation help us subsidise the cost of transplant for persons
+            that in need of quality safe and affordable stem cell
+            transplantation. You become an integral part of the life changing
+            journey when u donate
+          </p>
+        </div>
+        <div className="w-1/2 h-full p-10">
+          <img
+            src="./assets/bmt/donation_last.png"
+            alt=""
+            className="object-cover"
+          />
+        </div>
+      </section>
+      <LatestNews />
     </>
   );
 };
