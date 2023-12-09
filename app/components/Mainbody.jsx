@@ -16,6 +16,7 @@ import CTA from "./Lcomp/CTA";
 import SuccessStory from "./Lcomp/SuccessStory";
 import Contact from "./Lcomp/Contact";
 import LatestNews from "./Hcomp/LatestNews";
+import Link from "next/link";
 
 const Mainbody = () => {
   return (
@@ -31,10 +32,12 @@ const Mainbody = () => {
             Be part of a Mission dedicated to making a lasting impact in
             healthcare.
           </p>
-          <Button
-            classes="px-[75px] py-[14px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide"
-            text="Donate Now"
-          />
+          <Link href="/donation">
+            <Button
+              classes="px-[75px] py-[14px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide"
+              text="Donate Now"
+            />
+          </Link>
         </div>
       </div>
       <Badge />

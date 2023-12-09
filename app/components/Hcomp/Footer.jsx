@@ -30,7 +30,7 @@ const Footer = () => {
         <span className="font-bold">Platforms</span>
         <ul className="flex flex-col w-max space-y-5">
           <Link href="/">About</Link>
-          <Link href="/">Donation</Link>
+          <Link href="/donation">Donation</Link>
           <Link href="/education">Education & Awareness</Link>
           <Link href="/">Research & Innovation</Link>
           <Link href="/">Patient Information</Link>

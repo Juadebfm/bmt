@@ -141,7 +141,7 @@ const Navbar = () => {
               className={
                 pathname == "/education"
                   ? "active_class"
-                  : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
+                  : "duration-200 transition-all ease-linear w-max"
               }
             >
               Education & Awareness
@@ -181,10 +181,12 @@ const Navbar = () => {
       </ul>
 
       <div className="w-max pl-24">
-        <Button
-          classes="px-[28px] py-[8px] bg-primary_red font-lexend font-bold rounded-[4px] text-[15px] hover:bg-primary_red/80 trans_animate"
-          text="Donate Now"
-        />
+        <Link href="/donation">
+          <Button
+            classes="px-[28px] py-[8px] bg-primary_red font-lexend font-bold rounded-[4px] text-[15px] hover:bg-primary_red/80 trans_animate"
+            text="Donate Now"
+          />
+        </Link>
       </div>
     </nav>
   );
