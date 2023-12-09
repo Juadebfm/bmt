@@ -1,9 +1,22 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Button from "../components/Lcomp/Button";
 import Badge from "../components/Lcomp/Badge";
 
 const page = () => {
+  const [activeButton, setActiveButton] = useState("enterAmount");
+  const [activeDiv, setActiveDiv] = useState("one");
+
+  const handleButtonClick = (button) => {
+    setActiveButton(button);
+
+    if (button === "enterAmount") {
+      setActiveDiv("one");
+    } else {
+      setActiveDiv("two");
+    }
+  };
   return (
     <>
       <section className="h-max flex items-center justify-center px-14 gap-20 mt-10">
@@ -34,12 +47,31 @@ const page = () => {
       </section>
       <Badge />
       <div className="flex items-center justify-center px-14 gap-20 mt-20">
-        <div className="w-1/2 box_shadow p-8 rounded-lg">
+        <div className="w-1/2 box_shadow p-10 rounded-2xl">
           <div className="w-full m-auto flex items-center justify-center">
-            <button className="w-1/2 py-[14px]">Enter Amount</button>
-            <button className="w-1/2 py-[14px]">Add Your Information</button>
+            <button
+              className={`w-1/2 py-[14px] ${
+                activeButton === "enterAmount"
+                  ? "bg-primary_red text-white font-bold"
+                  : "text-primary_red font-bold"
+              }`}
+              onClick={() => handleButtonClick("enterAmount")}
+            >
+              Enter Amount
+            </button>
+            <button
+              className={`w-1/2 py-[14px] ${
+                activeButton === "addInformation"
+                  ? "bg-primary_red text-white font-bold"
+                  : "text-primary_red font-bold"
+              }`}
+              onClick={() => handleButtonClick("addInformation")}
+            >
+              Add Your Information
+            </button>
           </div>
-          <div className="one mt-10">
+          {/* DIV ONE */}
+          <div className={activeDiv === "one" ? "block mt-10" : "hidden"}>
             <div className="flex flex-col items-center justify-center">
               <span className="text-[20px] font-bold w-max">
                 Online Donation
@@ -78,7 +110,8 @@ const page = () => {
               </div>
             </form>
           </div>
-          <div className="two mt-10">
+          {/* DIV TWO */}
+          <div className={activeDiv === "two" ? "block mt-10" : "hidden"}>
             <div className="flex flex-col items-center justify-center">
               <span className="text-[20px] font-bold w-max">
                 Who&apos;s giving today?{" "}
@@ -138,13 +171,28 @@ const page = () => {
                   />
                 </div>
               </div>
-              <div className="flex justify-center">
-                <Button
-                  classes="px-[75px] py-[14px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-5 text-white w-[60%]"
-                  text="Proceed"
-                />
-              </div>
             </form>
+            <div className="mt-8 px-10">
+              <span className="text-[20px] font-bold w-max">
+                Donation Summary
+              </span>
+              <div className="flex justify-between mt-5 text-[18px] items-center bg-[#F5F6F8] p-4">
+                <span>Payment Amount:</span> <span>N13,500</span>
+              </div>
+              <div className="flex justify-between mt-5 text-[18px] items-center bg-[#F5F6F8] p-4">
+                <span>Giving Frequency:</span> <span>One Time</span>
+              </div>
+              <div className="flex justify-between mt-5 text-[18px] items-center bg-[#F5F6F8] p-4">
+                <span className="font-bold">Donation Total</span>
+                <span className="font-bold">N13,500</span>
+              </div>
+            </div>
+            <div className="flex justify-center mt-7">
+              <Button
+                classes="px-[75px] py-[14px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-5 text-white w-[60%]"
+                text="Proceed"
+              />
+            </div>
           </div>
         </div>
         <div className="w-1/2 h-full p-10">
