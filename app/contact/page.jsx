@@ -85,7 +85,7 @@ const page = () => {
 
               <div className="w-full">
                 <span>
-                  <span className="">sicklecellfoundation</span>
+                  <span className="">info@sicklecellfoundation.com</span>
                 </span>
               </div>
             </Link>
@@ -94,7 +94,7 @@ const page = () => {
         <div className="mt-10">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.043488074915!2d3.3517910742182466!3d6.5161799934763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c372f833edf%3A0x2aac8965d8776cf8!2sSickle%20Cell%20Foundation%20Nigeria%20Idi-Araba%20Surulere%20Lagos!5e0!3m2!1sen!2sng!4v1702041884187!5m2!1sen!2sng"
-            width="400"
+            width="100%"
             height="300"
             style={{ border: 0 }}
             allowfullscreen=""
@@ -102,8 +102,8 @@ const page = () => {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
           <div className="flex items-start justify-start gap-3 w-[80%] mt-10">
-            <CiLocationOn className="text-6xl font-bold" />
-            <p className="text-[18px]">
+            <CiLocationOn className="text-[5rem] font-bold" />
+            <p className="text-[20px]">
               National Sickle Cell Centre,Opp Lagos University Teaching
               Hospital(LUTH),Ishaga Road, Idi-Araba,Surulere, Lagos. Nigeria.
               P.O Box 3463, Surulere, Lagos
