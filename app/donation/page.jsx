@@ -5,7 +5,7 @@ import Button from "../components/Lcomp/Button";
 import Badge from "../components/Lcomp/Badge";
 import LatestNews from "../components/Hcomp/LatestNews";
 
-const page = () => {
+const Page = () => {
   const [activeButton, setActiveButton] = useState("enterAmount");
   const [activeDiv, setActiveDiv] = useState("one");
 
@@ -228,4 +228,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
