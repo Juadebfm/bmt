@@ -1,5 +1,10 @@
 import Footer from "./components/Hcomp/Footer";
 import Navbar from "./components/Hcomp/Navbar";
+
+import { Lexend } from "next/font/google";
+
+const lexend = Lexend({ subsets: ["latin"] });
+
 import "./globals.css";
 
 export const metadata = {
@@ -10,7 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="w-[100%] text-base font-lexend overflow-x-hidden">
+      <body
+        style={lexend.style}
+        className="w-[100%] text-base font-Lexend overflow-x-hidden scroll_snap"
+      >
         <Navbar />
         <main>{children}</main>
         <Footer />

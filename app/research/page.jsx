@@ -8,7 +8,7 @@ import LatestNews from "../components/Hcomp/LatestNews";
 const page = () => {
   return (
     <>
-      <section className="h-max flex items-center justify-center px-14 gap-28 mt-10">
+      <section className="h-max flex items-center justify-center px-16 gap-28 mt-10">
         <div className="w-1/2 h-full p-10 pl-28 relative">
           <img
             src="./assets/bmt/female_docs_globe.png"
@@ -34,7 +34,7 @@ const page = () => {
           </p>
           <Link href="/donation">
             <Button
-              classes="px-[75px] py-[14px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-8 w-max text-white"
+              classes="px-[75px] py-[14px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-8 w-max text-white"
               text="Donate Now"
             />
           </Link>

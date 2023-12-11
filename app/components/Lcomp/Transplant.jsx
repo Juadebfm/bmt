@@ -2,7 +2,7 @@ import React from "react";
 
 const Transplant = () => {
   return (
-    <section className="px-14 mt-28">
+    <section className="px-16 mt-28">
       <h2 className="w-full text-[40px] text-center uppercase leading-[1.2] font-[600] text-primary_red">
         THE TRANSPLANT TEAM
       </h2>

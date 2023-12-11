@@ -1,14 +1,41 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Button from "../components/Lcomp/Button";
 import Badge from "../components/Lcomp/Badge";
 import SuccessStory from "../components/Lcomp/SuccessStory";
 import LatestNews from "../components/Hcomp/LatestNews";
 
-const page = () => {
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+const Page = () => {
+  const [showAll, setShowAll] = useState(false);
+  const [aosInitialized, setAOSInitialized] = useState(false);
+
+  const handleShowMore = () => {
+    setShowAll(true);
+    initializeAOS();
+  };
+
+  const handleShowLess = () => {
+    setShowAll(false);
+    initializeAOS();
+  };
+
+  const initializeAOS = () => {
+    if (!aosInitialized) {
+      setAOSInitialized(true);
+      import("aos").then((AOS) => {
+        AOS.init({ once: true }); // Initialize AOS only once
+      });
+    }
+  };
+
   return (
     <>
-      <section className="h-max flex items-center justify-center px-14">
+      <section className="h-max flex items-center justify-center px-16">
         <div className="w-1/2 flex flex-col justify-center">
           <h2 className="w-[80%] text-[44px] leading-[1.2] capitalize font-extrabold text-primary_red">
             Understanding stem cell transplantation
@@ -16,7 +43,7 @@ const page = () => {
               (Bone marrow transplantation)
             </span>
           </h2>
-          <p className="w-[80%] text-[20px] leading-normal mt-8">
+          <p className="w-full text-[20px] leading-normal mt-8">
             Access in-depth disease information on conditions like Sickle Cell
             Disease and Leukemia treated with BMT. Stay informed and engaged
             with upcoming webinars and workshops, fostering knowledge of BMT and
@@ -24,12 +51,12 @@ const page = () => {
           </p>
           <Link href="/donation">
             <Button
-              classes="px-[75px] py-[14px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-8 w-max text-white"
+              classes="px-[75px] py-[14px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-8 w-max text-white"
               text="Donate Now"
             />
           </Link>
         </div>
-        <div className="w-1/2 h-full p-10 pl-28 relative">
+        <div className="w-1/2 h-full p-10 relative">
           <img
             src="./assets/bmt/red_slash3.png"
             alt=""
@@ -38,12 +65,12 @@ const page = () => {
           <img
             src="./assets/bmt/happy-black-male-doctor-using-tablet-computer-technology-medicine-concept (1).png"
             alt=""
-            className="object-cover absolute bottom-5 w-[80%] h-auto"
+            className="object-cover absolute left-0 bottom-3 w-full h-auto"
           />
         </div>
       </section>
       <Badge />
-      <div className="flex items-center justify-center px-14 gap-20 mt-16 my-28">
+      <div className="flex items-center justify-center px-16 gap-20 mt-16 my-36">
         <div className="w-1/2 h-full">
           <img
             src="./assets/bmt/stc2.png"
@@ -72,27 +99,49 @@ const page = () => {
               marrow before the transplant. New conditioning regimens have been
               shown to be more effective at destroying diseased bone marrow
               while causing fewer side effects.
+              {!showAll && (
+                <button
+                  onClick={handleShowMore}
+                  className="ml-2 text-primary_red underline"
+                >
+                  Show more
+                </button>
+              )}
             </p>
-            <p className="mt-7">
-              Another important advancement in BMT technology has been the
-              development of new graft-versus-host disease (GVHD) prophylaxis
-              regimens. GVHD is a serious complication of BMT that can occur
-              when the donor&apos;s bone marrow attacks the recipient&apos;s
-              body. New GVHD prophylaxis regimens have been shown to be more
-              effective at preventing GVHD without increasing the risk of other
-              complications. In addition to these advancements in drug therapy,
-              there have also been a number of technological advancements in
-              BMT. These advancements include the development of new stem cell
-              collection methods, the use of gene therapy to improve
-              engraftment, and the use of robotics to perform BMT procedures.
-            </p>
-            <p className="mt-7">
-              As a result of these advancements, BMT is now a more effective and
-              safer treatment for many patients. However, it is important to
-              note that BMT is still a complex procedure with a number of risks
-              and side effects. Patients should carefully consider the risks and
-              benefits of BMT before making a decision about treatment.
-            </p>
+
+            {showAll && (
+              <div data-aos="fade-down">
+                <p className="mt-7">
+                  Another important advancement in BMT technology has been the
+                  development of new graft-versus-host disease (GVHD)
+                  prophylaxis regimens. GVHD is a serious complication of BMT
+                  that can occur when the donor&apos;s bone marrow attacks the
+                  recipient&apos;s body. New GVHD prophylaxis regimens have been
+                  shown to be more effective at preventing GVHD without
+                  increasing the risk of other complications. In addition to
+                  these advancements in drug therapy, there have also been a
+                  number of technological advancements in BMT. These
+                  advancements include the development of new stem cell
+                  collection methods, the use of gene therapy to improve
+                  engraftment, and the use of robotics to perform BMT
+                  procedures.
+                </p>
+                <p className="mt-7">
+                  As a result of these advancements, BMT is now a more effective
+                  and safer treatment for many patients. However, it is
+                  important to note that BMT is still a complex procedure with a
+                  number of risks and side effects. Patients should carefully
+                  consider the risks and benefits of BMT before making a
+                  decision about treatment.{" "}
+                  <button
+                    onClick={handleShowLess}
+                    className="ml-2 text-primary_red underline inline"
+                  >
+                    Show less
+                  </button>
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -109,8 +158,8 @@ const page = () => {
           </p>
         </div>
         <div className="mt-16">
-          <div className="w-[80%] m-auto grid grid-cols-3 gap-10">
-            <div className="box_shadow rounded-[12px]">
+          <div className="w-[80%] h-full m-auto flex items-center justify-center flex-wrap gap-14">
+            <div className="box_shadow rounded-[12px] w-[355px] h-[550px]">
               <img src="./assets/bmt/bmt1.png" alt="" />
               <div className="flex flex-col p-5">
                 <span className="text-[18px] capitalize font-bold mb-5">
@@ -126,7 +175,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="box_shadow rounded-[12px]">
+            <div className="box_shadow rounded-[12px] w-[355px] h-[550px]">
               <img src="./assets/bmt/bmt2.png" alt="" />
               <div className="flex flex-col p-5">
                 <span className="text-[18px] capitalize font-bold mb-5">
@@ -141,7 +190,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="box_shadow rounded-[12px]">
+            <div className="box_shadow rounded-[12px] w-[355px] h-[550px]">
               <img src="./assets/bmt/bmt3.png" alt="" />
               <div className="flex flex-col p-5">
                 <span className="text-[18px] capitalize font-bold mb-5">
@@ -156,9 +205,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="mt-16 w-[80%] m-auto grid grid-cols-3 gap-10">
-            <div className="box_shadow rounded-[12px]">
+            <div className="box_shadow rounded-[12px] w-[355px] h-[550px]">
               <img src="./assets/bmt/bmt4.png" alt="" className="w-full" />
               <div className="flex flex-col p-5">
                 <span className="text-[18px] capitalize font-bold mb-5">
@@ -172,22 +219,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="box_shadow rounded-[12px] invisible">
-              <img src="./assets/bmt/bmt2.png" alt="" />
-              <div className="flex flex-col p-5">
-                <span className="text-[18px] capitalize font-bold mb-5">
-                  Leukemia disease{" "}
-                </span>
-                <p>
-                  Leukemia is a cancer of the blood cells. There are many
-                  different types of leukemia, but they all start in the bone
-                  marrow. Leukemias are caused by changes in the DNA of blood
-                  cells that cause them to grow and divide uncontrollably. BMT
-                  is a common treatment for leukemia.
-                </p>
-              </div>
-            </div>
-            <div className="box_shadow rounded-[12px]">
+            <div className="box_shadow rounded-[12px] w-[355px] h-[550px]">
               <img src="./assets/bmt/bmt5.png" alt="" />
               <div className="flex flex-col p-5">
                 <span className="text-[18px] capitalize font-bold mb-5">
@@ -204,12 +236,12 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="h-max flex items-center justify-center px-14 mt-28">
+      <div className="h-max flex items-center justify-center px-16 mt-28">
         <div className="w-1/2 flex flex-col justify-center">
           <h2 className="w-[80%] text-[44px] leading-[1.2] capitalize font-extrabold text-primary_dark">
-            How is <span className="text-primary_red">Stem Cell</span>{" "}
-            Transplantation <span className="text-primary_red">(BMT) Used</span>{" "}
-            to Treat <span className="text-primary_red">Disease</span>{" "}
+            How is <span className="text-primary_red">Stem Cell</span>
+            Transplantation <span className="text-primary_red">(BMT) Used</span>
+            to Treat <span className="text-primary_red">Disease</span>
           </h2>
           <div className="text-[20px] leading-normal mt-3">
             BMT is used to replace diseased bone marrow with healthy bone
@@ -238,9 +270,9 @@ const page = () => {
             diseases.
           </div>
         </div>
-        <div className="w-1/2 h-full p-10 pl-28 relative">
+        <div className="w-1/2 h-full">
           <img
-            src="./assets/bmt/red_slash3.png"
+            src="./assets/bmt/stem cell transplant.png"
             alt=""
             className="object-cover"
           />
@@ -252,4 +284,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

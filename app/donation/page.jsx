@@ -20,7 +20,7 @@ const Page = () => {
   };
   return (
     <>
-      <section className="h-max flex items-center justify-center px-14 gap-20 mt-10">
+      <section className="h-max flex items-center justify-center px-16 gap-20 mt-10">
         <div className="w-1/2 h-full p-10">
           <img src="./assets/bmt/cta_img.png" alt="" className="object-cover" />
         </div>
@@ -40,15 +40,15 @@ const Page = () => {
           </p>
           <Link href="/donation">
             <Button
-              classes="px-[75px] py-[14px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-5 text-white"
+              classes="px-[75px] py-[14px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-5 text-white"
               text="Donate Now"
             />
           </Link>
         </div>
       </section>
       <Badge />
-      <div className="flex items-center justify-center px-14 gap-20 mt-20">
-        <div className="w-1/2 box_shadow p-10 rounded-2xl">
+      <div className="flex items-center justify-center px-16 gap-20 mt-20">
+        <div className="w-1/2 box_shadow p-[3rem] rounded-2xl">
           <div className="w-full m-auto flex items-center justify-center">
             <button
               className={`w-1/2 py-[14px] ${
@@ -105,7 +105,7 @@ const Page = () => {
               </div>
               <div className="flex justify-center">
                 <Button
-                  classes="px-[75px] py-[14px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-5 text-white w-[60%]"
+                  classes="px-[75px] py-[14px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-5 text-white w-[60%]"
                   text="Proceed"
                 />
               </div>
@@ -190,7 +190,7 @@ const Page = () => {
             </div>
             <div className="flex justify-center mt-7">
               <Button
-                classes="px-[75px] py-[14px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-5 text-white w-[60%]"
+                classes="px-[75px] py-[14px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-5 text-white w-[60%]"
                 text="Proceed"
               />
             </div>
@@ -200,7 +200,7 @@ const Page = () => {
           <img src="./assets/bmt/donation.png" alt="" />
         </div>
       </div>
-      <section className="h-max flex items-center justify-center px-14 gap-20 my-20">
+      <section className="h-max flex items-center justify-center px-16 gap-20 my-20">
         <div className="w-1/2 flex flex-col justify-center">
           <span className="text-[18px] text-primary_red font-bold">
             See what Happens When You Help

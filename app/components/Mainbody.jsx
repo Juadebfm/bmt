@@ -3,7 +3,6 @@ import Slider from "./Hcomp/Slider";
 import slides from "./Lcomp/SlidesData";
 import Button from "./Lcomp/Button";
 import Badge from "./Lcomp/Badge";
-import Footer from "./Hcomp/Footer";
 import MultiServices from "./Lcomp/MultiServices";
 import SupportServices from "./Lcomp/SupportServices";
 import About from "./Lcomp/About";
@@ -20,11 +19,11 @@ import Link from "next/link";
 
 const Mainbody = () => {
   return (
-    <section className="font-lexend">
+    <section className="font-Lexend">
       <div className="relative">
         <Slider slides={slides} />
-        <div className="absolute top-[25%] z-20 w-1/2 h-auto pl-14 text-white">
-          <h1 className="text-[48px] leading-[3.2rem] capitalize font-bold text_shadow_">
+        <div className="absolute top-[20%] z-20 w-[55%] h-auto pl-16 text-white">
+          <h1 className="text-[48px] leading-[3.4rem] capitalize font-bold text_shadow_">
             Providing, safe, quality, affordable healthcare for persons leaving
             with sickle cell
           </h1>
@@ -34,7 +33,7 @@ const Mainbody = () => {
           </p>
           <Link href="/donation">
             <Button
-              classes="px-[75px] py-[14px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide"
+              classes="px-[75px] py-[14px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide"
               text="Donate Now"
             />
           </Link>

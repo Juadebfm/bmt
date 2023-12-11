@@ -13,7 +13,7 @@ const FAQItem = ({ question, answer }) => {
   return (
     <div className="">
       <div
-        className="flex box_shadow cursor-pointer hover:box_shadow_hover items-center justify-between py-7 px-14 border-l-[8px] border-primary_red rounded-lg bg-[#FCFCFE]"
+        className="flex box_shadow cursor-pointer hover:box_shadow_hover items-center justify-between py-7 px-16 border-l-[8px] border-primary_red rounded-lg bg-[#FCFCFE]"
         onClick={toggleAnswer}
       >
         <h3 className="text-[18px] font-bold tracking-wide capitalize">

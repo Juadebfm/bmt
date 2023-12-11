@@ -3,12 +3,12 @@ import React from "react";
 
 const MultiServices = () => {
   return (
-    <section className="h-[70vh] flex items-center justify-center px-14 gap-20 mt-16 mb-24">
+    <section className="h-[70vh] flex items-center justify-center px-16 gap-20 mt-16 mb-24 scroll_item">
       <div className="w-1/2 flex flex-col justify-center">
         <h2 className="text-[44px] w-[90%] leading-[1.2] capitalize font-[600] text-primary_red">
           Our Multi-disciplinary services
         </h2>
-        <p className="w-[90%] text-[20px] leading-normal mt-6">
+        <p className="text-[20px] leading-normal mt-6">
           Our transplant team which includes Paediatricians, haematologists,
           internists and various specialists, ensures quality comprehensive
           care. From social workers to Anaesthetics, we are here for our

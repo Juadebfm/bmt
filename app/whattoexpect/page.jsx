@@ -21,7 +21,7 @@ const page = () => {
           </p>
           <Link href="/donation">
             <Button
-              classes="px-[75px] py-[14px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-8 w-max text-white"
+              classes="px-[75px] py-[14px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-8 w-max text-white"
               text="Donate Now"
             />
           </Link>
@@ -35,24 +35,24 @@ const page = () => {
         </div>
       </section>
       <Badge />
-      <div className="px-14 mt-16">
+      <div className="px-16 mt-16">
         <h2 className="text-[40px] leading-[1.2] capitalize font-bold text-primary_red text-center">
           Stem Cell Transplantation Stages
         </h2>
         <div className="my-14 flex items-center justify-center gap-12">
-          <div className="box_shadow px-14 py-16 flex items-center justify-center flex-col gap-4 rounded-xl">
+          <div className="box_shadow px-16 py-16 flex items-center justify-center flex-col gap-4 rounded-xl">
             <img src="./assets/bmt/bullet_point.png" alt="" />
             <span className="text-[22px] text-primary_red">Stage 1</span>
 
             <h3 className="text-[32px]">Pre-Transplant</h3>
           </div>
-          <div className="box_shadow px-14 py-16 flex items-center justify-center flex-col gap-4 rounded-xl">
+          <div className="box_shadow px-16 py-16 flex items-center justify-center flex-col gap-4 rounded-xl">
             <img src="./assets/bmt/bullet_point.png" alt="" />
             <span className="text-[22px] text-primary_red">Stage 2</span>
 
             <h3 className="text-[32px]">Pre-Transplant</h3>
           </div>
-          <div className="box_shadow px-14 py-16 flex items-center justify-center flex-col gap-4 rounded-xl">
+          <div className="box_shadow px-16 py-16 flex items-center justify-center flex-col gap-4 rounded-xl">
             <img src="./assets/bmt/bullet_point.png" alt="" />
             <span className="text-[22px] text-primary_red">Stage 3</span>
 
@@ -60,7 +60,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="px-14 w-[85%] m-auto mt-32">
+      <div className="px-16 w-[85%] m-auto mt-32">
         <h2 className="text-[40px] leading-[1.2] capitalize font-bold text-primary_red text-center mb-16">
           Frequently Asked Questions
         </h2>

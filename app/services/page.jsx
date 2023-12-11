@@ -23,14 +23,14 @@ const page = () => {
             prioritizes your well-being.
           </p>
           <Button
-            classes="px-[68px] py-[10px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/80 trans_animate block text-white mt-5 text-[16.5px] w-max"
+            classes="px-[68px] py-[10px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/80 trans_animate block text-white mt-5 text-[16.5px] w-max"
             text="Book Now"
           />
         </div>
       </section>
       <Badge />
-      <Transplant/>
-      <SuccessStory/>
+      <Transplant />
+      <SuccessStory />
     </>
   );
 };

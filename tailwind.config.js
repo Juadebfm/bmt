@@ -16,9 +16,6 @@ module.exports = {
         primary_green: "#4CAF50",
         primary_blue: "#159CD8",
       },
-      fontFamily: {
-        lexend: ["Lexend", "sans-serif"],
-      },
     },
   },
   plugins: [require("tailwindcss-animate")],

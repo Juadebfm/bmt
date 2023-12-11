@@ -2,7 +2,7 @@ import React from "react";
 
 const SupportServices = () => {
   return (
-    <section className="h-[70vh] px-14 mt-10">
+    <section className="h-[70vh] px-16 mt-10">
       <h2 className="w-full text-[44px] leading-[1.2] text-center capitalize font-[600] text-primary_red">
         Our Support Services
       </h2>

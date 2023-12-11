@@ -66,7 +66,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`font-lexend bg-primary_dark px-14 py-3 grid_col-fix text-[#fffff2] w-full text-[16.5px] sticky top-0 z-50 ${
+      className={`font-Lexend bg-primary_dark px-16 py-3 grid_col-fix text-[#fffff2] w-full text-[16.5px] sticky top-0 z-50 ${
         isScrolled ? "opacity-[0.98]" : "" // Apply opacity class based on scroll state
       }`}
     >
@@ -76,7 +76,7 @@ const Navbar = () => {
         </div>
       </Link>
 
-      <ul className="flex items-center justify-center gap-12 group:cursor-pointer font-lexend w-full ml-10">
+      <ul className="flex items-center justify-center gap-12 group:cursor-pointer font-Lexend w-full ml-10">
         <Link
           href="/about"
           className={
@@ -122,7 +122,7 @@ const Navbar = () => {
             {/* Render chevron based on state */}
           </div>
           <div
-            className={`flex flex-col bg-white text-primary_dark font-lexend p-8 font-normal rounded-[16px] trans_animate space-y-4 ${
+            className={`flex flex-col bg-white text-primary_dark font-Lexend p-8 font-normal rounded-[16px] trans_animate space-y-4 ${
               showMoreDropdown ? "show_more_nav" : "hidden"
             }`}
           >
@@ -174,16 +174,16 @@ const Navbar = () => {
                   : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
               }
             >
-              FAQ{" "}
+              FAQ
             </Link>
           </div>
         </div>
       </ul>
 
-      <div className="w-max pl-24">
+      <div className="w-max pl-12">
         <Link href="/donation">
           <Button
-            classes="px-[28px] py-[8px] bg-primary_red font-lexend font-bold rounded-[4px] text-[15px] hover:bg-primary_red/80 trans_animate"
+            classes="px-[48px] py-[12px] bg-primary_red font-Lexend font-bold rounded-[4px] text-[15px] hover:bg-primary_red/80 trans_animate tracking-wide"
             text="Donate Now"
           />
         </Link>

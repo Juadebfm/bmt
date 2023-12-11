@@ -8,7 +8,7 @@ import { CiLocationOn } from "react-icons/ci";
 
 const page = () => {
   return (
-    <section className="h-max flex items-center justify-center px-14 gap-24 mt-10">
+    <section className="h-max flex items-center justify-center px-16 gap-24 mt-10">
       <div className="w-1/2 h-full p-10 pl-0">
         <img
           src="./assets/bmt/smiling_family.png"

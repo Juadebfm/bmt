@@ -8,7 +8,7 @@ const WhatToExpect = () => {
         <img
           src="./assets/bmt/women.png"
           alt=""
-          className="object-cover w-[88%]"
+          className="object-cover w-full"
         />
       </div>
       <div className="w-1/2 flex flex-col justify-center p-10">
@@ -23,7 +23,7 @@ const WhatToExpect = () => {
           inspired by patient stories - your comprehensive guide to a successful
           transplant journey.
           <Link href="/whattoexpect">
-            <span className="font-bold text-primary_red text-[20px] cursor-pointer ml-2">
+            <span className="font-bold text-primary_red text-[20px] cursor-pointer block">
               Learn More
             </span>
           </Link>

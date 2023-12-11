@@ -2,14 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap");
 body {
-  font-family: "Lexend", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.scroll_snap {
+  scroll-snap-type: x mandatory;
+}
+
+.scroll_item {
+  scroll-snap-align: center;
 }
 
 .active_class {
-  --tw-text-opacity: 1;
-  color: rgb(226 232 240 / var(--tw-text-opacity));
+  color: #000 !important;
 }
 
 .grid_col-fix {

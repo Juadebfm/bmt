@@ -1,9 +1,10 @@
 import React from "react";
 import Button from "./Button";
+import Link from "next/link";
 
 const Contact = () => {
   return (
-    <section className="h-max flex items-center justify-center px-14 gap-10 mt-28">
+    <section className="h-max flex items-center justify-center px-16 gap-10 mt-28">
       <div className="w-1/2 h-full p-10">
         <img
           src="./assets/bmt/smiling_family.png"
@@ -17,10 +18,12 @@ const Contact = () => {
           one? Click on the contact us button below.
         </h2>
         <div className="w-full text-[18px] leading-normal mt-1">
-          <Button
-            classes="px-[68px] py-[10px] bg-primary_red font-lexend font-bold rounded-[4px] hover:bg-primary_red/80 trans_animate block text-white mt-5 text-[16.5px]"
-            text="Contact Us"
-          />
+          <Link href="/contact">
+            <Button
+              classes="px-[75px] py-[14px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide text-white mt-8"
+              text="Contact Us"
+            />
+          </Link>
         </div>
       </div>
     </section>

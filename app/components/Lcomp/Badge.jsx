@@ -2,7 +2,7 @@ import React from "react";
 
 const Badge = () => {
   return (
-    <section className="grid grid-cols-5 gap-4 px-14 py-20">
+    <section className="grid grid-cols-5 gap-4 px-16 py-20">
       <div className="flex items-center justify-center gap-3 box_shadow rounded-[10px] px-[16px] py-[18px]">
         <img
           src="./assets/bmt/bv4.png"
@@ -10,10 +10,8 @@ const Badge = () => {
           className="w-[38px] h-[38px]"
         />
         <div>
-          <span className="text-primary_gold font-[600]">
-            Availability
-          </span>
-          <p className="text-[13px] font-semibold">
+          <span className="text-primary_gold font-[600]">Availability</span>
+          <p className="text-[13px] font-semibold leading-[1.4]">
             We ensure that high-quality services are consistently available.
           </p>
         </div>
@@ -28,8 +26,8 @@ const Badge = () => {
           <span className="text-primary_tomato_red font-[600]">
             Accessibility
           </span>
-          <p className="text-[13px] font-semibold">
-            Quality healthcare is Readily accessible.
+          <p className="text-[13px] font-semibold leading-[1.4]">
+            Quality healthcare is readily accessible.
           </p>
         </div>
       </div>
@@ -40,10 +38,8 @@ const Badge = () => {
           className="w-[38px] h-[38px]"
         />
         <div>
-          <span className="text-primary_dark font-[600]">
-            Quality
-          </span>
-          <p className="text-[13px] font-semibold">
+          <span className="text-primary_dark font-[600]">Quality</span>
+          <p className="text-[13px] font-semibold leading-[1.4]">
             Quality healthcare is made easily reachable for everyone.
           </p>
         </div>
@@ -55,10 +51,8 @@ const Badge = () => {
           className="w-[38px] h-[38px]"
         />
         <div>
-          <span className="text-primary_green font-[600]">
-            Safe
-          </span>
-          <p className="text-[13px] font-semibold">
+          <span className="text-primary_green font-[600]">Safe</span>
+          <p className="text-[13px] font-semibold leading-[1.4]">
             Safety is our top priority
           </p>
         </div>
@@ -70,10 +64,8 @@ const Badge = () => {
           className="w-[38px] h-[38px]"
         />
         <div>
-          <span className="text-primary_blue font-[600]">
-            Affordable
-          </span>
-          <p className="text-[13px] font-semibold">
+          <span className="text-primary_blue font-[600]">Affordable</span>
+          <p className="text-[13px] font-semibold leading-[1.4]">
             Ensuring affordability of quality care
           </p>
         </div>

@@ -22,7 +22,7 @@ export default function App() {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 6000,
+          delay: 7000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination, Navigation]}
