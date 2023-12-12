@@ -147,9 +147,9 @@ const Navbar = () => {
               Education & Awareness
             </Link>
             <Link
-              href="/research_inno"
+              href="/research"
               className={
-                pathname == "/research_inno"
+                pathname == "/research"
                   ? "active_class"
                   : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
               }
@@ -157,9 +157,9 @@ const Navbar = () => {
               Research & Innovation{" "}
             </Link>
             <Link
-              href="/patient-info"
+              href="/whattoexpect"
               className={
-                pathname == "/patient-info"
+                pathname == "/whattoexpect"
                   ? "active_class"
                   : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
               }

@@ -15,7 +15,7 @@ body {
 }
 
 .active_class {
-  color: #000 !important;
+  color: rgb(159, 176, 193) !important;
 }
 
 .grid_col-fix {

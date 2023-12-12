@@ -4,20 +4,43 @@ import React, { useState } from "react";
 import Button from "../components/Lcomp/Button";
 import Badge from "../components/Lcomp/Badge";
 import LatestNews from "../components/Hcomp/LatestNews";
+import { CiWallet } from "react-icons/ci";
+import { BiSolidDonateHeart } from "react-icons/bi";
 
 const Page = () => {
   const [activeButton, setActiveButton] = useState("enterAmount");
   const [activeDiv, setActiveDiv] = useState("one");
+  const [currency, setCurrency] = useState("");
+  const [amount, setAmount] = useState("");
+
+  const [error, setError] = useState("");
 
   const handleButtonClick = (button) => {
     setActiveButton(button);
-
     if (button === "enterAmount") {
       setActiveDiv("one");
     } else {
       setActiveDiv("two");
     }
   };
+
+  const amountRegex = /^[0-9]+$/; // Regex to validate only numbers
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+
+    if (currency && amount) {
+      if (!amountRegex.test(amount)) {
+        setError("Input a valid amount");
+      } else {
+        setActiveDiv("two");
+        setActiveButton("addInformation");
+        setError(""); // Clear any previous error messages
+      }
+    } else {
+      setError("Please choose a currency and type an amount.");
+    }
+  };
+
   return (
     <>
       <section className="h-max flex items-center justify-center px-16 gap-20 mt-10">
@@ -83,24 +106,44 @@ const Page = () => {
                 the transplant procedure
               </p>
             </div>
-            <form className="mt-10 w-full p-10 space-y-10">
+            <form
+              className="mt-10 w-full p-10 space-y-10"
+              onSubmit={handleFormSubmit}
+            >
+              {error && <p className="text-red-500 text-center">{error}</p>}
+
               <div className="flex flex-col items-start justify-start w-full">
                 <label htmlFor="currency">Select Currency</label>
                 <select
                   name=""
                   id=""
+                  value={currency}
+                  onChange={(e) => setCurrency(e.target.value)}
                   className="w-full py-[14px] mt-2 border border-gray-400 rounded-md px-3"
                 >
-                  <option value=" "> </option>
-                  <option value="unknown">Unknown</option>
+                  <option value="Select"></option>
+                  <option value="NGN">NGN</option>
+                  <option value="USD">USD</option>
                 </select>
               </div>
               <div className="flex flex-col items-start justify-start w-full">
                 <label htmlFor="amount">Enter Amount</label>
                 <input
                   type="text"
+                  value={amount}
+                  onChange={(e) => {
+                    const inputVal = e.target.value;
+                    if (!amountRegex.test(inputVal)) {
+                      setError("Input a valid amount");
+                    } else {
+                      setError(""); // Clear error message when valid input
+                    }
+                    setAmount(inputVal);
+                  }}
                   placeholder="Type Here"
-                  className="w-full py-[14px] mt-2 border border-gray-400 rounded-md px-3"
+                  className={`w-full py-[14px] mt-2 border ${
+                    error ? "border-primary_red" : "border-gray-400"
+                  } rounded-md px-3`}
                 />
               </div>
               <div className="flex justify-center">
@@ -150,11 +193,7 @@ const Page = () => {
                       Donate with Offline Donation
                     </span>
                   </div>
-                  <img
-                    src="./assets/bmt/wallet.png"
-                    alt=""
-                    className="w-[25px] h-[25px]"
-                  />
+                  <CiWallet className="text-3xl text-primary_red font-bold" />
                 </div>
                 <div className="py-[14px] px-5 bg-[#DDDDDD] flex items-center justify-between w-full rounded-md  mt-7">
                   <div className="flex items-center justify-start gap-4">
@@ -165,11 +204,7 @@ const Page = () => {
                     />
                     <span className="font-bold">Donate with Paystack</span>
                   </div>
-                  <img
-                    src="./assets/bmt/heart.png"
-                    alt=""
-                    className="w-[25px] h-[25px]"
-                  />
+                  <BiSolidDonateHeart className="text-3xl text-primary_red font-bold" />
                 </div>
               </div>
             </form>

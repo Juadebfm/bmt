@@ -2,12 +2,26 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 // Reusable FAQItem Component
 const FAQItem = ({ question, answer }) => {
   const [showAnswer, setShowAnswer] = useState(false);
+  const [aosInitialized, setAOSInitialized] = useState(false);
+
+  const initializeAOS = () => {
+    if (!aosInitialized) {
+      setAOSInitialized(true);
+      import("aos").then((AOS) => {
+        AOS.init({ once: true }); // Initialize AOS only once
+      });
+    }
+  };
 
   const toggleAnswer = () => {
     setShowAnswer(!showAnswer);
+    initializeAOS();
   };
 
   return (
@@ -26,7 +40,10 @@ const FAQItem = ({ question, answer }) => {
         )}
       </div>
       {showAnswer && (
-        <div className="py-10 px-16 h-[260px] bg-[#fdeaea] w-[98.5%] m-auto mt-[5px]">
+        <div
+          data-aos="fade-down"
+          className="py-10 px-16 h-[260px] bg-[#fdeaea] w-[98.5%] m-auto mt-[5px]"
+        >
           <h3 className="text-[32px] capitalize">{question}</h3>
           <p className="mt-5 w-full text-[#232323]/60 leading-relaxed text-[19px]">
             {answer}

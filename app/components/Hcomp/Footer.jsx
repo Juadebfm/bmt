@@ -32,8 +32,8 @@ const Footer = () => {
           <Link href="/about">About</Link>
           <Link href="/donation">Donation</Link>
           <Link href="/education">Education & Awareness</Link>
-          <Link href="/">Research & Innovation</Link>
-          <Link href="/">Patient Information</Link>
+          <Link href="/research">Research & Innovation</Link>
+          <Link href="/whattoexpect">Patient Information</Link>
         </ul>
       </div>
       <div className="space-y-3">

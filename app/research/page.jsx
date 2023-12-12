@@ -8,8 +8,8 @@ import LatestNews from "../components/Hcomp/LatestNews";
 const page = () => {
   return (
     <>
-      <section className="h-max flex items-center justify-center px-16 gap-28 mt-10">
-        <div className="w-1/2 h-full p-10 pl-28 relative">
+      <section className="h-max flex items-center justify-center px-16 gap-20 mt-10">
+        <div className="w-1/2 h-full p-10 relative">
           <img
             src="./assets/bmt/female_docs_globe.png"
             alt=""
@@ -18,7 +18,7 @@ const page = () => {
           <img
             src="./assets/bmt/female_docs.png"
             alt=""
-            className="object-cover absolute bottom-5 w-[80%] h-auto"
+            className="object-cover absolute bottom-5 w-full left-0 h-auto"
           />
         </div>
         <div className="w-1/2 flex flex-col justify-center">

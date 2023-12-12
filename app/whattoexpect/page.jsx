@@ -26,11 +26,11 @@ const page = () => {
             />
           </Link>
         </div>
-        <div className="w-1/2 h-full p-10 pl-0">
+        <div className="w-1/2 h-full p-10">
           <img
             src="./assets/bmt/whattoexpect.png"
             alt=""
-            className="object-cover w-[90%]"
+            className="object-cover w-full"
           />
         </div>
       </section>
