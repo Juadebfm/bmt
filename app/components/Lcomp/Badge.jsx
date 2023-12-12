@@ -2,7 +2,7 @@ import React from "react";
 
 const Badge = () => {
   return (
-    <section className="grid grid-cols-5 gap-4 px-16 py-20">
+    <section className="grid grid-cols-5 gap-4 px-7 py-20">
       <div className="flex items-center justify-center gap-3 box_shadow rounded-[10px] px-[16px] py-[18px]">
         <img
           src="./assets/bmt/bv4.png"
