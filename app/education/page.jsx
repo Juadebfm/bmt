@@ -92,13 +92,7 @@ const Page = () => {
               replaces damaged or diseased bone marrow with healthy bone marrow.
               Bone marrow is the spongy tissue inside bones that produces blood
               cells. BMT can be used to treat a variety of diseases, including
-              leukemia, lymphoma, and sickle cell disease. One of the most
-              important advancements in BMT technology has been the development
-              of new conditioning regimens. Conditioning regimens are the drugs
-              or radiation therapy that are used to destroy the diseased bone
-              marrow before the transplant. New conditioning regimens have been
-              shown to be more effective at destroying diseased bone marrow
-              while causing fewer side effects.
+              leukemia, lymphoma, and sickle cell disease.
               {!showAll && (
                 <button
                   onClick={handleShowMore}
@@ -111,7 +105,17 @@ const Page = () => {
 
             {showAll && (
               <div data-aos="fade-down">
-                <p className="mt-7">
+                <p className="mt-4">
+                  
+                  One of the most important advancements in BMT technology has
+                  been the development of new conditioning regimens.
+                  Conditioning regimens are the drugs or radiation therapy that
+                  are used to destroy the diseased bone marrow before the
+                  transplant. New conditioning regimens have been shown to be
+                  more effective at destroying diseased bone marrow while
+                  causing fewer side effects.
+                </p>
+                <p className="mt-4">
                   Another important advancement in BMT technology has been the
                   development of new graft-versus-host disease (GVHD)
                   prophylaxis regimens. GVHD is a serious complication of BMT
@@ -126,7 +130,7 @@ const Page = () => {
                   engraftment, and the use of robotics to perform BMT
                   procedures.
                 </p>
-                <p className="mt-7">
+                <p className="mt-4">
                   As a result of these advancements, BMT is now a more effective
                   and safer treatment for many patients. However, it is
                   important to note that BMT is still a complex procedure with a

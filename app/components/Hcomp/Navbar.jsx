@@ -82,7 +82,7 @@ const Navbar = () => {
           className={
             pathname == "/about"
               ? "active_class"
-              : "hover:text-slate-200 duration-200 transition-all ease-linear w-max"
+              : "hover:text-slate-300 duration-200 transition-all ease-linear w-max"
           }
         >
           About Us
@@ -92,7 +92,7 @@ const Navbar = () => {
           className={
             pathname == "/services"
               ? "active_class"
-              : "hover:text-slate-200 duration-200 transition-all ease-linear w-max"
+              : "hover:text-slate-300 duration-200 transition-all ease-linear w-max"
           }
         >
           Services
@@ -102,13 +102,13 @@ const Navbar = () => {
           className={
             pathname == "/contact"
               ? "active_class"
-              : "hover:text-slate-200 duration-200 transition-all ease-linear w-max"
+              : "hover:text-slate-300 duration-200 transition-all ease-linear w-max"
           }
         >
           Contact Us
         </Link>
         <div
-          className="cursor-pointer hover:text-slate-200 duration-200 transition-all ease-linear w-max"
+          className="cursor-pointer hover:text-slate-300 duration-200 transition-all ease-linear w-max"
           onMouseEnter={handleDropdownMouseEnter}
           onMouseLeave={handleDropdownMouseLeave}
           onClick={() => {
