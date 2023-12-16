@@ -4,12 +4,12 @@ import Link from "next/link";
 
 const CTA = () => {
   return (
-    <section className="h-max flex items-center justify-center px-16 gap-20 mt-28">
-      <div className="w-1/2 h-full p-10">
+    <section className="h-max flex flex-col sm:flex-row items-center justify-center px-[25px] sm:px-16 gap-10 sm:gap-20 mt-10 sm:mt-28">
+      <div className="w-full sm:w-1/2 h-full p-0 sm:p-10">
         <img src="./assets/bmt/cta_img.png" alt="" className="object-cover" />
       </div>
-      <div className="w-1/2 flex flex-col justify-center">
-        <h2 className="w-[95%] text-[44px] leading-[1.2] capitalize font-[600] text-primary_red">
+      <div className="w-full sm:w-1/2 flex flex-col justify-center">
+        <h2 className="w-full sm:w-[95%] text-[34px] sm:text-[44px] text-center sm:text-start leading-[1.2] capitalize font-[600] text-primary_red">
           This is a CALL TO ACTION! BE A HERO!
           <br /> CONTRIBUTE TODAY!
         </h2>
@@ -23,7 +23,7 @@ const CTA = () => {
           <br /> THANK YOU!
           <Link href="/donation">
             <Button
-              classes="px-[75px] py-[14px] block bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-5 text-white"
+              classes="px-[75px] py-[14px] w-full sm:w-auto block bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-5 text-white"
               text="Donate Now"
             />
           </Link>

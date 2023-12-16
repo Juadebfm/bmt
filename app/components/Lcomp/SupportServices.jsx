@@ -2,11 +2,11 @@ import React from "react";
 
 const SupportServices = () => {
   return (
-    <section className="h-[70vh] px-16 mt-10">
-      <h2 className="w-full text-[44px] leading-[1.2] text-center capitalize font-[600] text-primary_red">
+    <section className="h-auto sm:h-[70vh] px-[25px] sm:px-16 mt-10">
+      <h2 className="w-full text-[34px] sm:text-[44px] leading-[1.2] text-center capitalize font-[600] text-primary_red">
         Our Support Services
       </h2>
-      <div className="mt-10 flex items-center justify-center gap-10">
+      <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-10">
         <div className="p-6 box_shadow hover:box_shadow_hover trans_animate rounded-[16px]">
           <img
             src="./assets/bmt/person_card.png"

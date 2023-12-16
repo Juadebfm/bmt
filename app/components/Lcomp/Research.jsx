@@ -3,9 +3,9 @@ import React from "react";
 
 const Research = () => {
   return (
-    <section className="h-max flex items-center justify-center px-16 gap-10 mt-28">
-      <div className="w-1/2 flex flex-col justify-center">
-        <h2 className="w-full text-[44px] leading-[1.2] capitalize font-[600] text-primary_red">
+    <section className="h-max flex flex-col-reverse sm:flex-row items-center justify-center px-[25px] sm:px-16 gap-10 mt-10 sm:mt-28">
+      <div className="w-full sm:w-1/2 flex flex-col justify-center">
+        <h2 className="w-full text-[34px] sm:text-[44px] text-center sm:text-start leading-[1.2] capitalize font-[600] text-primary_red">
           Research and Innovations
         </h2>
         <p className="w-full text-[20px] leading-normal mt-8">
@@ -21,7 +21,7 @@ const Research = () => {
           </Link>
         </p>
       </div>
-      <div className="w-1/2 h-full p-10">
+      <div className="w-full sm:w-1/2 h-full p-0 sm:p-10">
         <img src="./assets/bmt/women2.png" alt="" className="object-cover" />
       </div>
     </section>

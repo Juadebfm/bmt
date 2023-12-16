@@ -30,7 +30,7 @@ export default function App() {
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="slide-container">
+            <div className="slide-container hidden sm:block">
               <div className="image-container">
                 <img
                   className="slide-image"

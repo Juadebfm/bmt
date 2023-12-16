@@ -1,27 +1,21 @@
 const slides = [
   {
-    image:
-      "https://res.cloudinary.com/juadeb/image/upload/v1701439724/BMT/bmt_landpage_h2ec10.png",
+    image: "./assets/bmt/slide1.png",
   },
   {
-    image:
-      "https://res.cloudinary.com/juadeb/image/upload/v1701442187/BMT/bmt_landpage2_thhopr.png",
+    image: "./assets/bmt/slide3.png",
   },
   {
-    image:
-      "https://res.cloudinary.com/juadeb/image/upload/v1701442178/BMT/bmt_landpage3_vdx8mb.png",
+    image: "./assets/bmt/slide4.png",
   },
   {
-    image:
-      "https://res.cloudinary.com/juadeb/image/upload/v1701439724/BMT/bmt_landpage_h2ec10.png",
+    image: "./assets/bmt/slide5.png",
   },
   {
-    image:
-      "https://res.cloudinary.com/juadeb/image/upload/v1701442178/BMT/bmt_landpage4_hmg1ac.png",
+    image: "./assets/bmt/slide6.png",
   },
   {
-    image:
-      "https://res.cloudinary.com/juadeb/image/upload/v1701442178/BMT/bmt_landpage5_eszs01.png",
+    image: "./assets/bmt/slide7.png",
   },
 ];
 

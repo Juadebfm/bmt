@@ -2,8 +2,8 @@ import React from "react";
 
 const Badge = () => {
   return (
-    <section className="grid grid-cols-5 gap-4 px-7 py-20">
-      <div className="flex items-center justify-center gap-3 box_shadow rounded-[10px] px-[16px] py-[18px]">
+    <section className="grid grid-cols-1 sm:grid-cols-5 gap-7 sm:gap-4 px-7 pt-10 sm:pb-20 pb-10">
+      <div className="flex items-center justify-start sm:justify-center gap-3 box_shadow rounded-[10px] px-[25px] sm:px-[16px] py-[25px] sm:py-[18px]">
         <img
           src="./assets/bmt/bv4.png"
           alt="quality"
@@ -16,7 +16,7 @@ const Badge = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-center gap-3 box_shadow rounded-[10px] px-[16px] py-[18px]">
+      <div className="flex items-center justify-start sm:justify-center gap-3 box_shadow rounded-[10px] px-[25px] sm:px-[16px] py-[25px] sm:py-[18px]">
         <img
           src="./assets/bmt/bv5.png"
           alt="quality"
@@ -31,7 +31,7 @@ const Badge = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-center gap-3 box_shadow rounded-[10px] px-[16px] py-[18px]">
+      <div className="flex items-center justify-start sm:justify-center gap-3 box_shadow rounded-[10px] px-[25px] sm:px-[16px] py-[25px] sm:py-[18px]">
         <img
           src="./assets/bmt/bv6.png"
           alt="quality"
@@ -44,7 +44,7 @@ const Badge = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-center gap-3 box_shadow rounded-[10px] px-[16px] py-[18px]">
+      <div className="flex items-center justify-start sm:justify-center gap-3 box_shadow rounded-[10px] px-[25px] sm:px-[16px] py-[25px] sm:py-[18px]">
         <img
           src="./assets/bmt/bv7.png"
           alt="quality"
@@ -57,7 +57,7 @@ const Badge = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-center gap-3 box_shadow rounded-[10px] px-[16px] py-[18px]">
+      <div className="flex items-center justify-start sm:justify-center gap-3 box_shadow rounded-[10px] px-[25px] sm:px-[16px] py-[25px] sm:py-[18px]">
         <img
           src="./assets/bmt/bv9.png"
           alt="quality"

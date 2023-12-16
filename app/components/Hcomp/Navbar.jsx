@@ -66,17 +66,17 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`font-Lexend bg-primary_dark px-16 py-3 grid_col-fix text-[#fffff2] w-full text-[16.5px] sticky top-0 z-50 ${
+      className={`font-Lexend bg-primary_dark px-7 sm:px-16 py-3 grid_col-fix text-[#fffff2] w-full text-[16.5px] sticky top-0 z-50 ${
         isScrolled ? "opacity-[0.98]" : "" // Apply opacity class based on scroll state
       }`}
     >
       <Link href="/">
-        <div>
+        <div className="w-[200px] sm:w-auto h-auto">
           <img src="./assets/bmt/Group 20653.png" alt="BMT Logo" className="" />
         </div>
       </Link>
 
-      <ul className="flex items-center justify-center gap-12 group:cursor-pointer font-Lexend w-full ml-10">
+      <ul className="hidden sm:flex items-center justify-center gap-12 group:cursor-pointer font-Lexend w-full ml-10">
         <Link
           href="/about"
           className={
@@ -180,7 +180,7 @@ const Navbar = () => {
         </div>
       </ul>
 
-      <div className="w-max pl-12">
+      <div className="hidden sm:block w-max pl-12">
         <Link href="/donation">
           <Button
             classes="px-[48px] py-[12px] bg-primary_red font-Lexend font-bold rounded-[4px] text-[15px] hover:bg-primary_red/80 trans_animate tracking-wide"

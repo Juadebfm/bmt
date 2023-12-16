@@ -13,7 +13,7 @@ import Button from "../Lcomp/Button";
 
 const Footer = () => {
   return (
-    <footer className="grid_col_footer gap-8 px-16 py-14 w-full">
+    <footer className="grid_col_footer_sm sm:grid_col_footer gap-8 px-[25px] sm:px-16 py-14 w-full">
       <div>
         <img src="./assets/bmt/logo_footer.png" alt="BMT Logo" className="" />
         <p className="w-[95%] mt-8 text-[18px]">

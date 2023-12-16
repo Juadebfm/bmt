@@ -16,14 +16,17 @@ import SuccessStory from "./Lcomp/SuccessStory";
 import Contact from "./Lcomp/Contact";
 import LatestNews from "./Hcomp/LatestNews";
 import Link from "next/link";
+import SmallScreenSlider from "./Hcomp/SmallScreenSlider";
+import slidesSm from "./Lcomp/SlidesDataSm";
 
 const Mainbody = () => {
   return (
     <section className="font-Lexend">
       <div className="relative">
         <Slider slides={slides} />
-        <div className="absolute top-[20%] z-20 w-[55%] h-auto pl-16 text-white">
-          <h1 className="text-[48px] leading-[3.4rem] capitalize font-bold text_shadow_">
+        <SmallScreenSlider slidesSm={slidesSm}/>
+        <div className="absolute top-[20%] z-20 w-full sm:w-[55%] h-auto pl-0 sm:pl-16 text-white">
+          <h1 className="text-[38px] sm:text-[48px] leading-[3.4rem] capitalize font-bold text_shadow_">
             Providing, safe, quality, affordable healthcare for persons leaving
             with sickle cell
           </h1>

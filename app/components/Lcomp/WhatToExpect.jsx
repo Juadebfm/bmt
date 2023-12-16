@@ -3,16 +3,16 @@ import React from "react";
 
 const WhatToExpect = () => {
   return (
-    <section className="h-max flex items-center justify-center gap-10 pr-14 mt-28 w-full">
-      <div className="w-1/2 h-full p-10 pl-0">
+    <section className="h-max flex flex-col items-center justify-center gap-10 sm:pr-14 px-[25px] mt-10 sm:mt-28 w-full">
+      <div className="w-full sm:w-1/2 h-full p-0 sm:p-10 pl-0">
         <img
           src="./assets/bmt/women.png"
           alt=""
           className="object-cover w-full"
         />
       </div>
-      <div className="w-1/2 flex flex-col justify-center p-10">
-        <h2 className="w-[85%] text-[40px] leading-[1.2] capitalize font-[600] text-primary_red">
+      <div className="w-full sm:w-1/2 flex flex-col justify-center p-0 sm:p-10">
+        <h2 className="w-full sm:w-[85%] text-[40px] leading-[1.2] capitalize font-[600] text-primary_red">
           What to expect in stem cell transplantation
           <span className="text-[20px] font-normal ml-2 p-0 mt-0 block">
             (Bone marrow transplantation)
