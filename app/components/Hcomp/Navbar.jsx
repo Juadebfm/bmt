@@ -5,6 +5,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 import Button from "../Lcomp/Button";
+import Image from "next/image";
 
 const Navbar = () => {
   const [showMoreDropdown, setShowMoreDropdown] = useState(false);
@@ -72,7 +73,14 @@ const Navbar = () => {
     >
       <Link href="/">
         <div className="w-[200px] sm:w-auto h-auto">
-          <img src="./assets/bmt/Group 20653.png" alt="BMT Logo" className="" />
+          <Image
+            src="/assets/bmt/main_logo.png"
+            alt="BMT Logo"
+            className=""
+            width={200}
+            height={0}
+            style={{ width: "100%", height: "auto" }} // optional
+          />
         </div>
       </Link>
 

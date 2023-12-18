@@ -3,7 +3,7 @@ import React from "react";
 
 const WhatToExpect = () => {
   return (
-    <section className="h-max flex flex-col items-center justify-center gap-10 sm:pr-14 px-[25px] mt-10 sm:mt-28 w-full">
+    <section className="h-max flex flex-col sm:flex-row items-center justify-center gap-10 sm:pr-14 px-[25px] mt-10 sm:mt-28 w-full">
       <div className="w-full sm:w-1/2 h-full p-0 sm:p-10 pl-0">
         <img
           src="./assets/bmt/women.png"

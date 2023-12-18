@@ -21,12 +21,12 @@ import slidesSm from "./Lcomp/SlidesDataSm";
 
 const Mainbody = () => {
   return (
-    <section className="font-Lexend">
+    <section>
       <div className="relative">
         <Slider slides={slides} />
-        <SmallScreenSlider slidesSm={slidesSm}/>
+        <SmallScreenSlider slidesSm={slidesSm} />
         <div className="absolute top-[20%] z-20 w-full sm:w-[55%] h-auto pl-0 sm:pl-16 text-white">
-          <h1 className="text-[38px] sm:text-[48px] leading-[3.4rem] capitalize font-bold text_shadow_">
+          <h1 className="w-[80%] text-[38px] sm:text-[48px] leading-[3.4rem] tracking-wide capitalize font-bold text_shadow_">
             Providing, safe, quality, affordable healthcare for persons leaving
             with sickle cell
           </h1>
@@ -36,7 +36,7 @@ const Mainbody = () => {
           </p>
           <Link href="/donation">
             <Button
-              classes="px-[75px] py-[14px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide"
+              classes="px-[75px] py-4 bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wider"
               text="Donate Now"
             />
           </Link>

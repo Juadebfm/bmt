@@ -1,13 +1,24 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SupportServices = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
     <section className="h-auto sm:h-[70vh] px-[25px] sm:px-16 mt-10">
       <h2 className="w-full text-[34px] sm:text-[44px] leading-[1.2] text-center capitalize font-[600] text-primary_red">
         Our Support Services
       </h2>
       <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-10">
-        <div className="p-6 box_shadow hover:box_shadow_hover trans_animate rounded-[16px]">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="600"
+          className="p-6 box_shadow hover:box_shadow_hover trans_animate rounded-[16px]"
+        >
           <img
             src="./assets/bmt/person_card.png"
             alt=""
@@ -17,7 +28,11 @@ const SupportServices = () => {
             Counselling
           </p>
         </div>
-        <div className="p-6 box_shadow hover:box_shadow_hover trans_animate rounded-[16px]">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="800"
+          className="p-6 box_shadow hover:box_shadow_hover trans_animate rounded-[16px]"
+        >
           <img
             src="./assets/bmt/person_card2.png"
             alt=""
@@ -27,7 +42,11 @@ const SupportServices = () => {
             Support Groups
           </p>
         </div>
-        <div className="p-6 box_shadow hover:box_shadow_hover trans_animate rounded-[16px]">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          className="p-6 box_shadow hover:box_shadow_hover trans_animate rounded-[16px]"
+        >
           <img
             src="./assets/bmt/person_card3.png"
             alt=""
