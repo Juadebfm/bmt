@@ -4,7 +4,7 @@ import Image from "next/image";
 const TourFacility = () => {
   return (
     <section>
-      <h2 className="w-full text-[44px] leading-[1.2] text-center capitalize font-[600] text-primary_red mt-14">
+      <h2 className="w-full text-[44px] lg:text-[64px] leading-[1.2] text-center capitalize font-[600] text-primary_red mt-14">
         Tour of Our Facility
       </h2>
       <div
@@ -14,7 +14,7 @@ const TourFacility = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
-        className="mt-14 mb-14 h-screen relative p-14"
+        className="mt-14 mb-14 h-[50vh] lg:h-screen relative p-14"
       >
         <Image
           src="/assets/bmt/playIcon.png"

@@ -4,18 +4,18 @@ import TeamMember from "./TeamMember";
 const OurTeam = () => {
   return (
     <>
-      <section className="flex flex-col border-y ">
+      <section className="flex flex-col border-y p-[25px] lg:p-0">
         <div>
-          <h1 className="font-lexend font-semibold text-[64px] p-20 pb-5 text-primary_red leading-normal">
+          <h1 className="font-lexend font-semibold text-[44px] lg:text-[64px] p-0 lg:p-20 pb-5 text-primary_red leading-normal text-center lg:text-start">
             Our Team
           </h1>
         </div>
-        <div className="ml-40">
-          <h3 className="font-semibold text-[22px] text-primary_dark font-lexend leading-normal ">
+        <div className="ml-0 lg:ml-40">
+          <h3 className="font-semibold text-[18px] lg:text-[22px] text-primary_dark font-lexend leading-normal text-center lg:text-start">
             CHAIRMAN AND MEMBERS, BOARD OF SICKLE CELL FOUNDATION NIGERIA (SCFN)
           </h3>
         </div>
-        <div className="grid grid-cols-3 gap-10 gap-x-14 px-40 ml-20 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 mt-8">
           <div>
             <TeamMember
               name="Chief Tunde Afolabi, MFR"
@@ -130,12 +130,12 @@ const OurTeam = () => {
           </div>
         </div>
 
-        <div className="ml-40">
-          <h3 className="font-semibold text-[22px] text-primary_dark font-lexend leading-normal mt-10 ">
+        <div className="ml-0 lg:ml-40">
+          <h3 className="font-semibold text-[18px] lg:text-[22px] text-primary_dark font-lexend leading-normal mt-10 text-center lg:text-start">
             LUTH Management Team
           </h3>
         </div>
-        <div className="grid grid-cols-3 gap-10 gap-x-14 px-40 ml-20 mt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 mt-8">
           <div>
             <TeamMember
               name="Prof. Wasiu Adeyemo"
@@ -162,12 +162,12 @@ const OurTeam = () => {
           </div>
         </div>
 
-        <div className="ml-40">
-          <h3 className="font-semibold text-[22px] text-primary_dark font-lexend leading-normal mt-10 ">
+        <div className="ml-0 lg:ml-40">
+          <h3 className="font-semibold text-[18px] lg:text-[22px] text-primary_dark font-lexend leading-normal mt-10 text-center lg:text-start">
             TOP MANAGEMENT COMMITTEE SCFN/LUTH BMT PROGRAMME
           </h3>
         </div>
-        <div className="grid grid-cols-3  gap-10 gap-x-14 px-40 ml-20 mt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 mt-8">
           <div>
             <TeamMember
               name="Prof. Wasiu Adeyemo"
@@ -194,12 +194,12 @@ const OurTeam = () => {
           </div>
         </div>
 
-        <div className="ml-40">
-          <h3 className="font-semibold text-[22px] text-primary_dark font-lexend leading-normal mt-10 ">
+        <div className="ml-0 lg:ml-40">
+          <h3 className="font-semibold text-[18px] lg:text-[22px] text-primary_dark font-lexend leading-normal mt-10 text-center lg:text-start">
             BMT TREATMENT GROUP
           </h3>
         </div>
-        <div className="grid grid-cols-3  gap-10 gap-x-14 px-40 ml-20 mt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 mt-8">
           <div>
             <TeamMember
               name="Prof. Edamisan Temiye"
@@ -250,12 +250,12 @@ const OurTeam = () => {
           </div>
         </div>
 
-        <div className="ml-40">
-          <h3 className="font-semibold text-[22px] text-primary_dark font-lexend leading-normal mt-10 ">
+        <div className="ml-0 lg:ml-40">
+          <h3 className="font-semibold text-[18px] lg:text-[22px] text-primary_dark font-lexend leading-normal mt-10 text-center lg:text-start">
             TECHNICAL PARTNER - VANDERBILT UNIVERSITY MEDICAL CENTRE
           </h3>
         </div>
-        <div className="grid grid-cols-3  gap-10 gap-x-14 px-40 ml-20 mt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 mt-8">
           <div>
             <TeamMember
               name="Prof. Adetola Kassim"

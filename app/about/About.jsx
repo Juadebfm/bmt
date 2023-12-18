@@ -9,17 +9,17 @@ const About = () => {
   const lineClamp = isExpanded ? "" : "line-clamp-[13]";
 
   return (
-    <section className="flex items-center justify-center gap-1  w-full ">
-      <div className=" m-10 w-1/2">
+    <section className="flex flex-col lg:flex-row items-center justify-center gap-1 w-full px-[25px] lg:px-14">
+      <div className="m-10 w-full lg:w-1/2">
         <Image
           src="/assets/bmt/treatment_team.png"
           alt="About Our BMT"
           width={547}
           height={649}
-          className="w-[90%]"
+          className="w-full"
         />
       </div>
-      <div className="w-1/2 block h-[670px] my-auto box-border pt-[40px] pr-10 overflow-y-scroll overflow-hidden cursor-pointer">
+      <div className="w-full lg:w-1/2 block h-max lg:h-[670px] my-auto box-border pt-[40px] pr-0 lg:pr-10 lg:overflow-y-scroll lg:overflow-hidden cursor-pointer">
         <p className={lineClamp}>
           <span className="w-full text-[17px] font-[300] font-lexend text-primary_dark leading-tight whitespace-break-spaces mt-4 text-justify ">
             <span className="font-[700] ">
@@ -96,7 +96,7 @@ const About = () => {
           </span>
         </p>
         <button
-          className="font-bold text-primary_red text-[18px] pl-2 cursor-pointer"
+          className="font-bold text-primary_red pl-2 cursor-pointer"
           onClick={toggleExpand}
         >
           {!isExpanded ? "Read more" : "See Less"}

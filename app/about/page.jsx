@@ -14,7 +14,7 @@ const page = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
-        className="h-screen relative p-14"
+        className="h-[50vh] md:h-screen relative p-14"
       >
         <Image
           src="/assets/bmt/sfcn_luth_logo.png"

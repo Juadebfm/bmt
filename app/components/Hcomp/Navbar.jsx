@@ -117,7 +117,7 @@ const Navbar = () => {
         <ul
           data-aos="fade-right"
           ref={menuRef} // Set the reference to the entire menu area
-          className="absolute left-0 top-[100%] bg-white text-[#232323] flex flex-col items-start justify-start gap-12 group:cursor-pointer font-Lexend w-[60%] md:w-[40%] h-[70vh] md:h-auto rounded-r-lg pt-24 md:pt-16 md:pb-16 px-14"
+          className="absolute left-0 top-[100%] bg-white text-[#232323] flex flex-col items-start justify-start gap-12 group:cursor-pointer font-Lexend w-[60%] md:w-[40%] h-[70vh] md:h-auto rounded-r-lg pt-24 md:pt-16 md:pb-16 px-10 md:px-14"
         >
           {/* ... existing menu items */}
           <Link
