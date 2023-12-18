@@ -32,6 +32,8 @@ export default function SmallScreenSlider() {
           <SwiperSlide key={index}>
             <div className="slide-container block sm:hidden">
               <div className="image-container">
+                <div className="overlay"></div>
+
                 <img
                   className="slide-image"
                   src={slide.image}

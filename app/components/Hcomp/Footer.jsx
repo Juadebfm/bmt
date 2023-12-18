@@ -13,7 +13,7 @@ import Button from "../Lcomp/Button";
 
 const Footer = () => {
   return (
-    <footer className="grid_col_footer_sm sm:grid_col_footer gap-8 px-[25px] sm:px-16 py-14 w-full">
+    <footer className="grid_col_footer_sm lg:grid_col_footer gap-8 px-[25px] sm:px-16 py-14 w-full">
       <div>
         <img src="./assets/bmt/logo_footer.png" alt="BMT Logo" className="" />
         <p className="w-[95%] mt-8 text-[18px]">
@@ -129,10 +129,10 @@ const Footer = () => {
             type="email"
             placeholder="Enter your email address"
             required
-            className="px-[28px] py-[8px] w-full border-[1px] border-primary_red/50 rounded-lg"
+            className="px-[28px] py-[8px] w-full md:w-[70%] lg:w-full border-[1px] border-primary_red/50 rounded-lg"
           />
           <Button
-            classes="px-[68px] py-[10px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/80 trans_animate block text-white mt-5 text-[15px] w-full"
+            classes="px-[68px] py-[10px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/80 trans_animate block text-white mt-5 text-[15px] w-full md:w-[70%] lg:w-full"
             text="Subscribe"
           />
         </form>

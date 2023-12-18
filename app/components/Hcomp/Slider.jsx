@@ -32,6 +32,8 @@ export default function App() {
           <SwiperSlide key={index}>
             <div className="slide-container hidden sm:block">
               <div className="image-container">
+              <div className="overlay"></div>
+
                 <img
                   className="slide-image"
                   src={slide.image}

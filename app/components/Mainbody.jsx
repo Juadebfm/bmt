@@ -25,18 +25,21 @@ const Mainbody = () => {
       <div className="relative">
         <Slider slides={slides} />
         <SmallScreenSlider slidesSm={slidesSm} />
-        <div className="absolute top-[20%] z-20 w-full sm:w-[55%] h-auto pl-0 sm:pl-16 text-white">
-          <h1 className="w-[80%] text-[38px] sm:text-[48px] leading-[3.4rem] tracking-wide capitalize font-bold text_shadow_">
+        <div className="absolute top-[25%] md:top-[20%] z-20 w-full lg:w-[55%] h-auto px-[1.5rem] sm:px-16 text-white">
+          <h1 className="w-full lg:w-[80%] text-[30px] md:text-[38px] lg:text-[48px] leading-[1.2] lg:leading-[3.4rem] tracking-wide capitalize text-center lg:text-start font-bold text_shadow_">
             Providing, safe, quality, affordable healthcare for persons leaving
             with sickle cell
           </h1>
-          <p className="text-[20px] my-8 w-full text_shadow_ tracking-wide">
+          <p className="text-[17.5px] lg:text-[20px] text-center sm:text-start  my-8 w-[90%] lg:w-full mx-auto lg:mx-0 text_shadow_ tracking-wide">
             Be part of a mission dedicated to making a lasting impact in
             healthcare.
           </p>
-          <Link href="/donation">
+          <Link
+            href="/donation"
+            className="md:flex md:items-center md:justify-center lg:block"
+          >
             <Button
-              classes="px-[48px] py-[12px] bg-primary_red font-Lexend font-bold rounded-[4px] text-[15px] hover:bg-primary_red/80 trans_animate tracking-wider"
+              classes="px-[48px] py-[12px] bg-primary_red font-Lexend font-bold rounded-[4px] text-[15px] hover:bg-primary_red/80 trans_animate tracking-wider w-full md:w-[60%] lg:w-auto"
               text="Donate Now"
             />
           </Link>
