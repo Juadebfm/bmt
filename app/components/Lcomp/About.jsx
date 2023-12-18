@@ -11,7 +11,7 @@ const About = () => {
         <h2 className="w-full text-[34px] sm:text-[44px] text-center sm:text-start leading-[1.2] capitalize font-[600] text-primary_red">
           About the SCFN | LUTH | VUMC Partnership
         </h2>
-        <p className="w-full text-[20px] leading-normal mt-3">
+        <p className="w-full text-[19px] leading-normal mt-3">
           The SCFN/LUTH/VUMC BMT Centre was officially opened January 2022 and
           it is heartwarming to know that the SCFN/LUTH/VUMC BMT Centre will not
           only provide safe, quality and affordable cure for sickle cell
@@ -22,7 +22,7 @@ const About = () => {
           AFFORDABLE BONE MARROW TRANSPLANTATION AT THE SCFN/LUTH/VUMC
           BMT CENTRE, LAGOS.
           <Link href="/about">
-            <span className="font-bold text-primary_red text-[20px] cursor-pointer ml-2">
+            <span className="font-bold text-primary_red cursor-pointer ml-2">
               Learn More
             </span>
           </Link>

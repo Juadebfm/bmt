@@ -36,7 +36,7 @@ const Mainbody = () => {
           </p>
           <Link href="/donation">
             <Button
-              classes="px-[75px] py-4 bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wider"
+              classes="px-[48px] py-[12px] bg-primary_red font-Lexend font-bold rounded-[4px] text-[15px] hover:bg-primary_red/80 trans_animate tracking-wider"
               text="Donate Now"
             />
           </Link>

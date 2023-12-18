@@ -1,9 +1,20 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const WhatToExpect = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
-    <section className="h-max flex flex-col sm:flex-row items-center justify-center gap-10 sm:pr-14 px-[25px] mt-10 sm:mt-28 w-full">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="600"
+      className="h-max flex flex-col sm:flex-row items-center justify-center gap-10 sm:pr-14 px-[25px] mt-10 sm:mt-28 w-full"
+    >
       <div className="w-full sm:w-1/2 h-full p-0 sm:p-10 pl-0">
         <img
           src="./assets/bmt/women.png"
@@ -18,12 +29,12 @@ const WhatToExpect = () => {
             (Bone marrow transplantation)
           </span>
         </h2>
-        <p className="w-full text-[20px] leading-normal mt-4">
+        <p className="w-full text-[19px] leading-normal mt-4">
           Welcome to our BMT hub. Learn about procedures, find resources, and be
           inspired by patient stories - your comprehensive guide to a successful
           transplant journey.
           <Link href="/whattoexpect">
-            <span className="font-bold text-primary_red text-[20px] cursor-pointer block">
+            <span className="font-bold text-primary_red cursor-pointer block">
               Learn More
             </span>
           </Link>

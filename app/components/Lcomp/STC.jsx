@@ -1,9 +1,20 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const STC = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
-    <section className="h-max flex flex-col-reverse sm:flex-row items-center justify-center px-[25px] sm:px-16 mt-10 sm:mt-28">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="600"
+      className="h-max flex flex-col-reverse sm:flex-row items-center justify-center px-[25px] sm:px-16 mt-10 sm:mt-28"
+    >
       <div className="w-full sm:w-1/2 flex flex-col justify-center">
         <h2 className="w-full text-[34px] sm:text-[44px] leading-[1.2] capitalize font-[600] text-primary_red">
           Understanding stem cell transplantation
@@ -11,13 +22,13 @@ const STC = () => {
             (Bone marrow transplantation)
           </span>
         </h2>
-        <p className="w-full text-[20px] leading-normal mt-8">
+        <p className="w-[95%] text-[19px] leading-normal mt-8">
           Access in-depth disease information on conditions like Sickle Cell
           Disease and Leukemia treated with BMT. Stay informed and engaged with
           upcoming webinars and workshops, fostering knowledge of BMT and
           related health topics.
           <Link href="/education">
-            <span className="font-bold text-primary_red text-[20px] cursor-pointer ml-2">
+            <span className="font-bold text-primary_red cursor-pointer ml-2">
               Learn More
             </span>
           </Link>

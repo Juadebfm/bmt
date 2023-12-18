@@ -1,21 +1,32 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Research = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
-    <section className="h-max flex flex-col-reverse sm:flex-row items-center justify-center px-[25px] sm:px-16 gap-10 mt-10 sm:mt-28">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="600"
+      className="h-max flex flex-col-reverse sm:flex-row items-center justify-center px-[25px] sm:px-16 gap-10 mt-10 sm:mt-28"
+    >
       <div className="w-full sm:w-1/2 flex flex-col justify-center">
         <h2 className="w-full text-[34px] sm:text-[44px] text-center sm:text-start leading-[1.2] capitalize font-[600] text-primary_red">
           Research and Innovations
         </h2>
-        <p className="w-full text-[20px] leading-normal mt-8">
+        <p className="w-full text-[19px] leading-normal mt-8">
           Embark on the frontier of healthcare with our Research and Innovations
           hub. Explore opportunities to participate in groundbreaking clinical
           trials; stay updated on the latest medical innovations enhancing our
           BMT procedures. Join us in shaping the future of healthcare through
           knowledge and progress.
           <Link href="/research">
-            <span className="font-bold text-primary_red text-[18px] pl-2 cursor-pointer">
+            <span className="font-bold text-primary_red pl-2 cursor-pointer">
               Learn More
             </span>
           </Link>

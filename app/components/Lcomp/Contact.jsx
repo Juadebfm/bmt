@@ -1,10 +1,21 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Button from "./Button";
 import Link from "next/link";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
-    <section className="h-max flex flex-col sm:flex-row items-center justify-center px-[25px] sm:px-16 gap-10 mt-10 sm:mt-28">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="600"
+      className="h-max flex flex-col sm:flex-row items-center justify-center px-[25px] sm:px-16 gap-10 mt-10 sm:mt-28"
+    >
       <div className="w-full sm:w-1/2 h-full p-0 sm:p-10">
         <img
           src="./assets/bmt/smiling_family.png"
@@ -20,7 +31,7 @@ const Contact = () => {
         <div className="w-full text-[18px] leading-normal mt-1">
           <Link href="/contact">
             <Button
-              classes="px-[75px] py-[14px] w-full sm:w-auto bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide text-white mt-8"
+              classes="px-[48px] py-[12px] bg-primary_red font-Lexend font-bold rounded-[4px] text-[15px] hover:bg-primary_red/90 trans_animate tracking-wider block text-white mt-7"
               text="Contact Us"
             />
           </Link>

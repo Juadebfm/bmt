@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Documentary = () => {
@@ -9,12 +10,14 @@ const Documentary = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-      className="mt-10 sm:mt-28 w-[100%] sm:w-auto h-[40vh] sm:h-screen relative p-14"
+      className="mt-10 sm:mt-28 w-[100%] sm:w-auto h-[60vh] sm:h-screen relative p-14"
     >
-      <img
-        src="./assets/bmt/playIcon.png"
+      <Image
+        src="/assets/bmt/playIcon.png"
         alt=""
-        className="w-[80px] h-[80px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:box_shadow_hover rounded-full trans_animate"
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:box_shadow_hover rounded-full trans_animate"
+        width={80}
+        height={80}
       />
       <div className="absolute bottom-5 sm:bottom-10">
         <h2 className="w-max text-[34px] sm:text-[44px] text-center leading-[1.2] capitalize font-[600] text-primary_red text_shadow_">

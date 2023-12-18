@@ -1,10 +1,21 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Button from "./Button";
 import Link from "next/link";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const CTA = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
-    <section className="h-max flex flex-col sm:flex-row items-center justify-center px-[25px] sm:px-16 gap-10 sm:gap-20 mt-10 sm:mt-28">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="600"
+      className="h-max flex flex-col sm:flex-row items-center justify-center px-[25px] sm:px-16 gap-10 sm:gap-20 mt-10 sm:mt-28"
+    >
       <div className="w-full sm:w-1/2 h-full p-0 sm:p-10">
         <img src="./assets/bmt/cta_img.png" alt="" className="object-cover" />
       </div>
@@ -13,7 +24,7 @@ const CTA = () => {
           This is a CALL TO ACTION! BE A HERO!
           <br /> CONTRIBUTE TODAY!
         </h2>
-        <p className="w-full text-[20px] leading-normal mt-8">
+        <p className="w-full text-[19px] leading-normal mt-8">
           Your contributions will help subsidies this life-saving procedure for
           the vast majority of Nigerians living with sickle cell disorder,
           giving them the opportunity for a cure.
@@ -23,7 +34,7 @@ const CTA = () => {
           <br /> THANK YOU!
           <Link href="/donation">
             <Button
-              classes="px-[75px] py-[14px] w-full sm:w-auto block bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-5 text-white"
+              classes="px-[48px] py-[12px] bg-primary_red font-Lexend font-bold rounded-[4px] text-[15px] hover:bg-primary_red/90 trans_animate tracking-wider block text-white mt-7"
               text="Donate Now"
             />
           </Link>
