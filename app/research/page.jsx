@@ -8,12 +8,12 @@ import LatestNews from "../components/Hcomp/LatestNews";
 const page = () => {
   return (
     <>
-      <section className="h-max flex items-center justify-center px-16 gap-20 mt-10">
-        <div className="w-1/2 h-full p-10 relative">
+      <section className="h-max flex flex-col lg:flex-row items-center justify-center px-[25px] lg:px-16 gap-20 mt-10">
+        <div className="w-full lg:w-1/2 h-full p-10 relative">
           <img
             src="./assets/bmt/female_docs_globe.png"
             alt=""
-            className="object-cover"
+            className="object-cover w-full"
           />
           <img
             src="./assets/bmt/female_docs.png"
@@ -21,8 +21,8 @@ const page = () => {
             className="object-cover absolute bottom-5 w-full left-0 h-auto"
           />
         </div>
-        <div className="w-1/2 flex flex-col justify-center">
-          <h2 className="w-full text-[44px] leading-[1.2] capitalize font-[600] text-primary_red">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center">
+          <h2 className="w-full text-[34px] text-center lg:text-start lg:text-[44px] leading-[1.2] capitalize font-[600] text-primary_red">
             Research and Innovations
           </h2>
           <p className="w-full text-[20px] leading-normal mt-8">
@@ -32,9 +32,12 @@ const page = () => {
             innovations enhancing our BMT procedures. Join us in shaping the
             future of healthcare through knowledge and progress.
           </p>
-          <Link href="/donation">
+          <Link
+            href="/donation"
+            className="md:flex md:items-center md:justify-center lg:block"
+          >
             <Button
-              classes="px-[75px] py-[14px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-8 w-max text-white"
+              classes="px-[48px] py-[12px] bg-primary_red font-Lexend font-bold rounded-[4px] text-[15px] hover:bg-primary_red/90 trans_animate tracking-wider block text-white mt-7 w-full md:w-[60%] lg:w-auto"
               text="Donate Now"
             />
           </Link>
@@ -42,17 +45,17 @@ const page = () => {
       </section>
       <Badge />
       <div className="my-20">
-        <div>
-          <h2 className="text-[40px] leading-[1.2] capitalize font-bold text-primary_red text-center">
+        <div className="px-[25px] lg:px-0">
+          <h2 className="text-[30px] lg:text-[40px] leading-[1.2] capitalize font-bold text-primary_red text-center">
             Advancements & Technologies
           </h2>
-          <p className="w-[70%] text-[20px] m-auto text-center mt-3 leading-[1.3]">
+          <p className="w-full lg:w-[70%] text-[20px] m-auto text-center mt-3 leading-[1.3]">
             Here are some of the latest advancements and technologies used in
             BMT procedures
           </p>
         </div>
         <div className="mt-16">
-          <div className="w-[80%] m-auto grid grid-cols-3 gap-10">
+          <div className="w-[80%] m-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
             <div className="box_shadow rounded-[12px]">
               <img src="./assets/bmt/research1.png" alt="" />
               <div className="flex flex-col p-5">
@@ -95,7 +98,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="mt-16 w-[80%] m-auto grid grid-cols-3 gap-10">
+          <div className="mt-16 w-[80%] m-auto hidden lg:grid grid-cols-1 lg:grid-cols-3 gap-10">
             <div className="box_shadow rounded-[12px] invisible">
               <img src="./assets/bmt/research4.png" alt="" className="w-full" />
               <div className="flex flex-col p-5">

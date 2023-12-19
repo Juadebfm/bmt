@@ -27,25 +27,25 @@ const FAQItem = ({ question, answer }) => {
   return (
     <div className="">
       <div
-        className="flex box_shadow cursor-pointer hover:box_shadow_hover items-center justify-between py-7 px-16 border-l-[8px] border-primary_red rounded-lg bg-[#FCFCFE]"
+        className="flex box_shadow cursor-pointer hover:box_shadow_hover items-center justify-between py-7 px-[18px] lg:px-16 border-l-[8px] border-primary_red rounded-lg bg-[#FCFCFE]"
         onClick={toggleAnswer}
       >
-        <h3 className="text-[18px] font-bold tracking-wide capitalize">
+        <h3 className="text-base lg:text-[18px] font-bold tracking-wide capitalize">
           {question}
         </h3>
         {showAnswer ? (
-          <FaChevronDown className="text-2xl text-primary_red" />
+          <FaChevronDown className="text-xl lg:text-2xl text-primary_red" />
         ) : (
-          <FaChevronUp className="text-2xl text-primary_red" />
+          <FaChevronUp className="text-xl lg:text-2xl text-primary_red" />
         )}
       </div>
       {showAnswer && (
         <div
           data-aos="fade-down"
-          className="py-10 px-16 h-[260px] bg-[#fdeaea] w-[98.5%] m-auto mt-[5px]"
+          className="py-10 px-[25px] lg:px-16 lg:h-[260px] bg-[#fdeaea] w-[98.5%] h-max m-auto mt-[5px]"
         >
-          <h3 className="text-[32px] capitalize">{question}</h3>
-          <p className="mt-5 w-full text-[#232323]/60 leading-relaxed text-[19px]">
+          <h3 className="text-lg lg:text-[32px] capitalize">{question}</h3>
+          <p className="mt-5 w-full text-[#232323]/60 leading-relaxed text-base lg:text-[19px]">
             {answer}
           </p>
         </div>

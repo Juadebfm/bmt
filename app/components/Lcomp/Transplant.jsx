@@ -2,14 +2,14 @@ import React from "react";
 
 const Transplant = () => {
   return (
-    <section className="px-16 mt-28">
-      <h2 className="w-full text-[40px] text-center uppercase leading-[1.2] font-[600] text-primary_red">
+    <section className="px-[25px] lg:px-16 mt-28">
+      <h2 className="w-full text-[34px] lg:text-[44px] text-center uppercase leading-[1.2] font-[600] text-primary_red">
         THE TRANSPLANT TEAM
       </h2>
       <p className="text-[18px] leading-normal text-center">
         The Transplant Team is multidisciplinary, consisting of the following
       </p>
-      <div className="w-[70%] m-auto grid_special mt-10">
+      <div className="w-[90%] lg:w-[70%] m-auto grid_special mt-10">
         <div className="flex flex-col w-[250px] h-[180px] place-content-center items-center p-8">
           <img
             src="./assets/bmt/bullet_point.png"

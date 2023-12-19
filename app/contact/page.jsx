@@ -8,23 +8,23 @@ import { CiLocationOn } from "react-icons/ci";
 
 const page = () => {
   return (
-    <section className="h-max flex items-center justify-center px-16 gap-24 mt-10">
-      <div className="w-1/2 h-full p-10 pl-0">
+    <section className="h-max flex flex-col lg:flex-row items-center justify-center px-[25px] lg:px-16 gap-24 mt-10">
+      <div className="w-full lg:w-1/2 h-full p-0 lg:p-10 pl-0">
         <img
           src="./assets/bmt/smiling_family.png"
           alt=""
-          className="object-cover"
+          className="object-cover w-full"
         />
       </div>
-      <div className="flex flex-col justify-center w-1/2">
+      <div className="flex flex-col justify-center w-full lg:w-1/2">
         <h2 className="w-full text-[40px] leading-[1.2] capitalize font-[600] text-primary_dark">
           Reach Out To Us
         </h2>
-        <div className="w-[90%] text-[18px] leading-normal mt-4">
-          <ul className="flex flex-col w-max space-y-7">
+        <div className="w-full lg:w-[90%] text-[18px] leading-normal mt-4">
+          <ul className="flex flex-col w-full space-y-7">
             <Link
               href="tel:+2347086622570"
-              className="flex items-center justify-start w-full h-max gap-2"
+              className="flex flex-col lg:flex-row items-center justify-start w-full h-max gap-2"
             >
               <MdOutlinePhoneInTalk className="text-2xl" />
 
@@ -101,8 +101,8 @@ const page = () => {
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-          <div className="flex items-start justify-start gap-3 w-[80%] mt-10">
-            <CiLocationOn className="text-[5rem] font-bold" />
+          <div className="flex items-start justify-start gap-3 w-full lg:w-[80%] mt-10">
+            <CiLocationOn className="text-[10rem] lg:text-[5rem] font-bold" />
             <p className="text-[20px]">
               National Sickle Cell Centre,Opp Lagos University Teaching
               Hospital(LUTH),Ishaga Road, Idi-Araba,Surulere, Lagos. Nigeria.

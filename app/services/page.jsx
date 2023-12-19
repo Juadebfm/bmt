@@ -3,29 +3,39 @@ import Button from "../components/Lcomp/Button";
 import Badge from "../components/Lcomp/Badge";
 import SuccessStory from "../components/Lcomp/SuccessStory";
 import Transplant from "../components/Lcomp/Transplant";
+import Link from "next/link";
 
 const page = () => {
   return (
     <>
-      <section className="h-max flex items-center justify-center pr-14 gap-10 mt-5">
-        <div className="w-1/2 h-full p-10 pl-0">
-          <img src="./assets/bmt/service.png" alt="" className="object-cover" />
+      <section className="h-max flex flex-col lg:flex-row items-center justify-center pr-0 lg:pr-14 gap-10 mt-5">
+        <div className="w-full lg:w-1/2 h-full p-0 lg:p-10 pl-0">
+          <img
+            src="./assets/bmt/service.png"
+            alt=""
+            className="object-cover w-full"
+          />
         </div>
-        <div className="w-1/2 flex flex-col justify-center">
-          <h2 className="w-full text-[40px] leading-[1.2] capitalize font-[600] text-primary_red">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center px-[24px] lg:px-0">
+          <h2 className="w-full text-[34px] lg:text-[44px] leading-[1.2] capitalize font-[600] text-primary_red text-center lg:text-start">
             Our Multi-Disciplinary Services
           </h2>
-          <p className="w-[90%] text-[18px] leading-normal mt-8">
+          <p className="w-full lg:w-[90%] text-[18px] leading-normal mt-8">
             Explore our diverse support services designed to accompany you
             through every phase. From counseling to post-transplant care,
             we&apos;re dedicated to ensuring you feel supported, empowered, and
             guided on your path to recovery. Discover our holistic network that
             prioritizes your well-being.
           </p>
-          <Button
-            classes="px-[68px] py-[10px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/80 trans_animate block text-white mt-5 text-[16.5px] w-max"
-            text="Book Now"
-          />
+          <Link
+            href="/donation"
+            className="md:flex md:items-center md:justify-center lg:block"
+          >
+            <Button
+              classes="px-[48px] py-[12px] bg-primary_red font-Lexend font-bold rounded-[4px] text-[15px] hover:bg-primary_red/90 trans_animate tracking-wider block text-white mt-7 w-full md:w-[60%] lg:w-auto"
+              text="Book Now"
+            />
+          </Link>
         </div>
       </section>
       <Badge />
