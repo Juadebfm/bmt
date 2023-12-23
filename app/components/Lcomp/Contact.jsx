@@ -25,7 +25,7 @@ const Contact = () => {
       </div>
       <div className="w-full lg:w-1/2 flex flex-col justify-center">
         <h2 className="w-full text-[34px] lg:text-[40px] text-center sm:text-start leading-[1.2] capitalize font-[600] text-primary_red">
-          Do u live with sickle cell disorder? Or seeking support for a loved
+          Do you live with sickle cell disorder? Or seeking support for a loved
           one? Click on the contact us button below.
         </h2>
         <div className="w-full text-[18px] leading-normal mt-1">

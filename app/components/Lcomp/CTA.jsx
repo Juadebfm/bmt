@@ -29,9 +29,9 @@ const CTA = () => {
           <br /> CONTRIBUTE TODAY!
         </h2>
         <p className="w-full text-[19px] leading-normal mt-8 text-center lg:text-start">
-          Your contributions will help subsidies this life-saving procedure for
-          the vast majority of Nigerians living with sickle cell disorder,
-          giving them the opportunity for a cure.
+          Your contributions will help subsidise the cost of this life-saving
+          procedure for the vast majority of Nigerians living with sickle cell
+          disorder, giving them access to this cure
           <br />
           <br /> Help make this cure a reality for many! 
           <br />
