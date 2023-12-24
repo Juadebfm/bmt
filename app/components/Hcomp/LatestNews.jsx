@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import { IoChevronBackSharp, IoChevronForwardSharp } from "react-icons/io5";
 
 const LatestNews = () => {
   const [newsData, setNewsData] = useState([]);
@@ -59,6 +60,36 @@ const LatestNews = () => {
     }
   };
 
+  const handlePageClick = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const generatePagination = () => {
+    const pageNumbers = [];
+    const maxVisibleButtons = 5; // Number of page numbers to show before/after ellipsis
+
+    for (let i = 1; i <= totalPages; i++) {
+      if (
+        i === 1 ||
+        i === totalPages ||
+        (i >= currentPage - maxVisibleButtons &&
+          i <= currentPage + maxVisibleButtons)
+      ) {
+        pageNumbers.push(i);
+      }
+    }
+
+    return pageNumbers.map((pageNumber) => (
+      <button
+        key={pageNumber}
+        onClick={() => handlePageClick(pageNumber)}
+        className={currentPage === pageNumber ? "active-page" : "text-slate-400"}
+      >
+        {pageNumber}
+      </button>
+    ));
+  };
+
   return (
     <section className="h-screen px-[25px] sm:px-16 mt-10 w-full flex flex-col items-center justify-start">
       <h1 className="text-[34px] lg:text-[44px] w-full leading-[1.2] capitalize font-[600] text-primary_red text-center">
@@ -72,13 +103,21 @@ const LatestNews = () => {
           </div>
         ))}
       </div>
-      <div className="self-end">
-        <button onClick={goToPreviousPage} disabled={currentPage === 1}>
-          Previous
+      <div className="self-end flex items-center justify-center space-x-3">
+        <button
+          className="flex items-center space-x-1 justify-center"
+          onClick={goToPreviousPage}
+          disabled={currentPage === 1}
+        >
+          <IoChevronBackSharp /> <span>Back</span>
         </button>
-        <span>{`${currentPage} / ${totalPages}`}</span>
-        <button onClick={goToNextPage} disabled={currentPage === totalPages}>
-          Next
+        <span className="flex item-center justify-center space-x-3">{generatePagination()}</span>
+        <button
+          className="flex items-center space-x-1 justify-center"
+          onClick={goToNextPage}
+          disabled={currentPage === totalPages}
+        >
+          <span>Next</span> <IoChevronForwardSharp />
         </button>
       </div>
     </section>
