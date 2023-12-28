@@ -3,11 +3,15 @@
 import React, { useEffect, useState } from "react";
 import { IoChevronBackSharp, IoChevronForwardSharp } from "react-icons/io5";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const LatestNews = () => {
   const [newsData, setNewsData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
+
+  const router = useRouter();
 
   useEffect(() => {
     const fetchNews = async () => {
@@ -103,6 +107,10 @@ const LatestNews = () => {
     return colors[randomIndex];
   };
 
+  const handleReadMoreClick = (id) => {
+    router.push(`/news/${id}`);
+  };
+
   return (
     <section className="h-max px-[25px] sm:px-16 mt-10 w-full flex flex-col items-center justify-start">
       <div>
@@ -117,23 +125,69 @@ const LatestNews = () => {
       </div>
       <div className="grid grid-cols-3 gap-8 mb-10">
         {newsData.map((newsItem) => (
-          <div key={newsItem.id} className="shadow-md p-4 rounded-md">
-            <div>
-              <img
-                alt="page image"
-                src={newsItem.events_news_front_image}
-                className="w-full max-h-[300px]"
-              />
-            </div>
-            <div>
-              <span
-                className={`inline-block px-2 py-0 text-[#232323]/30 tracking-wider uppercase text-[12px] border-s-2 ${getRandomColorClass()}`}
-              >
-                News
-              </span>
+          <div
+            key={newsItem.id}
+            className="shadow-md p-5 rounded-md hover:shadow-xl transition-shadow"
+          >
+            {newsItem.category_type === "news" ? (
+              <div className="flex flex-col items-center justify-between h-[580px]">
+                <div className="mb-5 relative">
+                  <img
+                    src={newsItem.events_news_front_image}
+                    alt=""
+                    className="w-full h-full rounded-lg"
+                  />
+                  <div className="custom_shape absolute z-25 bottom-0"></div>
+                </div>
 
-              <h2>{newsItem.events_news_name}</h2>
-            </div>
+                <div className="space-y-3">
+                  <span
+                    className={`inline-block px-2 py-0 text-[#232323]/50 font-bold tracking-wider uppercase text-[15px] border-s-2 ${getRandomColorClass()}`}
+                  >
+                    News
+                  </span>
+                  <h2 className="font-bold mb-3 leading-5 line-clamp-4">
+                    {newsItem.events_news_name}
+                  </h2>
+                  <p className="text-[#777777] text-sm">
+                    <span className="line-clamp-5">
+                      {newsItem.events_news_content}
+                    </span>{" "}
+                    <span
+                      onClick={() => handleReadMoreClick(newsItem.id)}
+                      className="text-primary_red cursor-pointer hover:underline transition mt-1"
+                    >
+                      Read More
+                    </span>
+                  </p>
+                </div>
+                <div className="mt-5 flex items-center justify-start w-full">
+                  <Image
+                    width={100}
+                    height={30}
+                    src="/assets/bmt/news_logo.png"
+                    alt="sfcn logo"
+                  />
+                </div>
+              </div>
+            ) : (
+              <div
+                style={{
+                  backgroundImage: `url(${newsItem.events_news_front_image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  minHeight: "300px", // Set your desired height
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  padding: "20px",
+                  color: "#fff", // Set text color for events
+                }}
+              >
+                <h2>{newsItem.events_news_name}</h2>
+                {/* You can add additional content for events */}
+              </div>
+            )}
           </div>
         ))}
       </div>

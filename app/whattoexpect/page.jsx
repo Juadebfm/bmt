@@ -29,7 +29,7 @@ const page = () => {
             />
           </Link>
         </div>
-        <div className="w-full lg:w-1/2 h-full p-0 lg:p-10">
+        <div className="w-full lg:w-1/2 h-full p-0 lg:p-5">
           <img
             src="./assets/bmt/whattoexpect.png"
             alt=""

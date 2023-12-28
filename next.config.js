@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["www.sicklecellfoundation.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.sicklecellfoundation.com",
+      },
+    ],
   },
 };
 

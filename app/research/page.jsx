@@ -9,17 +9,8 @@ const page = () => {
   return (
     <>
       <section className="h-max flex flex-col lg:flex-row items-center justify-center px-[25px] lg:px-16 gap-20 mt-10">
-        <div className="w-full lg:w-1/2 h-full p-10 relative">
-          <img
-            src="./assets/bmt/female_docs_globe.png"
-            alt=""
-            className="object-cover w-full"
-          />
-          <img
-            src="./assets/bmt/female_docs.png"
-            alt=""
-            className="object-cover absolute bottom-5 w-full left-0 h-auto"
-          />
+        <div className="w-full lg:w-1/2 h-full p-5">
+          <img src="./assets/bmt/female_doc.png" alt="" />
         </div>
         <div className="w-full lg:w-1/2 flex flex-col justify-center">
           <h2 className="w-full text-[34px] text-center lg:text-start lg:text-[44px] leading-[1.2] capitalize font-[600] text-primary_red">
