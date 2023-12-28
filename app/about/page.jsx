@@ -1,10 +1,32 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import About from "./About";
 import OurTeam from "./OurTeam";
 import TourFacility from "./TourFacility";
+import { FaAnglesDown } from "react-icons/fa6";
 
-const page = () => {
+const Page = () => {
+  // show arrow state
+  const [showArrow, setShowArrow] = useState(true);
+
+  // use effect for showing the arrow
+  useEffect(() => {
+    // Function to handle scroll event
+    const handleScroll = () => {
+      // Remove event listener and hide arrow when scrolled
+      setShowArrow(false);
+      window.removeEventListener("scroll", handleScroll);
+    };
+
+    // Add event listener to handle scroll
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up by removing event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <section
@@ -16,13 +38,16 @@ const page = () => {
         }}
         className="h-[50vh] md:h-screen relative p-14"
       >
-        <Image
+        <img
           src="/assets/bmt/sfcn_luth_logo.png"
           alt="bmt-logo"
-          width={847}
-          height={225}
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-14"
+          className="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-14 w-[500px] h-auto"
         />
+        <div className="w-full absolute bottom-36 z-50 flex items-center justify-center">
+          {showArrow && (
+            <FaAnglesDown className="text-4xl text-white/80 shadow-md bounce-animation rounded-full font-extralight" />
+          )}
+        </div>
       </section>
       <About />
       <OurTeam />
@@ -31,4 +56,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

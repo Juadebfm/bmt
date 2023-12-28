@@ -1,21 +1,21 @@
 const slides = [
   {
-    image: "./assets/bmt/slide1.png",
+    image: "./assets/bmt/medical_professionals.png",
   },
   {
-    image: "./assets/bmt/slide3.png",
+    image: "./assets/bmt/medical_facility.png",
   },
   {
-    image: "./assets/bmt/slide4.png",
+    image: "./assets/bmt/doctor.png",
   },
   {
-    image: "./assets/bmt/slide5.png",
+    image: "./assets/bmt/medical_professionals.png",
   },
   {
-    image: "./assets/bmt/slide6.png",
+    image: "./assets/bmt/operating_room.png",
   },
   {
-    image: "./assets/bmt/slide7.png",
+    image: "./assets/bmt/happy_users.png",
   },
 ];
 

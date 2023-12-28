@@ -9,7 +9,7 @@ const TourFacility = () => {
       </h2>
       <div
         style={{
-          backgroundImage: "url(./assets/bmt/about_bmt.png)",
+          backgroundImage: "url(./assets/bmt/medical_professionals.png)",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
