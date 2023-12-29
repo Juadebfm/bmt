@@ -41,6 +41,8 @@ const LatestNews = () => {
           const result = await response.json();
           setNewsData(result.data);
           setTotalPages(result.last_page);
+          // Store news data in local storage
+          localStorage.setItem("newsData", JSON.stringify(result.data));
           console.log("Fetched news data:", result.data); // Log the fetched data
         } else {
           console.error("Failed to fetch data:", response.statusText);
@@ -123,16 +125,10 @@ const LatestNews = () => {
 
   return (
     <section className="h-max px-[25px] sm:px-16 mt-10 w-full flex flex-col items-center justify-start">
-      <div>
-        <h1 className="text-[34px] lg:text-[44px] w-full leading-[1.2] capitalize font-[600] text-primary_red text-center mb-3">
-          Latest News & Updates
-        </h1>
-        <p className="text-[19px] text-center leading-normal mb-10">
-          Lorem ipsum dolor sit amet consectetur. Euismod amet in mi integer
-          risus leo enim mi. Neque viverra facilisi nec semper nullam ipsum. In
-          imperdiet cursus augue donec elit nibh.
-        </p>
-      </div>
+      <h1 className="text-[34px] lg:text-[44px] w-full leading-[1.2] capitalize font-[600] text-primary_red text-center mb-10">
+        Latest News & Updates
+      </h1>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
         {newsData.map((newsItem) => (
           <div
@@ -149,7 +145,7 @@ const LatestNews = () => {
                   e.currentTarget.style.transform = "scale(1)"; // Reset on hover out
                 }}
                 style={{ transition: "transform 0.5s ease-in-out" }}
-                className="flex flex-col items-center justify-between h-[580px] p-5"
+                className="flex flex-col items-center justify-between min-h-[600px] p-5"
               >
                 <div className="mb-5 relative bg-white border border-white">
                   <img
@@ -174,25 +170,17 @@ const LatestNews = () => {
                   <h2 className="font-bold mb-3 leading-5 line-clamp-4">
                     {newsItem.events_news_name}
                   </h2>
-                  <p className="text-[#777777] text-sm">
+                  <p className="text-[#777777] text-sm pb-8">
                     <span className="line-clamp-5">
                       {newsItem.events_news_content}
                     </span>{" "}
                     <span
                       onClick={() => handleReadMoreClick(newsItem.id)}
-                      className="text-primary_red cursor-pointer hover:underline transition mt-1"
+                      className="text-primary_red cursor-pointer hover:underline transition pt-3"
                     >
                       Read More
                     </span>
                   </p>
-                </div>
-                <div className="mt-5 flex items-center justify-start w-full">
-                  <Image
-                    width={100}
-                    height={30}
-                    src="/assets/bmt/news_logo.png"
-                    alt="sfcn logo"
-                  />
                 </div>
               </div>
             ) : (

@@ -62,7 +62,7 @@ body {
 
 @layer components {
   .active-page {
-    @apply shadow-md border-b border-primary_red pb-0 mb-0;
+    @apply shadow-sm border-b border-primary_red pb-0 mb-0;
   }
   .grid_col-fix {
     display: grid;

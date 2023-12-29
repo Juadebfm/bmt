@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer className="grid_col_footer_sm lg:grid_col_footer gap-8 px-[25px] sm:px-16 py-14 w-full">
       <div>
-        <img src="./assets/bmt/logo_footer.png" alt="BMT Logo" className="" />
+        <img src="/assets/bmt/logo_footer.png" alt="BMT Logo" className="" />
         <p className="w-[95%] mt-8 text-[18px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim.
         </p>
@@ -57,7 +57,6 @@ const Footer = () => {
             <div>
               <span className="flex flex-col">
                 <span>+234 708 662 2570</span>
-                <span className="capitalize font-bold">SEYE KOLAWOLE</span>
               </span>
             </div>
           </Link>

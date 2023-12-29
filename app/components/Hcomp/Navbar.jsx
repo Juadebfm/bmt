@@ -108,7 +108,7 @@ const Navbar = () => {
     >
       <Link href="/">
         <div className="w-full h-max sm:w-auto sm:h-auto">
-          <img src="./assets/bmt/main_logo.png" alt="BMT Logo" className="" />
+          <img src="/assets/bmt/main_logo.png" alt="BMT Logo" className="" />
         </div>
       </Link>
 
