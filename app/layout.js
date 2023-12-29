@@ -6,6 +6,7 @@ import { Lexend } from "next/font/google";
 const lexend = Lexend({ subsets: ["latin"] });
 
 import "./globals.css";
+import { NewsProvider } from "./NewsContext";
 
 export const metadata = {
   title: "SCFN",
@@ -20,7 +21,9 @@ export default function RootLayout({ children }) {
         className="w-[100%] text-base font-Lexend overflow-x-hidden scroll_snap scrollbar-thin scrollbar-thumb-primary_dark scrollbar-track-primary_faded_grey/50"
       >
         <Navbar />
-        <main>{children}</main>
+        <main>
+          <NewsProvider>{children}</NewsProvider>
+        </main>
         <Footer />
       </body>
     </html>
