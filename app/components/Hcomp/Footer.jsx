@@ -118,24 +118,17 @@ const Footer = () => {
       <div className="space-y-5">
         <span className="font-bold">Subscribe</span>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Euismod amet in mi integer
-          risus leo enim mi. Neque viverra facilisi nec semper nullam ipsum.{" "}
+          Subscribe to our newsletter to receive the latest updates and news.
+          Subscribe now for valuable information and stay connected with our
+          mission.
         </p>
-        <form
-          action=""
-          className="flex items-center justify-center w-full flex-col space-y-3"
-        >
-          <input
-            type="email"
-            placeholder="Enter your email address"
-            required
-            className="px-[28px] py-[8px] w-full md:w-[70%] lg:w-full border-[1px] border-primary_red/50 rounded-lg"
-          />
+
+        <Link href="https://zc.vg/MFcKl" target="_blank">
           <Button
             classes="px-[68px] py-[10px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/80 trans_animate block text-white mt-5 text-[15px] w-full md:w-[70%] lg:w-full"
             text="Subscribe"
           />
-        </form>
+        </Link>
       </div>
     </footer>
   );
