@@ -41,7 +41,7 @@ const Page = () => {
         <img
           src="/assets/bmt/sfcn_luth_logo.png"
           alt="bmt-logo"
-          className="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-14 w-[500px] h-auto"
+          className="px-[25px] md:px-0 absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-14 w-[500px] h-auto"
         />
         <div className="w-full absolute bottom-36 z-50 flex items-center justify-center">
           {showArrow && (
