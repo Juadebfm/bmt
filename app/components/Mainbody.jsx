@@ -44,7 +44,7 @@ const Mainbody = () => {
   }, []);
 
   return (
-    <section>
+    <section className="w-full">
       <div className="relative">
         <Slider slides={slides} />
         <SmallScreenSlider slidesSm={slidesSm} />
