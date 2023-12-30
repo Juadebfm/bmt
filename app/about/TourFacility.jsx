@@ -1,8 +1,15 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const TourFacility = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   const [showVideo, setShowVideo] = useState(false);
 
   const handleClick = () => {
@@ -14,7 +21,7 @@ const TourFacility = () => {
   };
 
   return (
-    <section>
+    <section data-aos="fade-up" data-aos-duration="500">
       <h2 className="w-full text-[44px] lg:text-[64px] leading-[1.2] text-center capitalize font-[600] text-primary_red mt-14">
         Tour of Our Facility
       </h2>

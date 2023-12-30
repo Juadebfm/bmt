@@ -1,10 +1,20 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import TeamMember from "./TeamMember";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const OurTeam = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
     <>
-      <section className="flex flex-col border-y p-[25px] lg:p-0">
+      <section
+        data-aos="fade-up"
+        className="flex flex-col border-y p-[25px] lg:p-0"
+      >
         <div>
           <h1 className="font-lexend font-semibold text-[44px] lg:text-[64px] p-0 lg:p-20 pb-5 text-primary_red leading-normal text-center lg:text-start">
             Our Team
@@ -135,7 +145,12 @@ const OurTeam = () => {
             LUTH Management Team
           </h3>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 mt-8">
+
+        <div
+          data-aos="fade-up"
+          data-aos-duration="500"
+          className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 mt-8"
+        >
           <div>
             <TeamMember
               name="Prof. Wasiu Adeyemo"
@@ -167,7 +182,12 @@ const OurTeam = () => {
             TOP MANAGEMENT COMMITTEE SCFN/LUTH BMT PROGRAMME
           </h3>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 mt-8">
+
+        <div
+          data-aos="fade-up"
+          data-aos-duration="700"
+          className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 mt-8"
+        >
           <div>
             <TeamMember
               name="Prof. Wasiu Adeyemo"
@@ -199,7 +219,12 @@ const OurTeam = () => {
             BMT TREATMENT GROUP
           </h3>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 mt-8">
+
+        <div
+          data-aos="fade-left"
+          data-aos-duration="900"
+          className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 mt-8"
+        >
           <div>
             <TeamMember
               name="Prof. Edamisan Temiye"
@@ -255,7 +280,9 @@ const OurTeam = () => {
             TECHNICAL PARTNER - VANDERBILT UNIVERSITY MEDICAL CENTRE
           </h3>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 my-8">
+
+        <div data-aos="fade-right"
+          data-aos-duration="2000" className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 my-8">
           <div>
             <TeamMember
               name="Prof. Adetola Kassim"
