@@ -38,13 +38,14 @@ const TourFacility = () => {
           />
         </div>
       ) : (
-        <div>
-          {/* Video container */}
-          <div className="w-[70%] h-[70%] mx-auto mt-8 py-10">
-            <button onClick={handleClose} className="">
-              X
-            </button>
-
+        <div className="relative py-10">
+          <button
+            onClick={handleClose}
+            className="text-white text-3xl bg-primary_red rounded-full p-5 w-10 h-10 flex items-center justify-center absolute left-6 md:left-32 top-3 md:top-10 hover:box_shadow_hover trans_animate"
+          >
+            X
+          </button>{" "}
+          <div className="w-full md:w-[70%] h-auto md:h-[70%] mx-auto mt-8 py-0 md:py-10 px-[25px] md:px-0">
             <video controls className="w-full" autoPlay>
               <source
                 src="https://www.sicklecellfoundation.com/scfn-luth-api/storage/public/img/Virtual%20Tour%20video%20of%20the%20SCFN_LUTH%20Bone%20Marrow%20Transplant_compressed.mp4"
