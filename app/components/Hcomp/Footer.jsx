@@ -20,10 +20,15 @@ const Footer = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim.
         </p>
         <div className="flex items-center justify-start text-3xl mt-6 text-primary_red space-x-5">
-          <FaInstagram className="cursor-pointer" />
-          <RiFacebookBoxLine className="cursor-pointer" />
-          <LiaTwitterSquare className="cursor-pointer" />
-          <RiLinkedinBoxLine className="cursor-pointer" />
+          <Link href="https://instagram.com/sicklecellfoundationng?igshid=MzMyNGUyNmU2YQ==">
+            <FaInstagram className="cursor-pointer" />
+          </Link>
+          <Link href="https://www.facebook.com/sicklecellfoundation?mibextid=ZbWKwL">
+            <RiFacebookBoxLine className="cursor-pointer" />
+          </Link>
+          <Link href="https://twitter.com/sicklecellnig">
+            <LiaTwitterSquare className="cursor-pointer" />
+          </Link>
         </div>
       </div>
       <div className="space-y-3">
@@ -117,7 +122,8 @@ const Footer = () => {
       <div className="space-y-5">
         <span className="font-bold">Subscribe</span>
         <p>
-          Subscribe to our newsletter to receive the latest updates and news. <br />
+          Subscribe to our newsletter to receive the latest updates and news.{" "}
+          <br />
           Subscribe now for valuable information and stay connected with our
           mission.
         </p>
