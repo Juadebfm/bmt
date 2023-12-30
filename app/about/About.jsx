@@ -19,7 +19,7 @@ const About = () => {
           className="w-full"
         />
       </div>
-      <div className="w-full lg:w-1/2 block h-max lg:h-[670px] my-auto box-border pt-[40px] pr-0 lg:pr-10 cursor-pointer">
+      <div className="w-full lg:w-1/2 block h-max lg:h-[670px] my-auto pt-[40px] cursor-pointer overflow-y-auto">
         <p className={lineClamp}>
           <span className="w-full text-[17px] font-[300] font-lexend text-primary_dark leading-tight whitespace-break-spaces mt-4 text-justify ">
             <span className="font-[700] ">
