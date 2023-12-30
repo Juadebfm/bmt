@@ -117,7 +117,7 @@ const Footer = () => {
       <div className="space-y-5">
         <span className="font-bold">Subscribe</span>
         <p>
-          Subscribe to our newsletter to receive the latest updates and news.
+          Subscribe to our newsletter to receive the latest updates and news. <br />
           Subscribe now for valuable information and stay connected with our
           mission.
         </p>

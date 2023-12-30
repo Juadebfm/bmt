@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-const LatestNews = () => {
+const LatestNews = ({ title = "Latest News & Updates", className = "" }) => {
   const [newsData, setNewsData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
@@ -125,8 +125,8 @@ const LatestNews = () => {
 
   return (
     <section className="h-max px-[25px] sm:px-16 mt-10 w-full flex flex-col items-center justify-start">
-      <h1 className="text-[34px] lg:text-[44px] w-full leading-[1.2] capitalize font-[600] text-primary_red text-center mb-10">
-        Latest News & Updates
+      <h1 className="text-[34px] lg:text-[40px] w-full leading-[1.2] capitalize font-[600] text-primary_red text-center mb-10">
+        {title}
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
