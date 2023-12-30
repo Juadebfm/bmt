@@ -1,13 +1,20 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../components/Lcomp/Button";
 import Badge from "../components/Lcomp/Badge";
 import LatestNews from "../components/Hcomp/LatestNews";
 import { CiWallet } from "react-icons/ci";
 import { BiSolidDonateHeart } from "react-icons/bi";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Page = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   const [activeButton, setActiveButton] = useState("enterAmount");
   const [activeDiv, setActiveDiv] = useState("one");
   const [currency, setCurrency] = useState("");
@@ -44,14 +51,22 @@ const Page = () => {
   return (
     <>
       <section className="h-max flex flex-col lg:flex-row items-center justify-center px-[25px] lg:px-16 gap-20 mt-10">
-        <div className="w-full lg:w-1/2 h-full p-0 lg:p-10">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="500"
+          className="w-full lg:w-1/2 h-full p-0 lg:p-10"
+        >
           <img
             src="./assets/bmt/cta_img.png"
             alt=""
             className="object-cover w-full"
           />
         </div>
-        <div className="w-full lg:w-1/2 flex flex-col justify-center">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="800"
+          className="w-full lg:w-1/2 flex flex-col justify-center"
+        >
           <h2 className="w-full lg:w-[90%] text-[34px] lg:text-[44px] leading-[1.2] capitalize font-bold text-primary_red text-center lg:text-start">
             This is a CALL TO ACTION! BE A HERO!
             <br /> CONTRIBUTE TODAY!
@@ -243,7 +258,11 @@ const Page = () => {
         </div>
       </div>
       <section className="h-max flex flex-col-reverse lg:flex-row items-center justify-center px-[25px] lg:px-16 gap-20 my-20">
-        <div className="w-full lg:w-1/2 flex flex-col justify-center">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1100"
+          className="w-full lg:w-1/2 flex flex-col justify-center"
+        >
           <span className="text-[24px] lg:text-[18px] text-primary_red font-bold leading-[1.2]">
             See what Happens When You Help
           </span>
@@ -257,7 +276,11 @@ const Page = () => {
             journey when u donate
           </p>
         </div>
-        <div className="w-full lg:w-1/2 h-full p-0 sm:p-10">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          className="w-full lg:w-1/2 h-full p-0 sm:p-10"
+        >
           <img
             src="./assets/bmt/donation_last.png"
             alt=""

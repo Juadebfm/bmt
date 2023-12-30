@@ -30,10 +30,7 @@ const page = () => {
 
               <div>
                 <span className="flex items-center justify-center">
-                  <span>+234 708 662 2570 - </span>
-                  <span className="capitalize font-bold">
-                    &nbsp;SEYE KOLAWOLE
-                  </span>
+                  <span>+234 708 662 2570</span>
                 </span>
               </div>
             </Link>

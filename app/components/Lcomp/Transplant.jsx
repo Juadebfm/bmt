@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Transplant = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   return (
-    <section className="px-[25px] lg:px-16 mt-28">
+    <section
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      className="px-[25px] lg:px-16 mt-28"
+    >
       <h2 className="w-full text-[34px] lg:text-[44px] text-center uppercase leading-[1.2] font-[600] text-primary_red">
         THE TRANSPLANT TEAM
       </h2>

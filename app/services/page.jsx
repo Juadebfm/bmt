@@ -1,22 +1,38 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Button from "../components/Lcomp/Button";
 import Badge from "../components/Lcomp/Badge";
 import SuccessStory from "../components/Lcomp/SuccessStory";
 import Transplant from "../components/Lcomp/Transplant";
 import Link from "next/link";
 
-const page = () => {
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+const Page = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   return (
     <>
       <section className="h-max flex flex-col lg:flex-row items-center justify-center pr-0 lg:pr-14 gap-10 mt-5">
-        <div className="w-full lg:w-1/2 h-full p-0 lg:p-10 pl-0">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="500"
+          className="w-full lg:w-1/2 h-full p-0 lg:p-10 pl-0"
+        >
           <img
             src="./assets/bmt/service.png"
             alt=""
             className="object-cover w-full"
           />
         </div>
-        <div className="w-full lg:w-1/2 flex flex-col justify-center px-[24px] lg:px-0">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          className="w-full lg:w-1/2 flex flex-col justify-center px-[24px] lg:px-0"
+        >
           <h2 className="w-full text-[34px] lg:text-[44px] leading-[1.2] capitalize font-[600] text-primary_red text-center lg:text-start">
             Our Multi-Disciplinary Services
           </h2>
@@ -45,4 +61,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

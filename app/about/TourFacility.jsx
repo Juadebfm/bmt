@@ -21,7 +21,7 @@ const TourFacility = () => {
   };
 
   return (
-    <section data-aos="fade-up" data-aos-duration="500">
+    <section data-aos="fade-up" data-aos-duration="1200">
       <h2 className="w-full text-[44px] lg:text-[64px] leading-[1.2] text-center capitalize font-[600] text-primary_red mt-14">
         Tour of Our Facility
       </h2>
