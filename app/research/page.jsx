@@ -1,18 +1,34 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../components/Lcomp/Button";
 import Badge from "../components/Lcomp/Badge";
 import SuccessStory from "../components/Lcomp/SuccessStory";
 import LatestNews from "../components/Hcomp/LatestNews";
 
-const page = () => {
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+const Page = () => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   return (
     <>
       <section className="h-max flex flex-col lg:flex-row items-center justify-center px-[25px] lg:px-16 gap-20 mt-10">
-        <div className="w-full lg:w-1/2 h-full p-5">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="500"
+          className="w-full lg:w-1/2 h-full p-5"
+        >
           <img src="./assets/bmt/female_doc.png" alt="" />
         </div>
-        <div className="w-full lg:w-1/2 flex flex-col justify-center">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          className="w-full lg:w-1/2 flex flex-col justify-center"
+        >
           <h2 className="w-full text-[34px] text-center lg:text-start lg:text-[44px] leading-[1.2] capitalize font-[600] text-primary_red">
             Research and Innovations
           </h2>
@@ -141,4 +157,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

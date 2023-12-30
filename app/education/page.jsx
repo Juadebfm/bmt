@@ -36,7 +36,11 @@ const Page = () => {
   return (
     <>
       <section className="h-max flex flex-col-reverse lg:flex-row items-center justify-center px-[25px] lg:px-16">
-        <div className="w-full lg:w-1/2 flex flex-col justify-center">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="500"
+          className="w-full lg:w-1/2 flex flex-col justify-center"
+        >
           <h2 className="w-full lg:w-[80%] text-[34px] lg:text-[44px] text-center lg:text-start leading-[1.2] capitalize font-extrabold text-primary_red">
             Understanding stem cell transplantation
             <span className="text-[22px] font-extrabold ml-2 block">
@@ -59,7 +63,11 @@ const Page = () => {
             />
           </Link>
         </div>
-        <div className="w-full lg:w-1/2 h-full p-0 lg:p-10 relative my-10 lg:my-0">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="600"
+          className="w-full lg:w-1/2 h-full p-0 lg:p-10 relative my-10 lg:my-0"
+        >
           <img
             src="./assets/bmt/red_slash3.png"
             alt=""
@@ -89,7 +97,7 @@ const Page = () => {
             </span>{" "}
             (BMT)?
           </h2>
-          <div className="w-full text-[20px] leading-normal mt-6">
+          <div className="w-full text-[18px] leading-normal mt-6">
             <p className="mt-7">
               Bone marrow transplantation (BMT) is a medical procedure that
               replaces damaged or diseased bone marrow with healthy bone marrow.
