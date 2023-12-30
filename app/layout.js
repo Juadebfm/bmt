@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         style={lexend.style}
-        className="w-[100%] text-base font-Lexend overflow-x-hidden scroll_snap scrollbar-thin scrollbar-thumb-primary_dark scrollbar-track-primary_faded_grey/50"
+        className="w-screen text-base font-Lexend overflow-x-hidden scroll_snap scrollbar-thin scrollbar-thumb-primary_dark scrollbar-track-primary_faded_grey/50"
       >
         <Navbar />
         <main>

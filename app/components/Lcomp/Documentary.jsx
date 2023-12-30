@@ -19,7 +19,7 @@ const Documentary = () => {
         width={80}
         height={80}
       />
-      <div className="absolute bottom-5 sm:bottom-10">
+      <div className="absolute bottom-5 sm:bottom-10 w-max">
         <h2 className="w-max text-[34px] sm:text-[44px] text-center leading-[1.2] capitalize font-[600] text-primary_red text_shadow_">
           Documentary
         </h2>

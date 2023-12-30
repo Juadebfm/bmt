@@ -2,7 +2,7 @@ import React from "react";
 
 const Sponsors = () => {
   return (
-    <section className="h-max flex items-center justify-center px-16 gap-10 mt-28">
+    <section className="h-max flex items-center justify-center px-16 gap-10 mt-28 w-screen">
       <div className="w-1/2 h-full p-10 pl-28">
         <img src="./assets/bmt/logos.png" alt="" className="object-cover" />
       </div>

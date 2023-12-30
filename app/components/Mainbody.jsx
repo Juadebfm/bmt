@@ -44,7 +44,7 @@ const Mainbody = () => {
   }, []);
 
   return (
-    <section className="w-full">
+    <section className="w-screen overflow-x-hidden">
       <div className="relative">
         <Slider slides={slides} />
         <SmallScreenSlider slidesSm={slidesSm} />
