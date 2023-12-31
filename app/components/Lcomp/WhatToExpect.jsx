@@ -23,13 +23,13 @@ const WhatToExpect = () => {
         />
       </div>
       <div className="w-full lg:w-1/2 flex flex-col justify-center p-0 sm:p-10">
-        <h2 className="w-full lg:w-[85%] text-[34px] lg:text-[44px] text-center lg:text-start leading-[1.2] capitalize font-[600] text-primary_red">
+        <h2 className="w-full lg:w-[85%] text-[30px] lg:text-[40px] text-center lg:text-start leading-[1.2] capitalize font-[600] text-primary_red">
           What to expect in stem cell transplantation
           <span className="text-[20px] font-normal ml-2 p-0 mt-0 block">
             (Bone marrow transplantation)
           </span>
         </h2>
-        <p className="w-full text-[19px] leading-normal mt-4 text-center lg:text-start">
+        <p className="w-full text-[18px] md:text-[19px] leading-normal mt-4 text-center lg:text-start">
           Welcome to our BMT hub. Learn about procedures, find resources, and be
           inspired by patient stories - your comprehensive guide to a successful
           transplant journey.

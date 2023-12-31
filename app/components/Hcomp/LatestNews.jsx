@@ -125,7 +125,7 @@ const LatestNews = ({ title = "Latest News & Updates", className = "" }) => {
 
   return (
     <section className="h-max px-[25px] sm:px-16 mt-10 w-full flex flex-col items-center justify-start">
-      <h1 className="text-[34px] lg:text-[40px] w-full leading-[1.2] capitalize font-[600] text-primary_red text-center mb-10">
+      <h1 className="text-[27px] lg:text-[40px] w-full leading-[1.2] capitalize font-[600] text-primary_red text-center mb-10">
         {title}
       </h1>
 
@@ -145,7 +145,7 @@ const LatestNews = ({ title = "Latest News & Updates", className = "" }) => {
                   e.currentTarget.style.transform = "scale(1)"; // Reset on hover out
                 }}
                 style={{ transition: "transform 0.5s ease-in-out" }}
-                className="flex flex-col items-center justify-between min-h-[600px] p-5"
+                className="flex flex-col items-center justify-between min-h-[500px] md:min-h-[600px] p-5"
               >
                 <div className="mb-5 relative bg-white border border-white">
                   <img
@@ -154,7 +154,7 @@ const LatestNews = ({ title = "Latest News & Updates", className = "" }) => {
                     className="w-full h-full rounded-lg"
                   />
                   <div className="custom_shape absolute -right-[1px] -bottom-[2px] bg-white border border-white"></div>
-                  <div className="date absolute right-8 top-[70%] bg-red-500 p-4">
+                  <div className="absolute right-8 top-[70%] text-white bg-red-500 p-4">
                     <span>
                       12th <br /> Aug
                     </span>
@@ -205,7 +205,7 @@ const LatestNews = ({ title = "Latest News & Updates", className = "" }) => {
                   color: "#fff",
                   transition: "transform 0.3s ease-in-out",
                 }}
-                className="rounded-md overflow-hidden h-[580px]"
+                className="rounded-md overflow-hidden h-[500px] md:h-[580px]"
               >
                 <div className="py-8 px-4">
                   <span

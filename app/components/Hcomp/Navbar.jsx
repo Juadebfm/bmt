@@ -102,7 +102,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`font-Lexend bg-primary_dark px-8 lg:px-16 py-8 lg:py-3 grid_col-fix_sm sm:grid_col-fix text-[#fffff2] w-full text-[16.5px] relative sm:sticky top-0 z-50 ${
+      className={`font-Lexend bg-primary_dark px-[20px] lg:px-16 py-8 lg:py-3 grid_col-fix_sm sm:grid_col-fix text-[#fffff2] w-full text-[16.5px] relative sm:sticky top-0 z-50 ${
         isScrolled ? "opacity-[0.98]" : "" // Apply opacity class based on scroll state
       }`}
     >
@@ -117,9 +117,8 @@ const Navbar = () => {
         <ul
           data-aos="fade-right"
           ref={menuRef} // Set the reference to the entire menu area
-          className="absolute left-0 top-[100%] bg-white text-[#232323] flex flex-col items-start justify-start gap-12 group:cursor-pointer font-Lexend w-[60%] md:w-[40%] h-[70vh] md:h-auto rounded-r-lg pt-24 md:pt-16 md:pb-16 px-10 md:px-14"
+          className="absolute left-0 top-[100%] bg-white text-[#232323] flex flex-col items-start justify-start gap-12 group:cursor-pointer font-Lexend w-[60%] md:w-[40%] h-[70vh] md:h-auto rounded-r-lg pt-24 md:pt-16 md:pb-16 px-10 md:px-14 shadow-md border border-slate-100"
         >
-          {/* ... existing menu items */}
           <Link
             href="/about"
             className={
@@ -347,14 +346,14 @@ const Navbar = () => {
         // If the menu is open, render the "X" icon
         <CgClose
           data-aos="fade-in"
-          className="w-[45px] h-[45px] lg:hidden cursor-pointer bg-primary_red rounded-full p-2 absolute right-[2rem]"
+          className="w-[45px] h-[45px] lg:hidden cursor-pointer bg-primary_red rounded-full p-2 absolute right-[20px]"
           onClick={toggleMenu}
         />
       ) : (
         // If the menu is closed, render the CgMenuHotdog icon
         <CgMenuHotdog
           data-aos="fade-in"
-          className="w-[45px] h-[45px] lg:hidden cursor-pointer bg-primary_red rounded-full absolute right-[2rem]"
+          className="w-[45px] h-[45px] lg:hidden cursor-pointer bg-primary_red rounded-full absolute right-[20px]"
           onClick={toggleMenu}
         />
       )}

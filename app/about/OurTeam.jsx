@@ -13,7 +13,7 @@ const OurTeam = () => {
     <>
       <section
         data-aos="fade-up"
-        className="flex flex-col border-y p-[25px] lg:p-0"
+        className="flex flex-col border-y p-[25px] lg:p-0 mt-10"
       >
         <div>
           <h1 className="font-lexend font-semibold text-[44px] lg:text-[64px] p-0 lg:p-20 pb-5 text-primary_red leading-normal text-center lg:text-start">

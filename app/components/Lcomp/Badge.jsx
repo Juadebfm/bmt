@@ -13,7 +13,7 @@ const Badge = () => {
   return (
     <section
       data-aos="fade-left"
-      className="grid grid-cols-1 md:grid-cols-2 md:place-content-center lg:grid-cols-5 gap-7 md:gap-7 lg:gap-4 px-5 md:px-16 lg:px-5 pt-20 md:pt-20 lg:pt-10 pb-10"
+      className="grid grid-cols-1 md:grid-cols-2 md:place-content-center lg:grid-cols-5 gap-7 md:gap-7 lg:gap-4 px-5 md:px-16 lg:px-5 pt-10 md:pt-20 lg:pt-10 pb-10"
     >
       <div className="flex items-center justify-start sm:justify-center gap-3 box_shadow rounded-[10px] px-[25px] sm:px-[16px] py-[25px] sm:py-[20px]">
         <Image src="/assets/bmt/bv4.png" alt="quality" width={48} height={48} />

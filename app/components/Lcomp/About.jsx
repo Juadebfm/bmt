@@ -8,10 +8,10 @@ const About = () => {
         <img src="./assets/bmt/logos.png" alt="" className="object-cover w-full" />
       </div>
       <div className="w-full lg:w-1/2 flex flex-col justify-center">
-        <h2 className="w-full text-[34px] lg:text-[44px] text-center lg:text-start leading-[1.2] capitalize font-[600] text-primary_red">
+        <h2 className="w-full text-[30px] lg:text-[40px] text-center lg:text-start leading-[1.2] capitalize font-[600] text-primary_red">
           About the SCFN | LUTH | VUMC Partnership
         </h2>
-        <p className="w-full text-[19px] text-center lg:text-start leading-normal mt-3">
+        <p className="w-full text-[18px] md:text-[20px] text-center lg:text-start leading-normal mt-3">
           The SCFN/LUTH/VUMC BMT Centre was officially opened January 2022 and
           it is heartwarming to know that the SCFN/LUTH/VUMC BMT Centre will not
           only provide safe, quality and affordable cure for sickle cell

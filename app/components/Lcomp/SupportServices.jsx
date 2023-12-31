@@ -10,7 +10,7 @@ const SupportServices = () => {
   }, []);
   return (
     <section className="h-auto lg:h-[70vh] px-[25px] sm:px-16 mt-10">
-      <h2 className="w-full text-[34px] lg:text-[44px] leading-[1.2] text-center capitalize font-[600] text-primary_red">
+      <h2 className="w-full text-[30px] lg:text-[40px] leading-[1.2] text-center capitalize font-[600] text-primary_red">
         Our Support Services
       </h2>
       <div className="mt-10 flex flex-col lg:flex-row items-center justify-center gap-10">
