@@ -29,7 +29,7 @@ const Page = () => {
           data-aos-duration="1000"
           className="w-full lg:w-1/2 flex flex-col justify-center"
         >
-          <h2 className="w-full text-[34px] text-center lg:text-start lg:text-[44px] leading-[1.2] capitalize font-[600] text-primary_red">
+          <h2 className="w-full text-[30px] text-center lg:text-start lg:text-[40px] leading-[1.2] capitalize font-[600] text-primary_red">
             Research and Innovations
           </h2>
           <p className="w-full text-[20px] leading-normal mt-8">

@@ -50,7 +50,7 @@ const Page = () => {
 
   return (
     <>
-      <section className="h-max flex flex-col lg:flex-row items-center justify-center px-[25px] lg:px-16 gap-20 mt-10">
+      <section className="h-max flex flex-col lg:flex-row items-center justify-center px-[25px] lg:px-16 gap-10 md:gap-20 mt-10">
         <div
           data-aos="fade-right"
           data-aos-duration="500"
@@ -71,8 +71,8 @@ const Page = () => {
             This is a CALL TO ACTION! BE A HERO!
             <br /> CONTRIBUTE TODAY!
           </h2>
-          <p className="w-full text-[20px] leading-normal mt-8">
-            Your contributions will help subsidies this life-saving procedure
+          <p className="w-full text-[18px] md:text-[20px] leading-normal mt-8">
+            Your contributions will help subsidize this life-saving procedure
             for the vast majority of Nigerians living with sickle cell disorder,
             giving them the opportunity for a cure.
             <br />
@@ -92,7 +92,7 @@ const Page = () => {
         </div>
       </section>
       <Badge />
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-center px-[25px] lg:px-16 gap-20 mt-20">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-center px-[25px] lg:px-16 gap-10 md:gap-20 mt-20">
         <div className="w-full lg:w-1/2 box_shadow p-[1.5rem] lg:p-[3rem] rounded-2xl">
           <div className="w-full m-auto flex items-center justify-center">
             <button
@@ -122,14 +122,14 @@ const Page = () => {
               <span className="text-[20px] font-bold w-max">
                 Online Donation
               </span>
-              <p className="mt-2 text-[18px] text-center">
+              <p className="leading-normal mt-2 text-[18px] md:text-[20px] text-start">
                 How much would you like to donate? As a contributor to SCFN /
-                LUTH bmt program, your donation will go directly to subsidizing
+                LUTH BMT program, your donation will go directly to subsidizing
                 the transplant procedure
               </p>
             </div>
             <form
-              className="mt-10 w-full p-5 lg:p-10 space-y-10"
+              className="mt-10 w-full p-0 lg:p-10 space-y-10"
               onSubmit={handleFormSubmit}
             >
               {error && <p className="text-red-500 text-center">{error}</p>}
@@ -263,17 +263,17 @@ const Page = () => {
           data-aos-duration="1100"
           className="w-full lg:w-1/2 flex flex-col justify-center"
         >
-          <span className="text-[24px] lg:text-[18px] text-primary_red font-bold leading-[1.2]">
+          <span className="text-center md:text-start text-[34px] md:text-[44px] mb-5 lg:text-[18px] text-primary_red font-bold leading-[1.2]">
             See what Happens When You Help
           </span>
-          <h2 className="w-[90%] text-[18px] lg:text-[24px] leading-[1.2] capitalize font-bold text-primary_dark">
+          <h2 className="w-full md:w-[90%] text-[20px] lg:text-[28px] leading-[1.2] capitalize font-bold text-primary_dark">
             What We Do When You Donate us
           </h2>
-          <p className="w-full text-[20px] leading-normal mt-3">
-            Your donation help us subsidise the cost of transplant for persons
-            that in need of quality safe and affordable stem cell
-            transplantation. You become an integral part of the life changing
-            journey when u donate
+          <p className="w-full text-[18px] md:text-[20px] leading-normal mt-3">
+            Your donation help us subsidize the cost of transplant for persons
+            that are in need of quality safe and affordable stem cell
+            transplantation. <br /> You become an integral part of the life
+            changing journey when you donate.
           </p>
         </div>
         <div

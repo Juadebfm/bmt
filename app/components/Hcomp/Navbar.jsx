@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import React, { useEffect, useState, useRef } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 import Button from "../Lcomp/Button";
-import Image from "next/image";
 import { CgMenuHotdog } from "react-icons/cg";
 import { CgClose } from "react-icons/cg";
 
@@ -98,11 +97,27 @@ const Navbar = () => {
     return () => clearTimeout(timeoutRef.current);
   }, []);
 
+  const [currentURL, setCurrentURL] = useState("");
+
   const pathname = usePathname();
+
+  useEffect(() => {
+    setCurrentURL(window.location.href); // Store current URL when component mounts
+  }, []);
+
+  useEffect(() => {
+    setCurrentURL(window.location.href); // Update current URL when pathname changes
+  }, [pathname]);
+
+  const handleLinkClick = () => {
+    setShowMenu(false); // Close the menu on link click
+    setShowMoreDropdown(false); // Close dropdowns on link click
+    setShowChevronUp(false); // Reset chevron on link click
+  };
 
   return (
     <nav
-      className={`font-Lexend bg-primary_dark px-[20px] lg:px-16 py-8 lg:py-3 grid_col-fix_sm sm:grid_col-fix text-[#fffff2] w-full text-[16.5px] relative sm:sticky top-0 z-50 ${
+      className={`font-Lexend bg-primary_dark px-[20px] lg:px-16 py-8 lg:py-3 grid_col-fix_sm sm:grid_col-fix text-[#fffff2] w-full text-[16.5px] sticky top-0 z-50 ${
         isScrolled ? "opacity-[0.98]" : "" // Apply opacity class based on scroll state
       }`}
     >
@@ -120,6 +135,7 @@ const Navbar = () => {
           className="absolute left-0 top-[100%] bg-white text-[#232323] flex flex-col items-start justify-start gap-12 group:cursor-pointer font-Lexend w-[60%] md:w-[40%] h-[70vh] md:h-auto rounded-r-lg pt-24 md:pt-16 md:pb-16 px-10 md:px-14 shadow-md border border-slate-100"
         >
           <Link
+            onClick={handleLinkClick}
             href="/about"
             className={
               pathname == "/about"
@@ -130,6 +146,7 @@ const Navbar = () => {
             About Us
           </Link>
           <Link
+            onClick={handleLinkClick}
             href="/services"
             className={
               pathname == "/services"
@@ -140,6 +157,7 @@ const Navbar = () => {
             Services
           </Link>
           <Link
+            onClick={handleLinkClick}
             href="/contact"
             className={
               pathname == "/contact"
@@ -169,6 +187,7 @@ const Navbar = () => {
               }`}
             >
               <Link
+                onClick={handleLinkClick}
                 href="/donation"
                 className={
                   pathname == "/donation"
@@ -179,6 +198,7 @@ const Navbar = () => {
                 Donation
               </Link>
               <Link
+                onClick={handleLinkClick}
                 href="/education"
                 className={
                   pathname == "/education"
@@ -189,6 +209,7 @@ const Navbar = () => {
                 Education & Awareness
               </Link>
               <Link
+                onClick={handleLinkClick}
                 href="/research"
                 className={
                   pathname == "/research"
@@ -199,6 +220,7 @@ const Navbar = () => {
                 Research & Innovation{" "}
               </Link>
               <Link
+                onClick={handleLinkClick}
                 href="/whattoexpect"
                 className={
                   pathname == "/whattoexpect"
@@ -209,6 +231,7 @@ const Navbar = () => {
                 Patient Information
               </Link>
               <Link
+                onClick={handleLinkClick}
                 href="/faq"
                 className={
                   pathname == "/faq"
@@ -220,7 +243,7 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
-          <Link href="/donation">
+          <Link href="/donation" onClick={handleLinkClick}>
             <Button
               classes="px-8 py-2 bg-primary_red font-Lexend font-normal rounded-[4px] text-base hover:bg-primary_red/80 trans_animate tracking-wide text-white"
               text="Donate Now"
