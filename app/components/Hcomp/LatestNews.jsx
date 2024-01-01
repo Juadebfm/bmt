@@ -154,11 +154,25 @@ const LatestNews = ({ title = "Latest News & Updates", className = "" }) => {
                     className="w-full h-full rounded-lg"
                   />
                   <div className="custom_shape absolute -right-[1px] -bottom-[2px] bg-white border border-white"></div>
-                  <div className="absolute right-8 top-[70%] text-white bg-red-500 p-4">
-                    <span>
-                      12th <br /> Aug
-                    </span>
-                  </div>
+                  {newsItem.day && newsItem.month ? (
+                    <div className="absolute right-8 top-[70%] text-white bg-red-500 p-3 rounded-b-lg">
+                      <div className="flex gap-1 items-center justify-center flex-col w-[45px] h-[60px] font-bold text-sm">
+                        <span>{newsItem.day}</span>
+                        <span>{newsItem.month}</span>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="absolute right-8 top-[70%] text-white bg-red-500 p-3 rounded-b-lg">
+                      <div className="flex gap-1 items-center justify-center flex-col w-[45px] h-[60px] font-bold text-sm">
+                        <span>{new Date().getDate()}</span>
+                        <span>
+                          {new Date().toLocaleString("default", {
+                            month: "short",
+                          })}
+                        </span>
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 <div className="space-y-3">
