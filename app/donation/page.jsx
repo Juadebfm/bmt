@@ -71,7 +71,7 @@ const Page = () => {
             This is a CALL TO ACTION! BE A HERO!
             <br /> CONTRIBUTE TODAY!
           </h2>
-          <p className="w-full text-[18px] md:text-[20px] leading-normal mt-8">
+          <p className="w-full text-[18px] md:text-[20px] text-center md:text-start leading-normal mt-8">
             Your contributions will help subsidize this life-saving procedure
             for the vast majority of Nigerians living with sickle cell disorder,
             giving them the opportunity for a cure.
@@ -122,7 +122,7 @@ const Page = () => {
               <span className="text-[20px] font-bold w-max">
                 Online Donation
               </span>
-              <p className="leading-normal mt-2 text-[18px] md:text-[20px] text-start">
+              <p className="leading-normal mt-2 text-[18px] md:text-[20px] text-center md:text-start">
                 How much would you like to donate? As a contributor to SCFN /
                 LUTH BMT program, your donation will go directly to subsidizing
                 the transplant procedure
@@ -266,10 +266,10 @@ const Page = () => {
           <span className="text-center md:text-start text-[34px] md:text-[44px] mb-5 lg:text-[18px] text-primary_red font-bold leading-[1.2]">
             See what Happens When You Help
           </span>
-          <h2 className="w-full md:w-[90%] text-[20px] lg:text-[28px] leading-[1.2] capitalize font-bold text-primary_dark">
+          <h2 className="w-full md:w-[90%] text-[20px] lg:text-[28px] text-center md:text-start leading-[1.2] capitalize font-bold text-primary_dark">
             What We Do When You Donate us
           </h2>
-          <p className="w-full text-[18px] md:text-[20px] leading-normal mt-3">
+          <p className="w-full text-[18px] md:text-[20px] text-center md:text-start leading-normal mt-3">
             Your donation help us subsidize the cost of transplant for persons
             that are in need of quality safe and affordable stem cell
             transplantation. <br /> You become an integral part of the life

@@ -36,7 +36,7 @@ const Page = () => {
           <h2 className="w-full text-[34px] lg:text-[44px] leading-[1.2] capitalize font-[600] text-primary_red text-center lg:text-start">
             Our Multi-Disciplinary Services
           </h2>
-          <p className="w-full lg:w-[90%] text-[18px] leading-normal mt-8">
+          <p className="w-full lg:w-[90%] text-[18px] md:text-[20px] text-center md:text-start leading-normal mt-8">
             Explore our diverse support services designed to accompany you
             through every phase. From counseling to post-transplant care,
             we&apos;re dedicated to ensuring you feel supported, empowered, and

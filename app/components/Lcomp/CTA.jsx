@@ -24,11 +24,11 @@ const CTA = () => {
         />
       </div>
       <div className="w-full lg:w-1/2 flex flex-col justify-center">
-        <h2 className="w-full lg:w-[95%] text-[30px] lg:text-[40px] text-center lg:text-start leading-[1.2] capitalize font-[600] text-primary_red">
+        <h2 className="w-full lg:w-[95%] text-[34px] lg:text-[44px] text-center lg:text-start leading-[1.2] capitalize font-[600] text-primary_red">
           This is a CALL TO ACTION! BE A HERO!
           <br /> CONTRIBUTE TODAY!
         </h2>
-        <p className="w-full text-[18px] md:text-[19px] leading-normal mt-8 text-center lg:text-start">
+        <p className="w-full text-[18px] md:text-[20px] leading-normal mt-8 text-center lg:text-start">
           Your contributions will help subsidise the cost of this life-saving
           procedure for the vast majority of Nigerians living with sickle cell
           disorder, giving them access to this cure

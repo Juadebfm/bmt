@@ -13,7 +13,7 @@ const OurSponsors = () => {
       <h2
         data-aos="fade-right"
         data-aos-duration="600"
-        className="text-[30px] lg:text-[40px] text-center lg:text-start w-full leading-[1.2] capitalize font-[600] text-primary_red"
+        className="text-[34px] lg:text-[44px] text-center lg:text-start w-full leading-[1.2] capitalize font-[600] text-primary_red"
       >
         Our Sponsors
       </h2>

@@ -24,7 +24,7 @@ const page = () => {
           <ul className="flex flex-col w-full space-y-7">
             <Link
               href="tel:+2347086622570"
-              className="flex flex-col lg:flex-row items-center justify-start w-full h-max gap-2"
+              className="flex flex-row items-center justify-start w-full h-max gap-2"
             >
               <MdOutlinePhoneInTalk className="text-2xl" />
 
@@ -100,7 +100,7 @@ const page = () => {
           ></iframe>
           <div className="flex items-start justify-start gap-3 w-full lg:w-[80%] mt-10">
             <CiLocationOn className="text-[10rem] lg:text-[5rem] font-bold" />
-            <p className="text-[20px]">
+            <p className="text-[18px] md:text-[20px]">
               National Sickle Cell Centre,Opp Lagos University Teaching
               Hospital(LUTH),Ishaga Road, Idi-Araba,Surulere, Lagos. Nigeria.
               P.O Box 3463, Surulere, Lagos

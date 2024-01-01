@@ -47,7 +47,7 @@ const Page = () => {
               (Bone marrow transplantation)
             </span>
           </h2>
-          <p className="w-full text-[20px] leading-normal mt-8">
+          <p className="w-full text-[18px] md:text-[20px] text-center md:text-start leading-normal mt-8">
             Access in-depth disease information on conditions like Sickle Cell
             Disease and Leukemia treated with BMT. Stay informed and engaged
             with upcoming webinars and workshops, fostering knowledge of BMT and
@@ -98,7 +98,7 @@ const Page = () => {
             (BMT)?
           </h2>
           <div className="w-full text-[18px] leading-normal mt-6">
-            <p className="mt-7">
+            <p className="mt-7 text-[18px] md:text-[20px] text-center md:text-start">
               Bone marrow transplantation (BMT) is a medical procedure that
               replaces damaged or diseased bone marrow with healthy bone marrow.
               Bone marrow is the spongy tissue inside bones that produces blood
@@ -116,7 +116,7 @@ const Page = () => {
 
             {showAll && (
               <div data-aos="fade-down">
-                <p className="mt-4">
+                <p className="mt-4 text-[18px] md:text-[20px] text-center md:text-start">
                   One of the most important advancements in BMT technology has
                   been the development of new conditioning regimens.
                   Conditioning regimens are the drugs or radiation therapy that
@@ -125,7 +125,7 @@ const Page = () => {
                   more effective at destroying diseased bone marrow while
                   causing fewer side effects.
                 </p>
-                <p className="mt-4">
+                <p className="mt-4 text-[18px] md:text-[20px] text-center md:text-start">
                   Another important advancement in BMT technology has been the
                   development of new graft-versus-host disease (GVHD)
                   prophylaxis regimens. GVHD is a serious complication of BMT
@@ -140,7 +140,7 @@ const Page = () => {
                   engraftment, and the use of robotics to perform BMT
                   procedures.
                 </p>
-                <p className="mt-4">
+                <p className="mt-4 text-[18px] md:text-[20px] text-center md:text-start">
                   As a result of these advancements, BMT is now a more effective
                   and safer treatment for many patients. However, it is
                   important to note that BMT is still a complex procedure with a
@@ -164,7 +164,7 @@ const Page = () => {
           <h2 className="text-[30px] lg:text-[40px] leading-[1.2] capitalize font-bold text-primary_red text-center">
             Diseases Treated with BMT
           </h2>
-          <p className="w-full lg:w-[60%] text-[20px] m-auto text-center mt-3 leading-[1.3]">
+          <p className="w-full lg:w-[60%] m-auto text-[18px] md:text-[20px] text-center md:text-start mt-3 leading-[1.3]">
             Bone marrow transplant (BMT) is a medical procedure that replaces
             damaged or diseased bone marrow with healthy bone marrow. Bone
             marrow is the spongy tissue inside bones that produces blood cells.
@@ -277,11 +277,11 @@ const Page = () => {
             Transplantation <span className="text-primary_red">(BMT) Used</span>
             to Treat <span className="text-primary_red">Disease</span>
           </h2>
-          <div className="text-[20px] leading-normal mt-3">
+          <div className="leading-normal mt-3 text-[18px] md:text-[20px] text-center md:text-start ">
             BMT is used to replace diseased bone marrow with healthy bone
             marrow. The healthy bone marrow can then produce healthy blood
             cells. There are two main types of BMT:
-            <ul className="p-8 px-5 lg:px-10">
+            <ul className="p-8 px-5 lg:px-10 text-[18px] md:text-[20px] text-center md:text-start">
               <li className="list-disc">
                 <b>Autologous BMT</b> uses the patient&apos;s own bone marrow.
                 The bone marrow is collected from the patient and then stored.

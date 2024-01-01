@@ -132,7 +132,7 @@ const Navbar = () => {
         <ul
           data-aos="fade-right"
           ref={menuRef} // Set the reference to the entire menu area
-          className="absolute left-0 top-[100%] bg-white text-[#232323] flex flex-col items-start justify-start gap-12 group:cursor-pointer font-Lexend w-[60%] md:w-[40%] h-[70vh] md:h-auto rounded-r-lg pt-24 md:pt-16 md:pb-16 px-10 md:px-14 shadow-md border border-slate-100"
+          className="absolute left-0 top-[100%] bg-white text-[#232323] flex flex-col items-start justify-start gap-8 group:cursor-pointer font-Lexend w-[60%] md:w-[40%] h-max rounded-r-lg px-10 py-12 md:px-14 shadow-md border border-slate-100 text-base"
         >
           <Link
             onClick={handleLinkClick}
@@ -167,85 +167,65 @@ const Navbar = () => {
           >
             Contact Us
           </Link>
-          <div
-            className="cursor-pointer hover:text-slate-300 duration-200 transition-all ease-linear w-max relative"
-            onMouseEnter={handleDropdownMouseEnter}
-            onMouseLeave={handleDropdownMouseLeave}
-            onClick={() => {
-              setShowMoreDropdown(!showMoreDropdown);
-              setShowChevronUp(!showChevronUp); // Toggle chevron direction on click
-            }}
+          <Link
+            onClick={handleLinkClick}
+            href="/donation"
+            className={
+              pathname == "/donation"
+                ? "active_class"
+                : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
+            }
           >
-            <div className="flex items-center justify-center gap-3">
-              <span>More</span>
-              {showChevronUp ? <FaChevronUp /> : <FaChevronDown />}{" "}
-              {/* Render chevron based on state */}
-            </div>
-            <div
-              className={`flex flex-col bg-white text-primary_dark font-Lexend font-normal rounded-[16px] trans_animate space-y-4 ${
-                showMoreDropdown ? "show_more_nav_sm" : "hidden"
-              }`}
-            >
-              <Link
-                onClick={handleLinkClick}
-                href="/donation"
-                className={
-                  pathname == "/donation"
-                    ? "active_class"
-                    : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
-                }
-              >
-                Donation
-              </Link>
-              <Link
-                onClick={handleLinkClick}
-                href="/education"
-                className={
-                  pathname == "/education"
-                    ? "active_class"
-                    : "duration-200 transition-all ease-linear w-max"
-                }
-              >
-                Education & Awareness
-              </Link>
-              <Link
-                onClick={handleLinkClick}
-                href="/research"
-                className={
-                  pathname == "/research"
-                    ? "active_class"
-                    : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
-                }
-              >
-                Research & Innovation{" "}
-              </Link>
-              <Link
-                onClick={handleLinkClick}
-                href="/whattoexpect"
-                className={
-                  pathname == "/whattoexpect"
-                    ? "active_class"
-                    : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
-                }
-              >
-                Patient Information
-              </Link>
-              <Link
-                onClick={handleLinkClick}
-                href="/faq"
-                className={
-                  pathname == "/faq"
-                    ? "active_class"
-                    : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
-                }
-              >
-                FAQ
-              </Link>
-            </div>
-          </div>
+            Donation
+          </Link>
+          <Link
+            onClick={handleLinkClick}
+            href="/education"
+            className={
+              pathname == "/education"
+                ? "active_class"
+                : "duration-200 transition-all ease-linear w-max"
+            }
+          >
+            Education & Awareness
+          </Link>
+          <Link
+            onClick={handleLinkClick}
+            href="/research"
+            className={
+              pathname == "/research"
+                ? "active_class"
+                : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
+            }
+          >
+            Research & Innovation{" "}
+          </Link>
+          <Link
+            onClick={handleLinkClick}
+            href="/whattoexpect"
+            className={
+              pathname == "/whattoexpect"
+                ? "active_class"
+                : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
+            }
+          >
+            Patient Information
+          </Link>
+          <Link
+            onClick={handleLinkClick}
+            href="/faq"
+            className={
+              pathname == "/faq"
+                ? "active_class"
+                : "hover:text-slate-700 duration-200 transition-all ease-linear w-max"
+            }
+          >
+            FAQ
+          </Link>
+
           <Link href="/donation" onClick={handleLinkClick}>
             <Button
-              classes="px-8 py-2 bg-primary_red font-Lexend font-normal rounded-[4px] text-base hover:bg-primary_red/80 trans_animate tracking-wide text-white"
+              classes="px-8 py-2 bg-primary_red font-Lexend font-normal rounded-[4px] text-base hover:bg-primary_red/80 trans_animate tracking-wide text-white w-full"
               text="Donate Now"
             />
           </Link>

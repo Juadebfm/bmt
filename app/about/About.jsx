@@ -96,7 +96,7 @@ const About = () => {
           </span>
         </p>
         <button
-          className="font-bold text-primary_red pl-2 cursor-pointer"
+          className="font-bold text-primary_red cursor-pointer inline"
           onClick={toggleExpand}
         >
           {!isExpanded ? "Read more" : "See Less"}

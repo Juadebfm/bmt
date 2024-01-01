@@ -4,11 +4,11 @@ import React from "react";
 const About = () => {
   return (
     <section className="h-max flex flex-col lg:flex-row items-center justify-center px-[25px] sm:px-16 gap-10 mt-10 sm:mt-28">
-      <div className="w-full lg:w-1/2 h-full p-10 lg:pl-28">
+      <div className="w-full lg:w-1/2 h-full p-0 lg:pl-28">
         <img src="./assets/bmt/logos.png" alt="" className="object-cover w-full" />
       </div>
       <div className="w-full lg:w-1/2 flex flex-col justify-center">
-        <h2 className="w-full text-[30px] lg:text-[40px] text-center lg:text-start leading-[1.2] capitalize font-[600] text-primary_red">
+        <h2 className="w-full text-[34px] lg:text-[44px] text-center lg:text-start leading-[1.2] capitalize font-[600] text-primary_red">
           About the SCFN | LUTH | VUMC Partnership
         </h2>
         <p className="w-full text-[18px] md:text-[20px] text-center lg:text-start leading-normal mt-3">
@@ -22,7 +22,7 @@ const About = () => {
           AFFORDABLE BONE MARROW TRANSPLANTATION AT THE SCFN/LUTH/VUMC
           BMT CENTRE, LAGOS.
           <Link href="/about">
-            <span className="font-bold text-primary_red cursor-pointer ml-2">
+            <span className="font-bold text-primary_red cursor-pointer block">
               Learn More
             </span>
           </Link>
