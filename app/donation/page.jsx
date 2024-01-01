@@ -21,6 +21,10 @@ const Page = () => {
 
   const [error, setError] = useState("");
 
+  const [fullNameInput, setFullNameInput] = useState("");
+  const [emailInput, setEmailInput] = useState("");
+  const [secondDivError, setSecondDivError] = useState("");
+
   const handleButtonClick = (button) => {
     setActiveButton(button);
     if (button === "enterAmount") {
@@ -44,6 +48,23 @@ const Page = () => {
       }
     } else {
       setError("Please choose a currency and type an amount.");
+    }
+  };
+
+  const handleSecondProceed = () => {
+    console.log("Proceed button clicked"); // Check if this message appears in the console
+
+    if (!fullNameInput.trim() || fullNameInput.trim().length < 3) {
+      console.log("Full Name validation failed"); // Check if this message appears in the console
+      setSecondDivError("Full Name should be at least 3 characters");
+    } else if (!/^\S+@\S+\.\S+$/.test(emailInput)) {
+      console.log("Email validation failed"); // Check if this message appears in the console
+      setSecondDivError("Please enter a valid email address");
+    } else {
+      console.log("Validation passed"); // Check if this message appears in the console
+      // If all validations pass, perform further actions or proceed
+      // For now, let's just clear the error state
+      setSecondDivError("");
     }
   };
 
@@ -186,21 +207,40 @@ const Page = () => {
                 We’ll never share this information with anyone.
               </p>
             </div>
+            {secondDivError && (
+              <p className="text-red-500 text-center mt-5 text-[18px]">{secondDivError}</p>
+            )}
             <form className="mt-10 w-full p-5 lg:p-10 space-y-5">
+              {/* Full Name Input */}
+
               <div className="flex flex-col items-start justify-start w-full">
                 <label htmlFor="fullname">Full Name</label>
                 <input
                   type="text"
+                  value={fullNameInput}
+                  onChange={(e) => setFullNameInput(e.target.value)}
                   placeholder="Enter Full Name"
-                  className="w-full py-[14px] mt-2 border border-gray-400 rounded-md px-3"
+                  className={`w-full py-[14px] mt-2 border ${
+                    secondDivError &&
+                    (!fullNameInput.trim() || fullNameInput.trim().length < 3)
+                      ? "border-red-500"
+                      : "border-gray-400"
+                  } rounded-md px-3`}
                 />
               </div>
+              {/* Email Input */}
               <div className="flex flex-col items-start justify-start w-full">
                 <label htmlFor="email">Email Address</label>
                 <input
                   type="email"
+                  value={emailInput}
+                  onChange={(e) => setEmailInput(e.target.value)}
                   placeholder="Email Address"
-                  className="w-full py-[14px] mt-2 border border-gray-400 rounded-md px-3"
+                  className={`w-full py-[14px] mt-2 border ${
+                    secondDivError && !/^\S+@\S+\.\S+$/.test(emailInput)
+                      ? "border-red-500"
+                      : "border-gray-400"
+                  } rounded-md px-3`}
                 />
               </div>
             </form>
@@ -221,7 +261,10 @@ const Page = () => {
                 </span>
               </div>
             </div>
-            <div className="flex justify-center mt-7">
+            <div
+              onClick={handleSecondProceed}
+              className="flex justify-center mt-7"
+            >
               <Button
                 classes="px-[75px] py-[14px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/90 trans_animate tracking-wide mt-5 text-white w-full lg:w-[60%]"
                 text="Proceed"
