@@ -4,8 +4,6 @@ import React, { useEffect, useState } from "react";
 import Button from "../components/Lcomp/Button";
 import Badge from "../components/Lcomp/Badge";
 import LatestNews from "../components/Hcomp/LatestNews";
-import { CiWallet } from "react-icons/ci";
-import { BiSolidDonateHeart } from "react-icons/bi";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -15,6 +13,7 @@ const Page = () => {
     AOS.init({ once: true });
   }, []);
 
+  const [donationAmount, setDonationAmount] = useState(0); // Initialize with 0 or any default value
   const [activeButton, setActiveButton] = useState("enterAmount");
   const [activeDiv, setActiveDiv] = useState("one");
   const [currency, setCurrency] = useState("");
@@ -31,7 +30,7 @@ const Page = () => {
     }
   };
 
-  const amountRegex = /^[0-9]+$/; // Regex to validate only numbers
+  const amountRegex = /^$|^[1-9][0-9]*$/; // Regex to validate only numbers
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
@@ -159,8 +158,9 @@ const Page = () => {
                       setError("Input a valid amount");
                     } else {
                       setError(""); // Clear error message when valid input
+                      setAmount(inputVal);
+                      setDonationAmount(parseInt(inputVal)); // Update donation amount state
                     }
-                    setAmount(inputVal);
                   }}
                   placeholder="Type Here"
                   className={`w-full py-[14px] mt-2 border ${
@@ -180,7 +180,7 @@ const Page = () => {
           <div className={activeDiv === "two" ? "block mt-10" : "hidden"}>
             <div className="flex flex-col items-center justify-center">
               <span className="text-[20px] font-bold w-max">
-                Who&apos;s giving today?{" "}
+                Who&apos;s giving today?
               </span>
               <p className="mt-2 text-[18px] text-center">
                 We’ll never share this information with anyone.
@@ -203,46 +203,22 @@ const Page = () => {
                   className="w-full py-[14px] mt-2 border border-gray-400 rounded-md px-3"
                 />
               </div>
-              <div className="flex flex-col items-start justify-start w-full">
-                <div className="py-[14px] px-5 bg-[#DDDDDD] flex items-center justify-between w-full rounded-md  mt-3">
-                  <div className="flex items-center justify-start gap-4">
-                    <img
-                      src="./assets/bmt/radio_btn.png"
-                      alt=""
-                      className="w-[25px] h-[25px]"
-                    />
-                    <span className="font-bold">
-                      Donate with Offline Donation
-                    </span>
-                  </div>
-                  <CiWallet className="text-3xl text-primary_red font-bold" />
-                </div>
-                <div className="py-[14px] px-5 bg-[#DDDDDD] flex items-center justify-between w-full rounded-md  mt-7">
-                  <div className="flex items-center justify-start gap-4">
-                    <img
-                      src="./assets/bmt/radio_btn.png"
-                      alt=""
-                      className="w-[25px] h-[25px]"
-                    />
-                    <span className="font-bold">Donate with Paystack</span>
-                  </div>
-                  <BiSolidDonateHeart className="text-3xl text-primary_red font-bold" />
-                </div>
-              </div>
             </form>
             <div className="mt-8 px-5 lg:px-10">
               <span className="text-[20px] font-bold w-max">
                 Donation Summary
               </span>
-              <div className="flex justify-between mt-5 text-[18px] items-center bg-[#F5F6F8] p-4">
+              {/* <div className="flex justify-between mt-5 text-[18px] items-center bg-[#F5F6F8] p-4">
                 <span>Payment Amount:</span> <span>N13,500</span>
               </div>
               <div className="flex justify-between mt-5 text-[18px] items-center bg-[#F5F6F8] p-4">
                 <span>Giving Frequency:</span> <span>One Time</span>
-              </div>
+              </div> */}
               <div className="flex justify-between mt-5 text-[18px] items-center bg-[#F5F6F8] p-4">
-                <span className="font-bold">Donation Total</span>
-                <span className="font-bold">N13,500</span>
+                <span className="text-base md:text-[18px]">Donation Total</span>
+                <span className="text-base md:text-[18px]">
+                  N{donationAmount}
+                </span>
               </div>
             </div>
             <div className="flex justify-center mt-7">
