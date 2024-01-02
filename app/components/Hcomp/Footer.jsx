@@ -16,9 +16,6 @@ const Footer = () => {
     <footer className="grid_col_footer_sm lg:grid_col_footer gap-8 px-[25px] sm:px-16 py-14 w-full">
       <div>
         <img src="/assets/bmt/logo_footer.png" alt="BMT Logo" className="" />
-        <p className="w-[95%] mt-8 text-[18px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim.
-        </p>
         <div className="flex items-center justify-start text-3xl mt-6 text-primary_red space-x-5">
           <Link href="https://instagram.com/sicklecellfoundationng?igshid=MzMyNGUyNmU2YQ==">
             <FaInstagram className="cursor-pointer" />
@@ -122,8 +119,6 @@ const Footer = () => {
       <div className="space-y-5">
         <span className="font-bold">Subscribe</span>
         <p>
-          Subscribe to our newsletter to receive the latest updates and news.{" "}
-          <br />
           Subscribe now for valuable information and stay connected with our
           mission.
         </p>

@@ -9,7 +9,7 @@ const OurSponsors = () => {
     AOS.init({ once: true });
   }, []);
   return (
-    <section className="h-[30vh] md:h-[50vh] lg:h-[60vh] px-[25px] sm:px-16 mt-10 sm:mt-28 flex flex-col items-start justify-start">
+    <section className="h-[30vh] md:h-[50vh] lg:h-[60vh] px-[25px] sm:px-16 mt-10 sm:mt-28 flex flex-col items-start justify-start ">
       <h2
         data-aos="fade-right"
         data-aos-duration="600"

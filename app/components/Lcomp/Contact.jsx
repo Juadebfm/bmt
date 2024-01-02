@@ -14,7 +14,7 @@ const Contact = () => {
     <section
       data-aos="fade-up"
       data-aos-duration="600"
-      className="h-max flex flex-col lg:flex-row items-center justify-center px-[25px] sm:px-16 gap-10 mt-10 sm:mt-28"
+      className="h-max flex flex-col lg:flex-row items-center justify-center px-[25px] sm:px-16 gap-10 mt-10 sm:mt-28 "
     >
       <div className="w-full lg:w-1/2 h-full p-0 sm:p-10">
         <img
@@ -24,7 +24,7 @@ const Contact = () => {
         />
       </div>
       <div className="w-full lg:w-1/2 flex flex-col justify-center">
-        <h2 className="w-full text-[34px] lg:text-[44px] text-center sm:text-start leading-[1.2] capitalize font-[600] text-primary_red">
+        <h2 className="w-full text-[34px] lg:text-[44px] text-start leading-[1.2] capitalize font-[600] text-primary_red">
           Do you live with sickle cell disorder? Or seeking support for a loved
           one? Click on the contact us button below.
         </h2>

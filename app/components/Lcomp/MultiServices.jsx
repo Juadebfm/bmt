@@ -12,20 +12,20 @@ const MultiServices = () => {
   return (
     <section
       data-aos="fade-up"
-      className="h-auto lg:h-[70vh] flex flex-col-reverse lg:flex-row items-center justify-center px-[25px] sm:px-16 gap-10 sm:gap-20 mt-10 md:mt-14 mb-10 md:mb-24 scroll_item"
+      className="h-auto lg:h-[70vh] flex flex-col-reverse lg:flex-row items-center justify-center px-[25px] sm:px-16 gap-10 sm:gap-20 mt-10 md:mt-14 mb-10 md:mb-24 scroll_item "
     >
       <div className="w-full md:w-full lg:w-1/2 flex flex-col justify-center">
-        <h2 className="text-[34px] lg:text-[44px] w-full sm:w-[90%] leading-[1.2] capitalize font-[600] text-primary_red text-center lg:text-start">
+        <h2 className="text-[34px] lg:text-[44px] w-full sm:w-[90%] leading-[1.2] capitalize font-[600] text-primary_red text-start">
           Our Multi-disciplinary services
         </h2>
-        <p className="text-[18px] md:text-[20px] text-center lg:text-start leading-normal mt-6">
+        <p className="text-[18px] md:text-[20px] text-start leading-normal mt-6">
           Our transplant team which includes Paediatricians, haematologists,
           internists and various specialists, ensures quality comprehensive
           care. From social workers to Anaesthetics, we are here for our
           patients well-being, providing support before and after
-          transplantation.{" "}
-          <Link href="/services">
-            <span className="font-bold text-primary_red cursor-pointer block">
+          transplantation.
+          <Link href="/services" className="pl-2">
+            <span className="font-bold text-primary_red cursor-pointer">
               Learn More
             </span>
           </Link>

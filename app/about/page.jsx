@@ -28,7 +28,7 @@ const Page = () => {
     };
   }, []);
   return (
-    <section className="overflow-x-hidden">
+    <section className="">
       <div
         style={{
           backgroundImage: "url(./assets/bmt/scfn-luth.png)",
@@ -36,7 +36,7 @@ const Page = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
-        className="h-[50vh] md:h-screen relative p-14"
+        className="h-[50vh] md:h-screen relative p-14 mt-24"
       >
         <img
           src="/assets/bmt/sfcn_luth_logo.png"

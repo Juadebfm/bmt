@@ -52,7 +52,7 @@ const TourFacility = () => {
           >
             X
           </button>{" "}
-          <div className="w-full md:w-[70%] h-auto md:h-[70%] mx-auto mt-8 py-0 md:py-10 px-[25px] md:px-0">
+          <div className="w-full md:w-[70%] h-auto md:h-[70%] mx-auto mt-8 py-0 md:py-10 px-[10px] md:px-0">
             <video controls className="w-full" autoPlay>
               <source
                 src="https://www.sicklecellfoundation.com/scfn-luth-api/storage/public/img/Virtual%20Tour%20video%20of%20the%20SCFN_LUTH%20Bone%20Marrow%20Transplant_compressed.mp4"

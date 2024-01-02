@@ -44,7 +44,7 @@ const Mainbody = () => {
   }, []);
 
   return (
-    <section className="w-screen overflow-x-hidden">
+    <section className="w-screen lg:mt-24">
       <div className="relative">
         <Slider slides={slides} />
         <SmallScreenSlider slidesSm={slidesSm} />

@@ -4,6 +4,7 @@
 
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 .scroll_snap {

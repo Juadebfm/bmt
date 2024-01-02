@@ -14,7 +14,7 @@ const CTA = () => {
     <section
       data-aos="fade-up"
       data-aos-duration="600"
-      className="h-max flex flex-col lg:flex-row items-center justify-center px-[25px] sm:px-16 gap-10 lg:gap-20 mt-10 md:mt-14 lg:mt-28"
+      className="h-max flex flex-col lg:flex-row items-center justify-center px-[25px] sm:px-16 gap-10 lg:gap-20 mt-10 md:mt-14 lg:mt-28 "
     >
       <div className="w-full lg:w-1/2 h-full p-0 lg:p-10">
         <img
@@ -24,11 +24,11 @@ const CTA = () => {
         />
       </div>
       <div className="w-full lg:w-1/2 flex flex-col justify-center">
-        <h2 className="w-full lg:w-[95%] text-[34px] lg:text-[44px] text-center lg:text-start leading-[1.2] capitalize font-[600] text-primary_red">
+        <h2 className="w-full lg:w-[95%] text-[34px] lg:text-[44px] text-start leading-[1.2] capitalize font-[600] text-primary_red">
           This is a CALL TO ACTION! BE A HERO!
           <br /> CONTRIBUTE TODAY!
         </h2>
-        <p className="w-full text-[18px] md:text-[20px] leading-normal mt-8 text-center lg:text-start">
+        <p className="w-full text-[18px] md:text-[20px] leading-normal mt-8 text-start">
           Your contributions will help subsidise the cost of this life-saving
           procedure for the vast majority of Nigerians living with sickle cell
           disorder, giving them access to this cure

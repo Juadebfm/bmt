@@ -8,15 +8,15 @@ import { CiLocationOn } from "react-icons/ci";
 
 const page = () => {
   return (
-    <section className="h-max flex flex-col lg:flex-row items-center justify-center px-[25px] lg:px-16 gap-24 mt-10">
-      <div className="w-full lg:w-1/2 h-full p-0 lg:p-10 pl-0">
+    <section className="h-max flex flex-col lg:flex-row items-center justify-center px-[25px] lg:px-16 gap-24 mt-10 ">
+      <div className="w-full lg:w-1/2 h-full p-0 lg:p-10 pl-0 mt-24 lg:mt-0">
         <img
           src="./assets/bmt/smiling_family.png"
           alt=""
           className="object-cover w-full"
         />
       </div>
-      <div className="flex flex-col justify-center w-full lg:w-1/2">
+      <div className="flex flex-col justify-center w-full lg:w-1/2 lg:mt-24">
         <h2 className="w-full text-[40px] leading-[1.2] capitalize font-[600] text-primary_dark">
           Reach Out To Us
         </h2>

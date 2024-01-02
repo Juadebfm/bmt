@@ -15,13 +15,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <body
         style={lexend.style}
-        className="w-screen text-base font-Lexend overflow-x-hidden scroll_snap scrollbar-thin scrollbar-thumb-primary_dark scrollbar-track-primary_faded_grey/50"
+        className="w-full text-base font-Lexend scroll_snap scrollbar-thin scrollbar-thumb-primary_dark scrollbar-track-primary_faded_grey/50"
       >
         <Navbar />
-        <main>
+        <main className="mt-10 lg:mt-0">
           <NewsProvider>{children}</NewsProvider>
         </main>
         <Footer />

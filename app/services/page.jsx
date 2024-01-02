@@ -16,11 +16,11 @@ const Page = () => {
 
   return (
     <>
-      <section className="h-max flex flex-col lg:flex-row items-center justify-center pr-0 lg:pr-14 gap-10 mt-5">
+      <section className="h-max flex flex-col lg:flex-row items-center justify-center pr-0 lg:pr-14 gap-10 mt-5 ">
         <div
           data-aos="fade-right"
           data-aos-duration="500"
-          className="w-full lg:w-1/2 h-full p-0 lg:p-10 pl-0"
+          className="mt-24 w-full lg:w-1/2 h-full p-0 lg:p-10 pl-0"
         >
           <img
             src="./assets/bmt/service.png"
@@ -33,10 +33,10 @@ const Page = () => {
           data-aos-duration="1000"
           className="w-full lg:w-1/2 flex flex-col justify-center px-[24px] lg:px-0"
         >
-          <h2 className="w-full text-[34px] lg:text-[44px] leading-[1.2] capitalize font-[600] text-primary_red text-center lg:text-start">
+          <h2 className="w-full text-[34px] lg:text-[44px] leading-[1.2] capitalize font-[600] text-primary_red text-start">
             Our Multi-Disciplinary Services
           </h2>
-          <p className="w-full lg:w-[90%] text-[18px] md:text-[20px] text-center md:text-start leading-normal mt-8">
+          <p className="w-full lg:w-[90%] text-[18px] md:text-[20px] text-start leading-normal mt-8">
             Explore our diverse support services designed to accompany you
             through every phase. From counseling to post-transplant care,
             we&apos;re dedicated to ensuring you feel supported, empowered, and

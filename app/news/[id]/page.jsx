@@ -1,13 +1,21 @@
 "use client";
 
 import LatestNews from "@/app/components/Hcomp/LatestNews";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { IoChevronBackSharp, IoChevronForwardSharp } from "react-icons/io5";
 
 const NewsDetails = ({ params }) => {
   const [newsDetails, setNewsDetails] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [newsData, setNewsData] = useState([]);
+
+  const scrollRef = useRef(null);
+
+  const scrollToRight = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollLeft += 300; // Adjust this value for scroll distance
+    }
+  };
 
   useEffect(() => {
     const storedNewsData = localStorage.getItem("newsData");
@@ -42,7 +50,7 @@ const NewsDetails = ({ params }) => {
 
   return (
     <>
-      <section className="px-[25px] md:px-16 py-[20px] md:py-10">
+      <section className="px-[25px] md:px-16 py-[20px] md:py-10 ">
         <div className="flex items-center justify-between py-4">
           <button
             className={`flex items-center justify-center ${
@@ -70,18 +78,37 @@ const NewsDetails = ({ params }) => {
             <h2 className="text-[22px] md:text-[32px] font-bold leading-tight mb-5">
               {newsDetails.events_news_name}
             </h2>
-            <div className="flex overflow-x-auto scroll_snap scrollbar-thin scrollbar-thumb-primary_dark scrollbar-track-primary_faded_grey/50 justify-start gap-5 mt-8 mb-10">
-              {newsDetails.event_news_image_array.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.file_url}
-                  alt={`Image ${index + 1}`}
-                  className="w-40 h-40 object-cover m-2 h-[260px] w-[350px] rounded-2xl shadow-md border border-slate-100"
-                />
-              ))}
+            <div className="relative">
+              <div
+                ref={scrollRef}
+                className="flex overflow-x-auto scroll_snap scrollbar-thin scrollbar-thumb-primary_dark scrollbar-track-primary_faded_grey/50 justify-start gap-5 mt-8 mb-10"
+              >
+                {newsDetails.event_news_image_array.map((image, index) => (
+                  <img
+                    key={index}
+                    src={image.file_url}
+                    alt={`Image ${index + 1}`}
+                    className="w-40 h-40 object-cover m-2 h-[260px] w-[350px] rounded-2xl shadow-md border border-slate-100"
+                  />
+                ))}
+              </div>
+
+              <button
+                onClick={scrollToRight}
+                className="lg:hidden absolute top-1/2 -right-3 transform -translate-y-1/2"
+              >
+                <IoChevronForwardSharp className="text-3xl text-primary_red" />
+              </button>
             </div>
-            <div>
-              <p>{newsDetails.events_news_content}</p>
+            <div className="text-justify lg:text-start">
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: newsDetails.events_news_content.replace(
+                    /\n/g,
+                    "<br/>"
+                  ),
+                }}
+              />
             </div>
           </div>
         ) : (

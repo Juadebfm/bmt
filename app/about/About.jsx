@@ -21,7 +21,7 @@ const About = () => {
       </div>
       <div className="w-full lg:w-1/2 block h-max lg:h-[670px] my-auto pt-[40px] cursor-pointer overflow-y-auto">
         <p className={lineClamp}>
-          <span className="w-full text-[17px] font-[300] font-lexend text-primary_dark leading-tight whitespace-break-spaces mt-4 text-justify ">
+          <span className="w-full text-[17px] font-[300] font-lexend text-primary_dark leading-tight mt-4 text-justify lg:text-start">
             <span className="font-[700] ">
               Stem Cell Transplantation Or Bone Marrow Transplantation (BMT)
             </span>{" "}
@@ -56,7 +56,7 @@ const About = () => {
             <br />
             <br />
             <span>
-              <span className="font-[700] text-primary_red ">
+              <span className="font-[700] text-primary_red text-justify lg:text-start">
                 The Tripartite Partnership for BMT:
               </span>
               <br />

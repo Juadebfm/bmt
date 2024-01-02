@@ -35,19 +35,19 @@ const Page = () => {
 
   return (
     <>
-      <section className="h-max flex flex-col-reverse lg:flex-row items-center justify-center px-[25px] lg:px-16">
+      <section className="h-max flex flex-col-reverse lg:flex-row items-center justify-center px-[25px] lg:px-16 ">
         <div
           data-aos="fade-right"
           data-aos-duration="500"
           className="w-full lg:w-1/2 flex flex-col justify-center"
         >
-          <h2 className="w-full lg:w-[80%] text-[34px] lg:text-[44px] text-center lg:text-start leading-[1.2] capitalize font-extrabold text-primary_red">
+          <h2 className="w-full lg:w-[90%] text-[30px] lg:text-[44px] text-start leading-[1.2] capitalize font-extrabold text-primary_red">
             Understanding stem cell transplantation
-            <span className="text-[22px] font-extrabold ml-2 block">
+            <span className="text-[22px] font-bold ml-2 block">
               (Bone marrow transplantation)
             </span>
           </h2>
-          <p className="w-full text-[18px] md:text-[20px] text-center md:text-start leading-normal mt-8">
+          <p className="w-full text-[18px] md:text-[20px] text-start leading-normal mt-8">
             Access in-depth disease information on conditions like Sickle Cell
             Disease and Leukemia treated with BMT. Stay informed and engaged
             with upcoming webinars and workshops, fostering knowledge of BMT and
@@ -66,7 +66,7 @@ const Page = () => {
         <div
           data-aos="fade-left"
           data-aos-duration="600"
-          className="w-full lg:w-1/2 h-full p-0 lg:p-10 relative my-10 lg:my-0"
+          className="w-full lg:w-1/2 h-full p-0 lg:p-10 relative my-10 mt-24"
         >
           <img
             src="./assets/bmt/red_slash3.png"
@@ -86,11 +86,11 @@ const Page = () => {
           <img
             src="./assets/bmt/stc2.png"
             alt=""
-            className="h-full w-max object-cover"
+            className="h-full w-full object-cover"
           />
         </div>
         <div className="w-full lg:w-1/2 flex flex-col justify-center">
-          <h2 className="text-[34px] lg:text-[44px] w-full lg:w-[90%] text-center lg:text-start leading-[1.2] capitalize font-[600] text-primary_dark">
+          <h2 className="text-[30px] lg:text-[44px] w-full lg:w-[90%] text-start leading-[1.2] capitalize font-[600] text-primary_dark">
             What Is{" "}
             <span className="text-primary_red">
               Bone Marrow Transplantation
@@ -98,7 +98,7 @@ const Page = () => {
             (BMT)?
           </h2>
           <div className="w-full text-[18px] leading-normal mt-6">
-            <p className="mt-7 text-[18px] md:text-[20px] text-center md:text-start">
+            <p className="mt-7 text-[18px] md:text-[20px] text-start">
               Bone marrow transplantation (BMT) is a medical procedure that
               replaces damaged or diseased bone marrow with healthy bone marrow.
               Bone marrow is the spongy tissue inside bones that produces blood
@@ -116,7 +116,7 @@ const Page = () => {
 
             {showAll && (
               <div data-aos="fade-down">
-                <p className="mt-4 text-[18px] md:text-[20px] text-center md:text-start">
+                <p className="mt-4 text-[18px] md:text-[20px] text-start">
                   One of the most important advancements in BMT technology has
                   been the development of new conditioning regimens.
                   Conditioning regimens are the drugs or radiation therapy that
@@ -125,7 +125,7 @@ const Page = () => {
                   more effective at destroying diseased bone marrow while
                   causing fewer side effects.
                 </p>
-                <p className="mt-4 text-[18px] md:text-[20px] text-center md:text-start">
+                <p className="mt-4 text-[18px] md:text-[20px] text-start">
                   Another important advancement in BMT technology has been the
                   development of new graft-versus-host disease (GVHD)
                   prophylaxis regimens. GVHD is a serious complication of BMT
@@ -140,7 +140,7 @@ const Page = () => {
                   engraftment, and the use of robotics to perform BMT
                   procedures.
                 </p>
-                <p className="mt-4 text-[18px] md:text-[20px] text-center md:text-start">
+                <p className="mt-4 text-[18px] md:text-[20px] text-start">
                   As a result of these advancements, BMT is now a more effective
                   and safer treatment for many patients. However, it is
                   important to note that BMT is still a complex procedure with a
@@ -161,10 +161,10 @@ const Page = () => {
       </div>
       <div className="px-[25px] lg:px-0">
         <div>
-          <h2 className="text-[30px] lg:text-[40px] leading-[1.2] capitalize font-bold text-primary_red text-center">
+          <h2 className="text-[30px] lg:text-[40px] leading-[1.2] capitalize font-bold text-primary_red text-start lg:text-center">
             Diseases Treated with BMT
           </h2>
-          <p className="w-full lg:w-[60%] m-auto text-[18px] md:text-[20px] text-center md:text-start mt-3 leading-[1.3]">
+          <p className="w-full lg:w-[60%] m-auto text-[18px] md:text-[20px] text-start lg:text-center mt-3 leading-[1.3]">
             Bone marrow transplant (BMT) is a medical procedure that replaces
             damaged or diseased bone marrow with healthy bone marrow. Bone
             marrow is the spongy tissue inside bones that produces blood cells.
@@ -272,16 +272,17 @@ const Page = () => {
       </div>
       <div className="h-max flex flex-col-reverse lg:flex-row items-center justify-center px-[25px] lg:px-16 mt-28">
         <div className="w-full lg:w-1/2 flex flex-col justify-center">
-          <h2 className="w-full lg:w-[80%] text-[34px] lg:text-[44px] leading-[1.2] capitalize font-extrabold text-primary_dark text-center lg:text-start">
+          <h2 className="w-full lg:w-[90%] text-[34px] lg:text-[44px] leading-[1.2] capitalize font-extrabold text-primary_dark text-start">
             How is <span className="text-primary_red">Stem Cell </span>
-            Transplantation <span className="text-primary_red">(BMT) Used</span>
+            Transplantation{" "}
+            <span className="text-primary_red">(BMT) Used </span>
             to Treat <span className="text-primary_red">Disease</span>
           </h2>
-          <div className="leading-normal mt-3 text-[18px] md:text-[20px] text-center md:text-start ">
+          <div className="leading-normal mt-3 text-[18px] md:text-[20px] text-start ">
             BMT is used to replace diseased bone marrow with healthy bone
             marrow. The healthy bone marrow can then produce healthy blood
             cells. There are two main types of BMT:
-            <ul className="p-8 px-5 lg:px-10 text-[18px] md:text-[20px] text-center md:text-start">
+            <ul className="p-8 px-5 lg:px-10 text-[18px] md:text-[20px] text-start">
               <li className="list-disc">
                 <b>Autologous BMT</b> uses the patient&apos;s own bone marrow.
                 The bone marrow is collected from the patient and then stored.

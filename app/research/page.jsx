@@ -16,11 +16,11 @@ const Page = () => {
 
   return (
     <>
-      <section className="h-max flex flex-col lg:flex-row items-center justify-center px-[25px] lg:px-16 gap-10 md:gap-20 mt-10">
+      <section className="h-max flex flex-col lg:flex-row items-center justify-center px-[25px] lg:px-16 gap-10 md:gap-20 mt-10 ">
         <div
           data-aos="fade-right"
           data-aos-duration="500"
-          className="w-full lg:w-1/2 h-full p-5"
+          className="w-full lg:w-1/2 h-full p-5 mt-24"
         >
           <img src="./assets/bmt/female_doc.png" alt="" />
         </div>
@@ -29,10 +29,10 @@ const Page = () => {
           data-aos-duration="1000"
           className="w-full lg:w-1/2 flex flex-col justify-center"
         >
-          <h2 className="w-full text-[30px] text-center lg:text-start lg:text-[40px] leading-[1.2] capitalize font-[600] text-primary_red">
-            Research and Innovations
+          <h2 className="w-full text-[30px] text-start lg:text-[40px] leading-[1.2] capitalize font-[600] text-primary_red">
+            Research & Innovations
           </h2>
-          <p className="w-full text-[18px] md:text-[20px] text-center md:text-start leading-normal mt-8">
+          <p className="w-full text-[18px] md:text-[20px] text-start leading-normal mt-8">
             Embark on the frontier of healthcare with our Research and
             Innovations hub. Explore opportunities to participate in
             groundbreaking clinical trials; stay updated on the latest medical
@@ -56,7 +56,7 @@ const Page = () => {
           <h2 className="text-[30px] lg:text-[40px] leading-[1.2] capitalize font-bold text-primary_red text-center">
             Advancements & Technologies
           </h2>
-          <p className="w-full lg:w-[70%] text-[18px] md:text-[20px] text-center md:text-start m-auto mt-3 leading-[1.3]">
+          <p className="w-full lg:w-[70%] text-[18px] md:text-[20px] text-center md:text-start lg:text-center m-auto mt-3 leading-[1.3]">
             Here are some of the latest advancements and technologies used in
             BMT procedures
           </p>

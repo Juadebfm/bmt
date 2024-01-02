@@ -10,7 +10,7 @@ const Documentary = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-      className="mt-10 md:mt-5 lg:mt-28 w-[100%] sm:w-auto h-[60vh] md:h-[40vh] lg:h-[90vh] relative p-6 sm:p-14"
+      className="mt-10 md:mt-5 lg:mt-28 w-[100%] sm:w-auto h-[60vh] md:h-[40vh] lg:h-[90vh] relative p-6 sm:p-14 "
     >
       <Image
         src="/assets/bmt/playIcon.png"
