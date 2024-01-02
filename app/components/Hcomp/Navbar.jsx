@@ -12,9 +12,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Navbar = () => {
+
+  // Function for animation
   useEffect(() => {
     AOS.init({ once: true });
   }, []);
+
+  // Sstates
   const [showMoreDropdown, setShowMoreDropdown] = useState(false);
   const [showChevronUp, setShowChevronUp] = useState(false); // Added state for chevron direction
   const dropdownRef = useRef(null);
@@ -25,6 +29,8 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false); // State to manage menu visibility
 
   const menuRef = useRef(null); // Reference to the entire menu area
+
+  
 
   useEffect(() => {
     const handleClickOutside = (event) => {
