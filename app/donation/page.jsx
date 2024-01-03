@@ -226,16 +226,16 @@ const Page = () => {
             <br /> CONTRIBUTE TODAY!
           </h2>
           <p className="w-full text-[18px] md:text-[20px] text-start leading-normal mt-8">
-            Your contributions will help subsidise this life-saving procedure
-            for the vast majority of Nigerians living with sickle cell disorder,
-            giving them the opportunity for a cure.
+            Your contributions will help subsidise the cost of this life-saving
+            procedure for the vast majority of Nigerians living with sickle cell
+            disorder, giving them access to this cure.
             <br />
             <br /> Help make this cure a reality for many! 
             <br />
             <br /> THANK YOU!
           </p>
           <Link
-            href="/donation"
+            href="#donate"
             className="md:flex md:items-center md:justify-center lg:block"
           >
             <Button
@@ -246,6 +246,7 @@ const Page = () => {
         </div>
       </section>
       <Badge />
+      <div id="donate" className="my-8"></div>
       <div className="flex flex-col-reverse lg:flex-row items-center justify-center px-[25px] md:px-14 lg:px-16 gap-10 md:gap-20 mt-20">
         <div className="w-full lg:w-1/2 box_shadow p-[1.5rem] lg:p-[3rem] rounded-2xl">
           <div className="w-full m-auto flex items-center justify-center">
