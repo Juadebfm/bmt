@@ -13,7 +13,7 @@ import Button from "../Lcomp/Button";
 
 const Footer = () => {
   return (
-    <footer className="grid_col_footer_sm lg:grid_col_footer gap-8 px-[25px] sm:px-16 py-14 w-full">
+    <footer className="grid_col_footer_sm lg:grid_col_footer gap-12 px-[25px] sm:px-16 py-14 w-full">
       <div>
         <img src="/assets/bmt/logo_footer.png" alt="BMT Logo" className="" />
         <div className="flex items-center justify-start text-3xl mt-6 text-primary_red space-x-5">
@@ -38,15 +38,7 @@ const Footer = () => {
           <Link href="/whattoexpect">Patient Information</Link>
         </ul>
       </div>
-      <div className="space-y-3">
-        <span className="font-bold">Advancements</span>
-        <ul className="flex flex-col w-max space-y-5">
-          <Link href="/">Haploidentical BMT</Link>
-          <Link href="/">Cord blood transplantation</Link>
-          <Link href="/">CAR-T cell therapy</Link>
-          <Link href="/">Gene editing</Link>
-        </ul>
-      </div>
+
       <div className="space-y-3">
         <span className="font-bold">Contact Us</span>
         <ul className="flex flex-col w-max space-y-5">

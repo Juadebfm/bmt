@@ -100,7 +100,7 @@ body {
   .grid_col_footer {
     display: grid;
     grid-template-columns: repeat(
-      5,
+      4,
       1fr
     ); /* Adjust the column percentages as needed */
   }
