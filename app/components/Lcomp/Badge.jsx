@@ -25,7 +25,7 @@ const Badge = () => {
         </div>
       </div>
       <div className="flex items-center justify-start sm:justify-center gap-3 box_shadow rounded-[10px] px-[25px] sm:px-[16px] py-[25px] sm:py-[20px]">
-        <Image src="/assets/bmt/bv5.png" alt="quality" width={68} height={68} />
+        <Image src="/assets/bmt/bv2.png" alt="quality" width={48} height={48} />
         <div>
           <span className="text-primary_tomato_red font-[600]">
             Accessibility
@@ -36,7 +36,7 @@ const Badge = () => {
         </div>
       </div>
       <div className="flex items-center justify-start sm:justify-center gap-3 box_shadow rounded-[10px] px-[25px] sm:px-[16px] py-[25px] sm:py-[20px]">
-        <Image src="/assets/bmt/bv6.png" alt="quality" width={48} height={48} />
+        <Image src="/assets/bmt/bv5.png" alt="quality" width={48} height={48} />
         <div>
           <span className="text-primary_dark font-[600]">Quality</span>
           <p className="text-[13px] font-semibold leading-[1.4]">
@@ -45,7 +45,7 @@ const Badge = () => {
         </div>
       </div>
       <div className="flex items-center justify-start sm:justify-center gap-3 box_shadow rounded-[10px] px-[25px] sm:px-[16px] py-[25px] sm:py-[20px]">
-        <Image src="/assets/bmt/bv7.png" alt="quality" width={48} height={48} />
+        <Image src="/assets/bmt/bv3.png" alt="quality" width={48} height={48} />
         <div>
           <span className="text-primary_green font-[600]">Safe</span>
           <p className="text-[13px] font-semibold leading-[1.4]">
@@ -54,7 +54,7 @@ const Badge = () => {
         </div>
       </div>
       <div className="flex items-center justify-start sm:justify-center gap-3 box_shadow rounded-[10px] px-[25px] sm:px-[16px] py-[25px] sm:py-[20px] md:w-full md:ml-[55%] lg:ml-[0%]">
-        <Image src="/assets/bmt/bv9.png" alt="quality" width={68} height={68} />
+        <Image src="/assets/bmt/bv1.png" alt="quality" width={48} height={48} />
         <div>
           <span className="text-primary_blue font-[600]">Affordable</span>
           <p className="text-[13px] font-semibold leading-[1.4]">
