@@ -441,7 +441,7 @@ const Page = () => {
           </h2>
           <p className="w-full text-[18px] md:text-[20px] text-start leading-normal mt-3">
             Your donation help us subsidize the cost of transplant for persons
-            that are in need of quality safe and affordable stem cell
+            that are in need of quality, safe and affordable stem cell
             transplantation. <br /> You become an integral part of the life
             changing journey when you donate.
           </p>
