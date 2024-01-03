@@ -226,7 +226,7 @@ const Page = () => {
             <br /> CONTRIBUTE TODAY!
           </h2>
           <p className="w-full text-[18px] md:text-[20px] text-start leading-normal mt-8">
-            Your contributions will help subsidize this life-saving procedure
+            Your contributions will help subsidise this life-saving procedure
             for the vast majority of Nigerians living with sickle cell disorder,
             giving them the opportunity for a cure.
             <br />
