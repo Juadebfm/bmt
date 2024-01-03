@@ -112,6 +112,13 @@ body {
       1fr
     ); /* Adjust the column percentages as needed */
   }
+  .grid_col_footer_md {
+    display: grid;
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Adjust the column percentages as needed */
+  }
   .box_shadow {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Horizontal offset, Vertical offset, Blur radius, Color */
   }

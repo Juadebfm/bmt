@@ -13,7 +13,7 @@ import Button from "../Lcomp/Button";
 
 const Footer = () => {
   return (
-    <footer className="grid_col_footer_sm lg:grid_col_footer gap-12 px-[25px] sm:px-16 py-14 w-full">
+    <footer className="grid_col_footer_sm md:grid_col_footer_md lg:grid_col_footer gap-12 px-[25px] sm:px-16 py-14 w-full">
       <div>
         <img src="/assets/bmt/logo_footer.png" alt="BMT Logo" className="" />
         <div className="flex items-center justify-start text-3xl mt-6 text-primary_red space-x-5">
@@ -117,7 +117,7 @@ const Footer = () => {
 
         <Link href="https://zc.vg/MFcKl" target="_blank">
           <Button
-            classes="px-[68px] py-[10px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/80 trans_animate block text-white mt-5 text-[15px] w-full md:w-[70%] lg:w-full"
+            classes="px-[68px] py-[10px] bg-primary_red font-Lexend font-bold rounded-[4px] hover:bg-primary_red/80 trans_animate block text-white mt-5 text-[15px] w-full"
             text="Subscribe"
           />
         </Link>
