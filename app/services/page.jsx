@@ -44,7 +44,7 @@ const Page = () => {
             prioritizes your well-being.
           </p>
           <Link
-            href="/donation"
+            href="/contact"
             className="md:flex md:items-center md:justify-center lg:block"
           >
             <Button
