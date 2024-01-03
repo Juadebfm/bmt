@@ -68,7 +68,7 @@ const Mainbody = () => {
           </Link>
         </div>
 
-        <div className="w-full absolute bottom-36 z-50 flex items-center justify-center">
+        <div className="w-full absolute bottom-20 md:bottom-36 z-50 flex items-center justify-center">
           {showArrow && (
             <FaAnglesDown className="text-4xl text-white/80 shadow-md bounce-animation rounded-full font-extralight" />
           )}

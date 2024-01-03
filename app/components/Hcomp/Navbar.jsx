@@ -138,7 +138,7 @@ const Navbar = () => {
         <ul
           data-aos="fade-right"
           ref={menuRef} // Set the reference to the entire menu area
-          className="absolute left-0 top-[100%] bg-white text-[#232323] flex flex-col items-start justify-start gap-8 group:cursor-pointer font-Lexend w-[60%] md:w-[40%] h-max rounded-r-lg px-10 py-12 md:px-14 shadow-md border border-slate-100 text-base"
+          className="absolute left-0 top-[100%] bg-white text-[#232323] flex flex-col items-start justify-start gap-8 group:cursor-pointer font-Lexend w-max md:w-[40%] h-max rounded-r-lg px-10 py-12 md:px-14 shadow-md border border-slate-100 text-base"
         >
           <Link
             onClick={handleLinkClick}

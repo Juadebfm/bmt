@@ -129,14 +129,14 @@ const LatestNews = ({ title = "Latest News & Updates", className = "" }) => {
         {title}
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-20">
         {newsData.map((newsItem) => (
           <div
             key={newsItem.id}
             onClick={() => handleReadMoreClick(newsItem.id)}
             className="shadow-md rounded-md hover:shadow-xl transition-shadow cursor-pointer border border-slate-100"
           >
-            {newsItem.category_type === "news" ? (
+            {newsItem.day || newsItem.month || newsItem.year ? (
               <div
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = "scale(1.01)"; // Scale up on hover
@@ -145,7 +145,7 @@ const LatestNews = ({ title = "Latest News & Updates", className = "" }) => {
                   e.currentTarget.style.transform = "scale(1)"; // Reset on hover out
                 }}
                 style={{ transition: "transform 0.5s ease-in-out" }}
-                className="flex flex-col items-center justify-between min-h-[500px] md:min-h-[600px] p-5"
+                className="flex flex-col items-center justify-between min-h-[380px] md:min-h-[430px] p-5"
               >
                 <div className="mb-5 relative bg-white border border-white">
                   <img
@@ -219,7 +219,7 @@ const LatestNews = ({ title = "Latest News & Updates", className = "" }) => {
                   color: "#fff",
                   transition: "transform 0.3s ease-in-out",
                 }}
-                className="rounded-md overflow-hidden h-[500px] md:h-[580px]"
+                className="rounded-md overflow-hidden h-[450px] md:h-[500px] object-cover"
               >
                 <div className="py-8 px-4">
                   <span

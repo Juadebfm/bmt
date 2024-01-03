@@ -50,7 +50,7 @@ const NewsDetails = ({ params }) => {
 
   return (
     <>
-      <section className="px-[25px] md:px-16 py-[20px] md:py-10 ">
+      <section className="px-[25px] md:px-16 py-[20px] md:py-10 mt-24">
         <div className="flex items-center justify-between py-4">
           <button
             className={`flex items-center justify-center ${
