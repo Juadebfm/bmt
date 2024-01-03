@@ -38,12 +38,12 @@ const SuccessStory = () => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
-          className="mt-10 md:mt-5 lg:mt-28 w-[100%] sm:w-auto h-[60vh] md:h-[40vh] lg:h-[90vh] relative p-6 sm:p-14 "
+          className="mt-10 md:mt-5 lg:mt-28 w-[100%] sm:w-auto h-[60vh] md:h-[40vh] lg:h-[90vh] relative p-6 sm:p-14"
         >
           <img
             src="/assets/bmt/playIcon.png"
             alt=""
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:box_shadow_hover rounded-full trans_animate"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer hover:box_shadow_hover rounded-full trans_animate pulse-shadow"
             width={80}
             height={80}
           />
