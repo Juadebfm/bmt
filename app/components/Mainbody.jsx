@@ -51,7 +51,7 @@ const Mainbody = () => {
         <div className="absolute top-[25%] md:top-[18%] z-20 w-full lg:w-[55%] h-auto px-[1.5rem] sm:px-16 text-white">
           <h1 className="w-full lg:w-full text-[34px] md:text-[38px] lg:text-[48px] leading-[1.2] lg:leading-[3.4rem] tracking-wide capitalize text-center lg:text-start font-bold text_shadow_">
             Providing, safe, quality, affordable healthcare for persons living
-            with sickle cell
+            with sickle cell disorder
           </h1>
           <p className="text-[18px] lg:text-[20px] text-center sm:text-start  my-8 w-[90%] lg:w-full mx-auto lg:mx-0 text_shadow_ tracking-wide">
             Be part of a mission dedicated to making a lasting impact in
