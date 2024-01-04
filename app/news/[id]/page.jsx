@@ -112,7 +112,9 @@ const NewsDetails = ({ params }) => {
             </div>
           </div>
         ) : (
-          <p>Loading...</p>
+          <div className="w-full h-full text-xl italic text-primary_red text-center">
+            Loading...
+          </div>
         )}
       </section>
       <LatestNews title="Related News" />
