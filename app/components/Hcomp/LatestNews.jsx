@@ -129,113 +129,120 @@ const LatestNews = ({ title = "Latest News & Updates", className = "" }) => {
         {title}
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-20">
-        {newsData.map((newsItem) => (
-          <div
-            key={newsItem.id}
-            onClick={() => handleReadMoreClick(newsItem.id)}
-            className="shadow-md rounded-md hover:shadow-xl transition-shadow cursor-pointer border border-slate-100"
-          >
-            {newsItem.day || newsItem.month || newsItem.year ? (
-              <div
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "scale(1.01)"; // Scale up on hover
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "scale(1)"; // Reset on hover out
-                }}
-                style={{ transition: "transform 0.5s ease-in-out" }}
-                className="flex flex-col items-center justify-between min-h-[380px] md:min-h-[430px] p-5"
-              >
-                <div className="mb-5 relative bg-white border border-white">
-                  <img
-                    src={newsItem.events_news_front_image}
-                    alt=""
-                    className="w-full h-full rounded-lg"
-                  />
-                  <div className="custom_shape absolute -right-[1px] -bottom-[2px] bg-white border border-white"></div>
-                  {newsItem.day && newsItem.month ? (
-                    <div className="absolute right-8 top-[70%] text-white bg-red-500 p-3 rounded-b-lg">
-                      <div className="flex gap-1 items-center justify-center flex-col w-[45px] h-[60px] font-bold text-sm">
-                        <span>{newsItem.day}</span>
-                        <span>{newsItem.month}</span>
+      {newsData.length === 0 ? (
+        <div className="w-full h-full text-xl italic text-primary_red text-center">
+          Loading...
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-20">
+          {newsData.map((newsItem) => (
+            <div
+              key={newsItem.id}
+              onClick={() => handleReadMoreClick(newsItem.id)}
+              className="shadow-md rounded-md hover:shadow-xl transition-shadow cursor-pointer border border-slate-100"
+            >
+              {newsItem.day || newsItem.month || newsItem.year ? (
+                <div
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = "scale(1.01)"; // Scale up on hover
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = "scale(1)"; // Reset on hover out
+                  }}
+                  style={{ transition: "transform 0.5s ease-in-out" }}
+                  className="flex flex-col items-center justify-between min-h-[380px] md:min-h-[430px] p-5"
+                >
+                  <div className="mb-5 relative bg-white border border-white">
+                    <img
+                      src={newsItem.events_news_front_image}
+                      alt=""
+                      className="w-full h-full rounded-lg"
+                    />
+                    <div className="custom_shape absolute -right-[1px] -bottom-[2px] bg-white border border-white"></div>
+                    {newsItem.day && newsItem.month ? (
+                      <div className="absolute right-8 top-[70%] text-white bg-red-500 p-3 rounded-b-lg">
+                        <div className="flex gap-1 items-center justify-center flex-col w-[45px] h-[60px] font-bold text-sm">
+                          <span>{newsItem.day}</span>
+                          <span>{newsItem.month}</span>
+                        </div>
                       </div>
-                    </div>
-                  ) : (
-                    <div className="absolute right-8 top-[70%] text-white bg-red-500 p-3 rounded-b-lg">
-                      <div className="flex gap-1 items-center justify-center flex-col w-[45px] h-[60px] font-bold text-sm">
-                        <span>{new Date().getDate()}</span>
-                        <span>
-                          {new Date().toLocaleString("default", {
-                            month: "short",
-                          })}
-                        </span>
+                    ) : (
+                      <div className="absolute right-8 top-[70%] text-white bg-red-500 p-3 rounded-b-lg">
+                        <div className="flex gap-1 items-center justify-center flex-col w-[45px] h-[60px] font-bold text-sm">
+                          <span>{new Date().getDate()}</span>
+                          <span>
+                            {new Date().toLocaleString("default", {
+                              month: "short",
+                            })}
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  )}
-                </div>
+                    )}
+                  </div>
 
-                <div className="space-y-3">
-                  <span
-                    className={`inline-block px-2 py-0 text-[#232323]/50 font-bold tracking-wider uppercase text-[15px] border-s-2 ${getRandomColorClass()}`}
-                  >
-                    {newsItem.category_type}
-                  </span>
-                  <h2 className="font-bold mb-3 leading-5 line-clamp-4">
-                    {newsItem.events_news_name}
-                  </h2>
-                  <p className="text-[#777777] text-sm pb-8">
-                    <span className="line-clamp-5">
-                      {newsItem.events_news_content}
-                    </span>{" "}
+                  <div className="space-y-3">
                     <span
-                      onClick={() => handleReadMoreClick(newsItem.id)}
-                      className="text-primary_red cursor-pointer hover:underline transition pt-3"
+                      className={`inline-block px-2 py-0 text-[#232323]/50 font-bold tracking-wider uppercase text-[15px] border-s-2 ${getRandomColorClass()}`}
                     >
-                      Read More
+                      {newsItem.category_type}
                     </span>
-                  </p>
+                    <h2 className="font-bold mb-3 leading-5 line-clamp-4">
+                      {newsItem.events_news_name}
+                    </h2>
+                    <p className="text-[#777777] text-sm pb-8">
+                      <span className="line-clamp-5">
+                        {newsItem.events_news_content}
+                      </span>{" "}
+                      <span
+                        onClick={() => handleReadMoreClick(newsItem.id)}
+                        className="text-primary_red cursor-pointer hover:underline transition pt-3"
+                      >
+                        Read More
+                      </span>
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ) : (
-              <div
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "scale(1.01)"; // Scale up on hover
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "scale(1)"; // Reset on hover out
-                }}
-                style={{
-                  backgroundImage: `linear-gradient(to top, ${getRandomBgColor()} 50%, transparent 100%), url(${
-                    newsItem.events_news_front_image
-                  })`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  minHeight: "100%",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "flex-end",
-                  position: "relative",
-                  color: "#fff",
-                  transition: "transform 0.3s ease-in-out",
-                }}
-                className="rounded-md overflow-hidden h-[450px] md:h-[500px] object-cover"
-              >
-                <div className="py-8 px-4">
-                  <span
-                    className={`inline-block px-2 py-0 text-white font-bold tracking-wider uppercase text-[15px] border-s-2 mb-5 ${getRandomColorClass()}`}
-                  >
-                    {newsItem.category_type}
-                  </span>
-                  <h2 className="text_shadow_ text-">
-                    {newsItem.events_news_name}
-                  </h2>
+              ) : (
+                <div
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = "scale(1.01)"; // Scale up on hover
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = "scale(1)"; // Reset on hover out
+                  }}
+                  style={{
+                    backgroundImage: `linear-gradient(to top, ${getRandomBgColor()} 50%, transparent 100%), url(${
+                      newsItem.events_news_front_image
+                    })`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    minHeight: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "flex-end",
+                    position: "relative",
+                    color: "#fff",
+                    transition: "transform 0.3s ease-in-out",
+                  }}
+                  className="rounded-md overflow-hidden h-[450px] md:h-[500px] object-cover"
+                >
+                  <div className="py-8 px-4">
+                    <span
+                      className={`inline-block px-2 py-0 text-white font-bold tracking-wider uppercase text-[15px] border-s-2 mb-5 ${getRandomColorClass()}`}
+                    >
+                      {newsItem.category_type}
+                    </span>
+                    <h2 className="text_shadow_ text-">
+                      {newsItem.events_news_name}
+                    </h2>
+                  </div>
                 </div>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+
       <div className="self-end flex items-center justify-center space-x-3">
         <button
           className={
