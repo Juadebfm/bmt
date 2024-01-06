@@ -48,12 +48,12 @@ const Mainbody = () => {
       <div className="relative">
         <Slider slides={slides} />
         <SmallScreenSlider slidesSm={slidesSm} />
-        <div className="absolute top-[25%] md:top-[18%] z-20 w-full lg:w-[55%] h-auto px-[1.5rem] sm:px-16 text-white">
-          <h1 className="w-full lg:w-full text-[34px] md:text-[38px] lg:text-[48px] leading-[1.2] lg:leading-[3.4rem] tracking-wide capitalize text-center lg:text-start font-bold text_shadow_">
+        <div className="absolute top-[25%] md:top-[25%] z-20 w-full lg:w-[55%] h-auto px-[1.5rem] sm:px-16 text-white">
+          <h1 className="w-full lg:w-full text-[34px] md:text-[38px] lg:text-[48px] leading-[1.2] md:leading-[1] lg:leading-[3.4rem] tracking-wide capitalize text-center lg:text-start font-bold text_shadow_">
             Providing, safe, quality, affordable healthcare for persons living
             with sickle cell disorder
           </h1>
-          <p className="text-[18px] lg:text-[20px] text-center sm:text-start  my-8 w-[90%] lg:w-full mx-auto lg:mx-0 text_shadow_ tracking-wide leading-normal">
+          <p className="text-[18px] lg:text-[20px] text-center sm:text-start md:text-center lg:text-start 3xl:text-center  my-8 md:my-4 lg:my-8 w-[90%] lg:w-full mx-auto lg:mx-0 text_shadow_ tracking-wide leading-normal md:leading-[1] lg:leading-normal">
             Be part of a mission dedicated to making a lasting impact in
             healthcare delivery.
           </p>
@@ -62,13 +62,13 @@ const Mainbody = () => {
             className="md:flex md:items-center md:justify-center lg:block"
           >
             <Button
-              classes="px-[48px] py-[12px] bg-primary_red font-Lexend font-bold rounded-[4px] text-[15px] hover:bg-primary_red/80 trans_animate tracking-wider w-full md:w-[60%] lg:w-auto"
+              classes="px-[48px] py-[12px] bg-primary_red font-Lexend font-bold rounded-[4px] text-[15px] hover:bg-primary_red/80 md:hover:bg-primary_red trans_animate tracking-wider w-full md:w-[60%] lg:w-auto"
               text="Donate Now"
             />
           </Link>
         </div>
 
-        <div className="w-full absolute bottom-20 md:bottom-36 z-50 flex items-center justify-center">
+        <div className="w-full absolute bottom-20 md:bottom-36 z-50 flex items-center justify-center md:hidden lg:flex">
           {showArrow && (
             <FaAnglesDown className="text-4xl text-white/80 shadow-md bounce-animation rounded-full font-extralight" />
           )}

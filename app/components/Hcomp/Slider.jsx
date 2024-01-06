@@ -26,7 +26,7 @@ export default function App() {
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper h-full"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
