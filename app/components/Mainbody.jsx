@@ -53,9 +53,9 @@ const Mainbody = () => {
             Providing, safe, quality, affordable healthcare for persons living
             with sickle cell disorder
           </h1>
-          <p className="text-[18px] lg:text-[20px] text-center sm:text-start  my-8 w-[90%] lg:w-full mx-auto lg:mx-0 text_shadow_ tracking-wide">
+          <p className="text-[18px] lg:text-[20px] text-center sm:text-start  my-8 w-[90%] lg:w-full mx-auto lg:mx-0 text_shadow_ tracking-wide leading-normal">
             Be part of a mission dedicated to making a lasting impact in
-            healthcare.
+            healthcare delivery.
           </p>
           <Link
             href="/donation"
