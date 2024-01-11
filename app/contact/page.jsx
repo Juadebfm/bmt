@@ -23,14 +23,14 @@ const page = () => {
         <div className="w-full lg:w-[90%] text-[18px] leading-normal mt-4">
           <ul className="flex flex-col w-full space-y-7">
             <Link
-              href="tel:+2347086622570"
+              href="tel:+2348100002001"
               className="flex flex-row items-center justify-start w-full h-max gap-2"
             >
               <MdOutlinePhoneInTalk className="text-2xl" />
 
               <div>
                 <span className="flex items-center justify-center">
-                  <span>+234 708 662 2570</span>
+                  <span>+2348100002001</span>
                 </span>
               </div>
             </Link>

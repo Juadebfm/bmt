@@ -21,7 +21,7 @@ const MultiServices = () => {
         <p className="text-[18px] md:text-[20px] text-start leading-normal mt-6">
           Our transplant team which includes Paediatricians, haematologists,
           internists and various specialists, ensures quality comprehensive
-          care. From social workers to Anaesthetics, we are here for our
+          care. From Psychosocial Team to Anaesthetics, we are here for our
           patients well-being, providing support before and after
           transplantation.
           <Link href="/services" className="pl-2">
