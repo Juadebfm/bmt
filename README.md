@@ -19,7 +19,7 @@
 
 ## 🚨 Info
 
-This project was built as a collaborative effort with the Trestlestack Team including myself(Frontend), <a href="https://www.linkedin.com/in/adebayoui/" target="_blank"><b>Yusuf Adebayo(Product Designer)</b></a>, <a href="https://www.linkedin.com/in/martins-okwesi-3578091bb/" target="_blank"><b>Martins(Project Manager & Backend)</b></a>,<a href="https://www.linkedin.com/in/cyril-okeleke-38b6511b1/" target="_blank"><b>and Mr Cyril Okeleke(Admin Dashboard)</b></a>.
+This project was built as a collaborative effort with the Trestlestack Team including myself(Frontend), <a href="https://www.linkedin.com/in/adebayoui/" target="_blank"><b>Yusuf Adebayo(Product Designer)</b></a>, <a href="https://www.linkedin.com/in/martins-okwesi-3578091bb/" target="_blank"><b>Martins</b></a>(Project Manager & Backend), and <a href="https://www.linkedin.com/in/cyril-okeleke-38b6511b1/" target="_blank"><b>Mr Cyril Okeleke</b></a>(Admin Dashboard).
 
 ## <a name="introduction">🤖 Introduction</a>
 
