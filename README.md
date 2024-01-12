@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
 
-## Getting Started
+  <div>
+    <img src="https://img.shields.io/badge/-Next_JS_14-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="Next.js" />
+  </div>
 
-First, run the development server:
+  <h3 align="center">BMT/SCFN WEBSITE</h3>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   <div align="center">
+     Project was designed by <a href="https://www.linkedin.com/in/adebayoui/" target="_blank"><b>Yusuf Adebayo</b></a>
+    </div>
+</div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📋 <a name="table">Table of Contents</a>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. 🤖 [Introduction](#introduction)
+2. ⚙️ [Tech Stack](#tech-stack)
+3. 🔋 [Features](#features)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🚨 Info
 
-## Learn More
+This project was built as a collaborative effort with the Trestlestack Team including myself(Frontend), <a href="https://www.linkedin.com/in/adebayoui/" target="_blank"><b>Yusuf Adebayo(Product Designer)</b></a>, <a href="https://www.linkedin.com/in/martins-okwesi-3578091bb/" target="_blank"><b>Martins(Project Manager & Backend)</b></a>,<a href="https://www.linkedin.com/in/cyril-okeleke-38b6511b1/" target="_blank"><b>and Mr Cyril Okeleke(Admin Dashboard)</b></a>.
 
-To learn more about Next.js, take a look at the following resources:
+## <a name="introduction">🤖 Introduction</a>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Built on Next.js 14, styled with TailwindCSS, animations and user engagement strategies done with framer motion and aos animation library, carousel with swiper Js.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
-## Deploy on Vercel
+- Next.js
+- TailwindCSS
+- Framer-Motion
+- AOS Animation
+- Sweet Alert 2
+- Swiper JS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## <a name="features">🔋 Features</a>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+👉 **Landing Page** Landing page with google analytics engaged to track user interactions and hits.
+
+👉 **Payment Gateway** Integrated flutterwave payment API, to allow for donations.
+
+👉 **Newsletter** Integrated basic email forwarding functionlity. This allows users join the project's newletter
+
+👉 **Fetch API** Used fetch api to consume, manipulate and render data.
