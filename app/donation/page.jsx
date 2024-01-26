@@ -300,6 +300,8 @@ const Page = () => {
                 >
                   <option value="NGN">NGN</option>
                   <option value="USD">USD</option>
+                  {/* <option value="USD">EUR</option>
+                  <option value="USD">GBP</option> */}
                 </select>
                 <div className="absolute inset-y-0 right-[20px] top-[40%] flex items-center pl-3 pointer-events-none">
                   {/* Adjust positioning using pl-3 for additional space */}

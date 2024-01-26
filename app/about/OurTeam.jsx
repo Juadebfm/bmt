@@ -30,113 +30,58 @@ const OurTeam = () => {
             <TeamMember
               name="Chief Tunde Afolabi, MFR"
               designation="Chairman, "
-              company="Sickle Cell Foundation Nigeria"
             />
           </div>
           <div>
             <TeamMember
               name="Prof Olu Akinyanju, OFR"
               designation="Founder, "
-              company="Sickle Cell Foundation Nigeria"
             />
           </div>
           <div>
             <TeamMember
               name="Dr Annette Akinsete"
               designation="National Director/CEO, "
-              company="Sickle Cell Foundation Nigeria"
             />
           </div>
           <div>
-            <TeamMember
-              name="Mr. John Momoh"
-              designation="Member, "
-              company="Sickle Cell Foundation Nigeria"
-            />
+            <TeamMember name="Mr. John Momoh" designation="Member" />
           </div>
           <div>
-            <TeamMember
-              name="Mr. Chidi Ofong"
-              designation="Member, "
-              company="Sickle Cell Foundation Nigeria"
-            />
+            <TeamMember name="Mr. Chidi Ofong" designation="Member" />
           </div>
           <div>
-            <TeamMember
-              name="Mrs. Abiola Ogunbiyi"
-              designation="Member, "
-              company="Sickle Cell Foundation Nigeria"
-            />
+            <TeamMember name="Mrs. Abiola Ogunbiyi" designation="Member" />
           </div>
           <div>
-            <TeamMember
-              name="Mrs. Toki Mabogunje"
-              designation="Member, "
-              company="Sickle Cell Foundation Nigeria"
-            />
+            <TeamMember name="Mrs. Toki Mabogunje" designation="Member" />
           </div>
           <div>
-            <TeamMember
-              name="Mr. Tony Epelle"
-              designation="Member, "
-              company="Sickle Cell Foundation Nigeria"
-            />
+            <TeamMember name="Mr. Tony Epelle" designation="Member" />
           </div>
           <div>
-            <TeamMember
-              name="Mrs. Ayo Otaigbe"
-              designation="Member, "
-              company="Sickle Cell Foundation Nigeria"
-            />
+            <TeamMember name="Mrs. Ayo Otaigbe" designation="Member" />
           </div>
           <div>
-            <TeamMember
-              name="Mr. Bode Emmanuel"
-              designation="Member, "
-              company="Sickle Cell Foundation Nigeria"
-            />
+            <TeamMember name="Mr. Bode Emmanuel" designation="Member" />
           </div>
           <div>
-            <TeamMember
-              name="Prof. Muuta Ibrahim"
-              designation="Member, "
-              company="Sickle Cell Foundation Nigeria"
-            />
+            <TeamMember name="Prof. Muuta Ibrahim" designation="Member" />
           </div>
           <div>
-            <TeamMember
-              name="Mr. Funso Sobande"
-              designation="Member, "
-              company="Sickle Cell Foundation Nigeria"
-            />
+            <TeamMember name="Mr. Funso Sobande" designation="Member" />
           </div>
           <div>
-            <TeamMember
-              name="Otunba Niyi Adebayo"
-              designation="Member, "
-              company="Sickle Cell Foundation Nigeria"
-            />
+            <TeamMember name="Otunba Niyi Adebayo" designation="Member" />
           </div>
           <div>
-            <TeamMember
-              name="Chief Dele Fajemirokun"
-              designation="Member, "
-              company="Sickle Cell Foundation Nigeria"
-            />
+            <TeamMember name="Chief Dele Fajemirokun" designation="Member" />
           </div>
           <div>
-            <TeamMember
-              name="Mr. Fola Adeola"
-              designation="Member, "
-              company="Sickle Cell Foundation Nigeria"
-            />
+            <TeamMember name="Mr. Fola Adeola" designation="Member" />
           </div>
           <div>
-            <TeamMember
-              name="Mr. Olabode Makanjuola"
-              designation="Member, "
-              company="Sickle Cell Foundation Nigeria"
-            />
+            <TeamMember name="Mr. Olabode Makanjuola" designation="Member" />
           </div>
         </div>
 
@@ -154,26 +99,16 @@ const OurTeam = () => {
           <div>
             <TeamMember
               name="Prof. Wasiu Adeyemo"
-              designation="Chief Medical Director, LUTH"
             />
           </div>
           <div>
-            <TeamMember
-              name="Dr. Oluwole Ayodeji"
-              designation="Chairman Medical Advisory Committee, LUTH "
-            />
+            <TeamMember name="Dr. Oluwole Ayodeji" />
           </div>
           <div>
-            <TeamMember
-              name="Dr. Babawale Taslim Bello"
-              designation="Deputy Chairman Medical Advisory Committee  Clinical Services, LUTH"
-            />
+            <TeamMember name="Dr. Babawale Taslim Bello" />
           </div>
           <div>
-            <TeamMember
-              name="Dr. Rufus Wale Ojewola"
-              designation="Deputy Chairman Medical Advisory Committee Research & Training, LUTH "
-            />
+            <TeamMember name="Dr. Rufus Wale Ojewola" />
           </div>
         </div>
 
@@ -189,28 +124,13 @@ const OurTeam = () => {
           className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 mt-8"
         >
           <div>
-            <TeamMember
-              name="Prof. Wasiu Adeyemo"
-              designation="Co-Chair, Top Management Committee"
-            />
+            <TeamMember name="Prof. Wasiu Adeyemo" />
           </div>
           <div>
-            <TeamMember
-              name="Dr. Annette Akinsete"
-              designation="Co-Chair Top Management Committee"
-            />
+            <TeamMember name="Dr. Annette Akinsete" />
           </div>
           <div>
-            <TeamMember
-              name="Prof. Edamisan Temiye"
-              designation="Chair, Bone Marrow Transplant Treatment Group"
-            />
-          </div>
-          <div>
-            <TeamMember name="Representative" designation="LUTH " />
-          </div>
-          <div>
-            <TeamMember name="Representative" designation="SCFN " />
+            <TeamMember name="Prof. Edamisan Temiye" />
           </div>
         </div>
 
@@ -273,6 +193,18 @@ const OurTeam = () => {
               designation="Nursing Officer / Transplant Nurse, LUTH "
             />
           </div>
+          <div>
+            <TeamMember
+              name="Mrs. Edna Ngozi Maduemezia"
+              designation="Nursing Officer / Transplant Nurse, LUTH "
+            />
+          </div>
+          <div>
+            <TeamMember
+              name="Olayiwola Zainab"
+              designation="Nursing Officer / Transplant Nurse, LUTH "
+            />
+          </div>
         </div>
 
         <div className="ml-0 lg:ml-40">
@@ -281,8 +213,11 @@ const OurTeam = () => {
           </h3>
         </div>
 
-        <div data-aos="fade-right"
-          data-aos-duration="2000" className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 my-8">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 my-8"
+        >
           <div>
             <TeamMember
               name="Prof. Adetola Kassim"

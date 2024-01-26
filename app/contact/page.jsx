@@ -101,9 +101,8 @@ const page = () => {
           <div className="flex items-start justify-start gap-3 w-full lg:w-[80%] mt-10">
             <CiLocationOn className="text-[10rem] lg:text-[5rem] font-bold" />
             <p className="text-[18px] md:text-[20px]">
-              National Sickle Cell Centre,Opp Lagos University Teaching
-              Hospital(LUTH),Ishaga Road, Idi-Araba,Surulere, Lagos. Nigeria.
-              P.O Box 3463, Surulere, Lagos
+              3rd Floor,<br /> SCFN/LUTH Bone Marrow Transplant Centre, Olikoye
+              Ransome Kuti Children Emergency Centre, LUTH, Idi-Araba, Lagos.
             </p>
           </div>
         </div>

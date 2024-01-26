@@ -48,10 +48,10 @@ const Page = () => {
             </span>
           </h2>
           <p className="w-full text-[18px] md:text-[20px] text-start leading-normal mt-8">
-            Access in-depth disease information on conditions like Sickle Cell
-            Disease and Leukemia treated with BMT. Stay informed and engaged
-            with upcoming webinars and workshops, fostering knowledge of BMT and
-            related health topics.
+            Access in-depth information on haematological conditions like sickle
+            cell disorder and Leukaemias treated with BMT. Stay informed and
+            engaged with upcoming webinars and workshops, fostering knowledge of
+            BMT and related health topics.
           </p>
           <Link
             href="/donation"
@@ -103,7 +103,7 @@ const Page = () => {
               replaces damaged or diseased bone marrow with healthy bone marrow.
               Bone marrow is the spongy tissue inside bones that produces blood
               cells. BMT can be used to treat a variety of diseases, including
-              leukemia, lymphoma, and sickle cell disease.
+              sickle cell disorder, leukaemias and lymphomas.
               {!showAll && (
                 <button
                   onClick={handleShowMore}
@@ -130,11 +130,11 @@ const Page = () => {
                   development of new graft-versus-host disease (GVHD)
                   prophylaxis regimens. GVHD is a serious complication of BMT
                   that can occur when the donor&apos;s bone marrow attacks the
-                  recipient&apos;s body. New GVHD prophylaxis regimens have been
-                  shown to be more effective at preventing GVHD without
-                  increasing the risk of other complications. In addition to
-                  these advancements in drug therapy, there have also been a
-                  number of technological advancements in BMT. These
+                  recipient&apos;s body. New medications to prevent and manage
+                  GVHD have been shown to be more effective at preventing GVHD
+                  without increasing the risk of other complications. In
+                  addition to these advancements in drug therapy, there have
+                  also been a number of technological advancements in BMT. These
                   advancements include the development of new stem cell
                   collection methods, the use of gene therapy to improve
                   engraftment, and the use of robotics to perform BMT
@@ -146,7 +146,7 @@ const Page = () => {
                   important to note that BMT is still a complex procedure with a
                   number of risks and side effects. Patients should carefully
                   consider the risks and benefits of BMT before making a
-                  decision about treatment.{" "}
+                  decision about treatment.
                   <button
                     onClick={handleShowLess}
                     className="ml-2 text-primary_red underline inline"
@@ -201,14 +201,14 @@ const Page = () => {
               <img src="./assets/bmt/bmt2.png" alt="" />
               <div className="flex flex-col p-5">
                 <span className="text-[18px] capitalize font-bold mb-5">
-                  Leukemia disease{" "}
+                  Leukaemia
                 </span>
                 <p>
-                  Leukemia is a cancer of the blood cells. There are many
-                  different types of leukemia, but they all start in the bone
-                  marrow. Leukemias are caused by changes in the DNA of blood
+                  Leukaemia is a cancer of the blood cells. There are many
+                  different types of leukaemia, but they all start in the bone
+                  marrow. Leukaemias are caused by changes in the DNA of blood
                   cells that cause them to grow and divide uncontrollably. BMT
-                  is a common treatment for leukemia.
+                  is a common treatment for leukaemia.
                 </p>
               </div>
             </div>
@@ -220,14 +220,14 @@ const Page = () => {
               <img src="./assets/bmt/bmt3.png" alt="" />
               <div className="flex flex-col p-5">
                 <span className="text-[18px] capitalize font-bold mb-5">
-                  Lymphomas disease{" "}
+                  Lymphomas
                 </span>
                 <p>
                   Lymphomas are cancers of the lymphatic system, which is a
-                  network of vessels and nodes that helps fight infection. There
-                  are two main types of lymphoma: Hodgkin lymphoma and
-                  non-Hodgkin lymphoma. BMT is sometimes used to treat lymphoma
-                  that has not responded to other treatments.
+                  network of vessels and nodes that help fight infection. There
+                  are two main types of lymphoma: Hodgkin’s lymphoma and
+                  non-Hodgkin’s lymphoma. BMT is sometimes used to treat
+                  lymphoma that has not responded to other treatments.
                 </p>
               </div>
             </div>
@@ -239,13 +239,13 @@ const Page = () => {
               <img src="./assets/bmt/bmt4.png" alt="" className="w-full" />
               <div className="flex flex-col p-5">
                 <span className="text-[18px] capitalize font-bold mb-5">
-                  Aplastic anemia disease{" "}
+                  Aplastic anaemia
                 </span>
                 <p>
-                  Aplastic anemia is a condition in which the body does not
+                  Aplastic anaemia is a condition in which the body does not
                   produce enough blood cells. This can cause fatigue, pale skin,
                   shortness of breath, and an increased risk of infection. BMT
-                  is a potentially curative treatment for aplastic anemia.
+                  is a potentially curative treatment for aplastic anaemia.
                 </p>
               </div>
             </div>
@@ -286,18 +286,17 @@ const Page = () => {
               <li className="list-disc">
                 <b>Autologous BMT</b> uses the patient&apos;s own bone marrow.
                 The bone marrow is collected from the patient and then stored.
-                The patient then receives high-dose chemotherapy or radiation
-                therapy to destroy the diseased bone marrow. The stored bone
+                The patient then receives high-dose chemotherapy with or without
+                radiation to destroy the diseased bone marrow. The stored bone
                 marrow is then infused back into the patient.
               </li>
 
               <li className="list-disc mt-8">
                 <b>Allogeneic BMT</b> uses bone marrow from a donor. The donor
                 must have a tissue type that is compatible with the
-                patient&apos;s tissue type. The patient then receives high-dose
-                chemotherapy or radiation therapy to destroy the diseased bone
-                marrow. The donor&apos;s bone marrow is then infused into the
-                patient.
+                patient&aposs tissue type. The patient then receives high-dose
+                chemotherapy or radiation to destroy the diseased bone marrow.
+                The donor&apos;s bone marrow is then infused into the patient.
               </li>
             </ul>
             BMT is a complex procedure with a number of risks and side effects.

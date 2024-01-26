@@ -37,11 +37,16 @@ const Page = () => {
             Our Multi-Disciplinary Services
           </h2>
           <p className="w-full lg:w-[90%] text-[18px] md:text-[20px] text-start leading-normal mt-8">
-            Explore our diverse support services designed to accompany you
-            through every phase. From counseling to post-transplant care,
-            we&apos;re dedicated to ensuring you feel supported, empowered, and
-            guided on your path to recovery. Discover our holistic network that
-            prioritizes your well-being.
+            Explore our services designed to accompany you through the
+            transplant processes. These comprises of: <br />
+            <ul className="list-decimal pl-14 py-5">
+              <li>HLA typing </li>
+              <li>Counselling and other psychosocial services</li>
+              <li>Pre- transplant evaluation </li>
+              <li>Stem Cell Processing</li>
+              <li>Post-transplant clinic.</li>
+              <li>Chimerism</li>
+            </ul>
           </p>
           <Link
             href="/contact"

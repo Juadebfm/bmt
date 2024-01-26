@@ -43,23 +43,31 @@ const page = () => {
           Stem Cell Transplantation Stages
         </h2>
         <div className="my-14 flex flex-col lg:flex-row items-center justify-center gap-12">
-          <div className="box_shadow px-16 py-16 flex items-center justify-center flex-col gap-4 rounded-xl">
-            <img src="./assets/bmt/bullet_point.png" alt="" />
-            <span className="text-[22px] text-primary_red">Stage 1</span>
+          <div className="box_shadow flex items-center justify-center flex-col rounded-xl">
+            <img src="./assets/bmt/stage1.png" alt="" />
+            <div className="py-12 px-8 flex items-center justify-center flex-col gap-6">
+              <span className="text-[18px] text-primary_red">Stage 1</span>
 
-            <h3 className="text-[32px]">Pre-Transplant</h3>
+              <h3 className="text-[24px]">Pre-Transplant</h3>
+            </div>
           </div>
-          <div className="box_shadow px-16 py-16 flex items-center justify-center flex-col gap-4 rounded-xl">
-            <img src="./assets/bmt/bullet_point.png" alt="" />
-            <span className="text-[22px] text-primary_red">Stage 2</span>
+          <div className="box_shadow flex items-center justify-center flex-col rounded-xl">
+            <img src="./assets/bmt/stage2.png" alt="" />
+            <div className="py-12 px-8 flex items-center justify-center flex-col gap-6">
+              <span className="text-[18px] text-primary_red">Stage 2</span>
 
-            <h3 className="text-[32px]">Pre-Transplant</h3>
+              <h3 className="text-[24px]">Intra-Transplant</h3>
+            </div>
           </div>
-          <div className="box_shadow px-16 py-16 flex items-center justify-center flex-col gap-4 rounded-xl">
-            <img src="./assets/bmt/bullet_point.png" alt="" />
-            <span className="text-[22px] text-primary_red">Stage 3</span>
+          <div className="box_shadow flex items-center justify-center flex-col rounded-xl">
+            <img src="./assets/bmt/stage3.png" alt="" />
+            <div className="py-12 px-8 flex items-center justify-center flex-col gap-6">
+              <span className="text-[18px] text-center text-primary_red">
+                Stage 3
+              </span>
 
-            <h3 className="text-[32px]">Pre-Transplant</h3>
+              <h3 className="text-[24px]">Post-Transplant</h3>
+            </div>
           </div>
         </div>
       </div>

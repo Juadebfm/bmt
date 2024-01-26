@@ -33,11 +33,13 @@ const Page = () => {
             Research & Innovations
           </h2>
           <p className="w-full text-[18px] md:text-[20px] text-start leading-normal mt-8">
-            Embark on the frontier of healthcare with our Research and
+            Embark on the frontiers of healthcare with our Research and
             Innovations hub. Explore opportunities to participate in
-            groundbreaking clinical trials; stay updated on the latest medical
-            innovations enhancing our BMT procedures. Join us in shaping the
-            future of healthcare through knowledge and progress.
+            ground-breaking clinical trials. Stay updated on the latest medical
+            innovations enhancing our BMT procedures.
+            <br />
+            <br />
+            Join us in shaping the future of healthcare.
           </p>
           <Link
             href="/donation"

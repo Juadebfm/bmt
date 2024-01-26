@@ -28,7 +28,7 @@ const Transplant = () => {
             className="w-[25px] h-[25px]"
           />
           <span className="text-center mt-2 text-[18px] font-bold">
-            Social workers/Counsellors{" "}
+            Social Workers, Psychologists and Counsellors
           </span>
         </div>
         <div className="flex flex-col w-[250px] h-[180px] place-content-center items-center p-8">
@@ -48,8 +48,6 @@ const Transplant = () => {
             className="w-[25px] h-[25px]"
           />
           <span className="text-center mt-2 text-[18px] font-bold w-full">
-            Physical therapist/
-            <br />
             Physiotherapist
           </span>
         </div>
@@ -60,7 +58,17 @@ const Transplant = () => {
             className="w-[25px] h-[25px]"
           />
           <span className="text-center mt-2 text-[18px] font-bold">
-            Pharmacist
+            Multispecialty Physicians
+          </span>
+        </div>
+        <div className="flex flex-col w-[250px] h-[180px] place-content-center items-center p-8">
+          <img
+            src="./assets/bmt/bullet_point.png"
+            alt=""
+            className="w-[25px] h-[25px]"
+          />
+          <span className="text-center mt-2 text-[18px] font-bold">
+            Pharmacists
           </span>
         </div>
         <div className="flex flex-col w-[250px] h-[180px] place-content-center items-center p-8">
