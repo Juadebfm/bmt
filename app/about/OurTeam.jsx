@@ -97,9 +97,7 @@ const OurTeam = () => {
           className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 mt-8"
         >
           <div>
-            <TeamMember
-              name="Prof. Wasiu Adeyemo"
-            />
+            <TeamMember name="Prof. Wasiu Adeyemo" />
           </div>
           <div>
             <TeamMember name="Dr. Oluwole Ayodeji" />
