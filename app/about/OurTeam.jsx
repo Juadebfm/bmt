@@ -33,11 +33,11 @@ const OurTeam = () => {
             />
           </div>
           <div>
-            <TeamMember name="Prof Olu Akinyanju, OFR" designation="Founder" />
+            <TeamMember name="Prof. Olu Akinyanju, OFR" designation="Founder" />
           </div>
           <div>
             <TeamMember
-              name="Dr Annette Akinsete"
+              name="Dr. Annette Akinsete"
               designation="National Director/CEO"
             />
           </div>
@@ -60,7 +60,7 @@ const OurTeam = () => {
             <TeamMember name="Mrs. Ayo Otaigbe" designation="Member" />
           </div>
           <div>
-            <TeamMember name="Mr. Bode Emmanuel" designation="Member" />
+            <TeamMember name="Mr. Bode Emanuel" designation="Member" />
           </div>
           <div>
             <TeamMember name="Prof. Muuta Ibrahim" designation="Member" />
@@ -69,13 +69,13 @@ const OurTeam = () => {
             <TeamMember name="Mr. Funso Sobande" designation="Member" />
           </div>
           <div>
-            <TeamMember name="Otunba Niyi Adebayo" designation="Member" />
+            <TeamMember name="Otunba Niyi Adebayo, CON" designation="" />
           </div>
           <div>
             <TeamMember name="Chief Dele Fajemirokun" designation="Member" />
           </div>
           <div>
-            <TeamMember name="Mr. Fola Adeola, OFR" designation="Member" />
+            <TeamMember name="Mr. Fola Adeola, OFR" designation="" />
           </div>
           <div>
             <TeamMember name="Mr. Olabode Makanjuola" designation="Member" />
@@ -83,10 +83,29 @@ const OurTeam = () => {
         </div>
 
         <div className="ml-0 lg:ml-40">
-          <h3 className="font-semibold text-[18px] lg:text-[22px] text-primary_dark font-lexend leading-normal mt-10 text-center lg:text-start">
+          <h3 className="font-semibold text-[18px] lg:text-[22px] text-primary_dark font-lexend leading-normal mt-10 text-center lg:text-start uppercase">
             LUTH Management Team
           </h3>
-          <p>TOP MANAGEMENT COMMITTEE SCFN/LUTH BMT PROGRAMME</p>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 ml-0 lg:ml-20 my-8 w-[85%]">
+            <TeamMember
+              name="Prof. Wasiu Adeyemo"
+              designation="Chief Medical Director, 
+              LUTH"
+            />
+            <TeamMember
+              name="Dr. Oluwole Ayodeji"
+              designation="Chairman, Medical Advisory Committee, LUTH"
+            />
+            <TeamMember
+              name="Dr. Babawale Taslim Bello"
+              designation="Deputy Chairman Medical Advisory Committee - Clinical Services, LUTH"
+            />
+            <TeamMember
+              name="Dr. Rufus Wale Ojewola"
+              designation="Deputy Chairman Medical Advisory Committee - Research & Training, LUTH"
+            />
+          </div>
+          <p className="text-[18px] lg:text-[22px]">TOP MANAGEMENT COMMITTEE SCFN/LUTH BMT PROGRAMME</p>
         </div>
 
         <div className="ml-0 lg:ml-40">
@@ -156,7 +175,7 @@ const OurTeam = () => {
           </div>
           <div>
             <TeamMember
-              name="Olayiwola Zainab"
+              name="Mrs. Olayiwola Zainab"
               designation="Nursing Officer / Transplant Nurse, LUTH"
             />
           </div>

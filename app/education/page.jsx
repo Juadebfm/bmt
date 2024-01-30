@@ -49,7 +49,7 @@ const Page = () => {
           </h2>
           <p className="w-full text-[18px] md:text-[20px] text-start leading-normal mt-8">
             Access in-depth information on haematological conditions like sickle
-            cell disorder and Leukaemias treated with BMT. Stay informed and
+            cell disorder and Leukaemias treated with BMT. <span className="text-primary_tomato_red cursor-pointer hover:underline"><a target="_blank" href="https://zc.vg/MFcKl">Stay informed</a></span> and
             engaged with upcoming webinars and workshops, fostering knowledge of
             BMT and related health topics.
           </p>
@@ -181,7 +181,7 @@ const Page = () => {
               <img src="./assets/bmt/bmt1.png" alt="" />
               <div className="flex flex-col p-5">
                 <span className="text-[18px] capitalize font-bold mb-5">
-                  Sickle cell disease
+                  Sickle cell disorder
                 </span>
                 <p>
                   Sickle cell disease is a genetic blood disorder that causes

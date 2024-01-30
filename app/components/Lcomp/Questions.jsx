@@ -11,7 +11,7 @@ const faqData = [
   {
     question: "What are Indications for BMT?",
     answer:
-      "BMT is undertaken to treat various haematological disorders, such as leukaemia, lymphoma, sickle cell, myeloma, aplastic anaemia, and certain genetic conditions, by rejuvenating blood-forming cells",
+      "BMT is undertaken to treat various haematological disorders, such as leukaemias, lymphomas, sickle cell, myeloma, aplastic anaemia, and certain genetic conditions, by rejuvenating blood-forming cells",
   },
   {
     question: "What are the common Complications of BMT?",

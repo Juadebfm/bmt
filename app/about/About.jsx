@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -83,10 +84,16 @@ const About = () => {
               it will serve as a Centre of Excellence for BMT training and
               service provision.
             </span>
+            <br />
+            <br />
+            <span>
+            Be a part of this laudable programme. <br /> 
+<Link href="/donation" className="font-bold text-primary_tomato_red hover:underline">DONATE NOW.</Link>
+            </span>
           </span>
         </p>
         <button
-          className="font-bold text-primary_red cursor-pointer inline"
+          className="font-bold text-primary_red cursor-pointer inline mt-5"
           onClick={toggleExpand}
         >
           {!isExpanded ? "Read more" : "See Less"}
