@@ -45,7 +45,7 @@ const OurTeam = () => {
             />
           </div>
           <div>
-            <TeamMember name="Mr. John Momoh" designation="Member" />
+            <TeamMember name="Mr. John Momoh" designation="OON" />
           </div>
           <div>
             <TeamMember name="Mr. Chidi Ofong" designation="Member" />
@@ -89,47 +89,7 @@ const OurTeam = () => {
           <h3 className="font-semibold text-[18px] lg:text-[22px] text-primary_dark font-lexend leading-normal mt-10 text-center lg:text-start">
             LUTH Management Team
           </h3>
-        </div>
-
-        <div
-          data-aos="fade-up"
-          data-aos-duration="500"
-          className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 mt-8"
-        >
-          <div>
-            <TeamMember name="Prof. Wasiu Adeyemo" />
-          </div>
-          <div>
-            <TeamMember name="Dr. Oluwole Ayodeji" />
-          </div>
-          <div>
-            <TeamMember name="Dr. Babawale Taslim Bello" />
-          </div>
-          <div>
-            <TeamMember name="Dr. Rufus Wale Ojewola" />
-          </div>
-        </div>
-
-        <div className="ml-0 lg:ml-40">
-          <h3 className="font-semibold text-[18px] lg:text-[22px] text-primary_dark font-lexend leading-normal mt-10 text-center lg:text-start">
-            TOP MANAGEMENT COMMITTEE SCFN/LUTH BMT PROGRAMME
-          </h3>
-        </div>
-
-        <div
-          data-aos="fade-up"
-          data-aos-duration="700"
-          className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 mt-8"
-        >
-          <div>
-            <TeamMember name="Prof. Wasiu Adeyemo" />
-          </div>
-          <div>
-            <TeamMember name="Dr. Annette Akinsete" />
-          </div>
-          <div>
-            <TeamMember name="Prof. Edamisan Temiye" />
-          </div>
+          <p>TOP MANAGEMENT COMMITTEE SCFN/LUTH BMT PROGRAMME</p>
         </div>
 
         <div className="ml-0 lg:ml-40">
@@ -141,7 +101,7 @@ const OurTeam = () => {
         <div
           data-aos="fade-left"
           data-aos-duration="900"
-          className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 mt-8"
+          className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 my-8"
         >
           <div>
             <TeamMember
@@ -151,75 +111,56 @@ const OurTeam = () => {
           </div>
           <div>
             <TeamMember
-              name="Prof. Titi Adeyemo"
+              name="Prof. Titilope Adeyemo"
               designation="Professor of Haematology & Blood Transfusion, LUTH"
             />
           </div>
           <div>
             <TeamMember
-              name="Dr. Seye Akinsete"
+              name="Dr. Adeseye Akinsete"
               designation="Consultant Paediatrician & Haematologist, LUTH"
             />
           </div>
           <div>
             <TeamMember
               name="Dr. Ann Ogbenna"
-              designation="Consultant Haematologist & Oncologist, LUTH "
+              designation="Consultant Haematologist & Oncologist, LUTH"
             />
           </div>
           <div>
             <TeamMember
-              name="Dr. Funto Kalejaiye"
+              name="Dr. Olufunto Kalejaiye"
               designation="Consultant Physician & Haematologist, LUTH "
             />
           </div>
           <div>
             <TeamMember
               name="Mrs. Titilayo Bamgboye"
-              designation="Assistant Director Nursing / Transplant Nurse, LUTH "
+              designation="Assistant Director Nursing / Transplant Nurse, LUTH"
             />
           </div>
           <div>
             <TeamMember
               name="Mrs. Amina Asimegbe"
-              designation="Chief Nursing Officer / Transplant Nurse, LUTH "
+              designation="Chief Nursing Officer / Transplant Nurse, LUTH"
             />
           </div>
           <div>
             <TeamMember
               name="Ms. Blessing Aziken-John"
-              designation="Nursing Officer / Transplant Nurse, LUTH "
+              designation="Nursing Officer / Transplant Nurse, SCFN"
             />
           </div>
           <div>
             <TeamMember
               name="Mrs. Edna Ngozi Maduemezia"
-              designation="Nursing Officer / Transplant Nurse, LUTH "
+              designation="Nursing Officer / Transplant Nurse, SCFN"
             />
           </div>
           <div>
             <TeamMember
               name="Olayiwola Zainab"
-              designation="Nursing Officer / Transplant Nurse, LUTH "
-            />
-          </div>
-        </div>
-
-        <div className="ml-0 lg:ml-40">
-          <h3 className="font-semibold text-[18px] lg:text-[22px] text-primary_dark font-lexend leading-normal mt-10 text-center lg:text-start">
-            TECHNICAL PARTNER - VANDERBILT UNIVERSITY MEDICAL CENTRE
-          </h3>
-        </div>
-
-        <div
-          data-aos="fade-right"
-          data-aos-duration="2000"
-          className="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-10 gap-x-7 lg:gap-x-14 px-[25px] lg:px-40 ml-0 lg:ml-20 my-8"
-        >
-          <div>
-            <TeamMember
-              name="Prof. Adetola Kassim"
-              designation="Medical Director, Vanderbilt Stem Cell Transplant & Cellular Therapy Programme – Vanderbilt University Medical Centre, Nashville, Tennessee USA."
+              designation="Nursing Officer / Transplant Nurse, LUTH"
             />
           </div>
         </div>

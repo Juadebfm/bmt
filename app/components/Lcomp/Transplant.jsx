@@ -38,7 +38,7 @@ const Transplant = () => {
             className="w-[25px] h-[25px]"
           />
           <span className="text-center mt-2 text-[18px] font-bold">
-            Dietitian
+            Dieticians
           </span>
         </div>
         <div className="flex flex-col w-[250px] h-[180px] place-content-center items-center p-8">
