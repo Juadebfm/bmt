@@ -208,10 +208,10 @@ const Page = () => {
         <div
           data-aos="fade-right"
           data-aos-duration="500"
-          className="w-full lg:w-1/2 h-full p-0 lg:p-10 mt-24"
+          className="w-full lg:w-1/2 h-full p-0 mt-24"
         >
           <img
-            src="./assets/bmt/cta_img.png"
+            src="./assets/bmt/donation_card.png"
             alt=""
             className="object-cover w-full"
           />
@@ -426,8 +426,8 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 h-full p-0 lg:p-10">
-          <img src="./assets/bmt/donation.png" alt="" className="w-full" />
+        <div className="w-full lg:w-1/2 h-full p-0">
+          <img src="./assets/bmt/new_donation.png" alt="" className="w-full" />
         </div>
       </div>
       <section className="h-max flex flex-col-reverse lg:flex-row items-center justify-center px-[25px] md:px-14 lg:px-16 gap-20 my-20">
@@ -452,10 +452,10 @@ const Page = () => {
         <div
           data-aos="fade-left"
           data-aos-duration="1000"
-          className="w-full lg:w-1/2 h-full p-0 sm:p-10"
+          className="w-full lg:w-1/2 h-full p-0"
         >
           <img
-            src="./assets/bmt/donation_last.png"
+            src="./assets/bmt/donation_what_we_do.png"
             alt=""
             className="object-cover w-full"
           />

@@ -18,7 +18,7 @@ const CTA = () => {
     >
       <div className="w-full lg:w-1/2 h-full p-0 lg:p-10">
         <img
-          src="./assets/bmt/cta_img.png"
+          src="./assets/bmt/donation_card.png"
           alt=""
           className="object-cover md:w-full lg:w-auto"
         />

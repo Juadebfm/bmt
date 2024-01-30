@@ -60,7 +60,7 @@ const page = () => {
             </div>
           </div>
           <div className="box_shadow flex items-center justify-center flex-col rounded-xl">
-            <img src="./assets/bmt/stage3.png" alt="" />
+            <img src="./assets/bmt/post_transplant.png" alt="" />
             <div className="py-12 px-8 flex items-center justify-center flex-col gap-6">
               <span className="text-[18px] text-center text-primary_red">
                 Stage 3
