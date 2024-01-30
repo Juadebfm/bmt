@@ -104,6 +104,10 @@ const OurTeam = () => {
               name="Dr. Rufus Wale Ojewola"
               designation="Deputy Chairman Medical Advisory Committee - Research & Training, LUTH"
             />
+            <TeamMember
+              name="Omolola Fakeye, JP"
+              designation="Acting Director of Administration"
+            />
           </div>
           <p className="text-[18px] lg:text-[22px]">TOP MANAGEMENT COMMITTEE SCFN/LUTH BMT PROGRAMME</p>
         </div>

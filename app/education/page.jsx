@@ -53,15 +53,6 @@ const Page = () => {
             engaged with upcoming webinars and workshops, fostering knowledge of
             BMT and related health topics.
           </p>
-          <Link
-            href="/donation"
-            className="md:flex md:items-center md:justify-center lg:block"
-          >
-            <Button
-              classes="px-[48px] py-[12px] bg-primary_red font-Lexend font-bold rounded-[4px] text-[15px] hover:bg-primary_red/90 trans_animate tracking-wider block text-white mt-7 w-full md:w-[60%] lg:w-auto"
-              text="Donate Now"
-            />
-          </Link>
         </div>
         <div
           data-aos="fade-left"
