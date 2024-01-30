@@ -16,15 +16,16 @@ const MultiServices = () => {
     >
       <div className="w-full md:w-full lg:w-1/2 flex flex-col justify-center">
         <h2 className="text-[34px] lg:text-[44px] w-full sm:w-[90%] leading-[1.2] capitalize font-[600] text-primary_red text-start">
-          Our Multi-disciplinary services
+          Our Multi-disciplinary Team
         </h2>
         <p className="text-[18px] md:text-[20px] text-start leading-normal mt-6">
           Our transplant team which includes Paediatricians, haematologists,
-          internists and various specialists, ensures excellent quality,
-          comprehensive care. From Social Workers, Psychologists and Counsellors
-          to Anaesthetists, we are here for our patients’ well-being, providing
-          services and support before and after transplantation.
-          <Link href="/services" className="pl-2">
+          internists and various specialists, ensures{" "}
+          <span className="text-red-500">excellent</span> quality, comprehensive
+          care. From Social Workers, Psychologists and Counsellors to
+          Anaesthetists, we are here for our patients’ well-being, providing
+          services and support before and after transplantation. <br />
+          <Link href="/services">
             <span className="font-bold text-primary_red cursor-pointer">
               Learn More
             </span>

@@ -22,36 +22,31 @@ const About = () => {
       <div className="w-full lg:w-1/2 block h-max lg:h-[670px] my-auto pt-[40px] cursor-pointer overflow-y-auto">
         <p className={lineClamp}>
           <span className="w-full text-[17px] font-[300] font-lexend text-primary_dark leading-tight mt-4 text-justify lg:text-start">
-            <span className="font-[700] ">
-              Stem Cell Transplantation Or Bone Marrow Transplantation (BMT)
+            <span className="capitalize font-bold text-primary_tomato_red block text-[26px] mb-2">
+              About the SCFN | LUTH | VUMC Partnership
             </span>{" "}
-            is the only internationally-approved cure for sickle cell disorder,
-            and Sickle Cell Foundation Nigeria (SCFN) and the Lagos University
-            Teaching Hospital (LUTH) have partnered to establish a BMT Programme
-            in Lagos, in order that quality, safe, affordable and life-changing
-            cure for sickle cell disorder will be locally available and
-            accessible to Nigerians in Nigeria.
+            Stem Cell Transplantation or Bone Marrow Transplantation (BMT) is
+            the known cure for sickle cell disorder. Sickle Cell Foundation
+            Nigeria (SCFN) and Lagos University Teaching Hospital (LUTH) have
+            partnered to establish a BMT Programme in Lagos, in order that
+            excellent quality, safe, affordable and life-changing cure for
+            sickle cell disorder will be locally available and accessible to
+            Nigerians in Nigeria. This is indeed fitting as Nigeria is by far
+            the country with the highest burden of sickle cell disorder in the
+            world. Over 40 million Nigerians are carriers of the sickle cell
+            gene and an estimated 150,000 babies are born every year with sickle
+            cell in the country. Sadly, 100,000 of these babies do not live to
+            celebrate their 5th birthday – dying mostly from ignorance and lack
+            of access to proper diagnosis, treatment and care.
             <span>
-              This is indeed fitting as Nigeria is by far the country with the
-              highest burden of sickle cell disorder in the world. Over 40
-              million Nigerians are carriers of the sickle cell gene and an
-              estimated 150,000 babies are born every year with sickle cell in
-              the country. Sadly, 100,000 of these babies do not live to
-              celebrate their 5th birthday – dying mostly from ignorance and
-              lack of access to proper diagnosis, treatment and care.{" "}
-            </span>
-            <br />
-            <br />
-            <span>
-              <span className="font-[700] text-primary_red ">
+              <span className="font-[700] text-primary_red block my-5">
                 Our BMT Journey:
-              </span>{" "}
-              <br />
+              </span>
               Our BMT journey started in 2011 when SCFN and LUTH partnered with
-              the Mediterranean Institute of Haematology (IME) Rome, and nearly
+              the Mediterranean Institute of Haematology (IME) Rome and nearly
               50 Nigerian children travelled to Italy and received free BMT.
-              Unfortunately, the programme was abruptly terminated due to
-              funding challenges in Italy. 
+              However, the programme was abruptly terminated due to funding
+              challenges in Italy.
             </span>
             <br />
             <br />
@@ -60,38 +55,33 @@ const About = () => {
                 The Tripartite Partnership for BMT:
               </span>
               <br />
-              It was following the abrupt cessation of our partnership with
-              Rome, that SCFN and LUTH in 2017, entered into partnership with
-              Vanderbilt University Medical Centre as our technical partners,
-              for the establishment of our own BMT Centre in Lagos, Nigeria. The
-              centre is a state-of-the-art facility and it will be the
+              Following the cessation of our BMT project with IME Rome, SCFN and
+              LUTH commenced initial discussions with Vanderbilt University
+              Medical Center (VUMC) in 2017, culminating in the formalisation of
+              partnership with the institution via an MoU in 2020 with VUMC as
+              technical partners, for the establishment of our own BMT Centre in
+              Lagos, Nigeria.
+            </span>
+            <br />
+            <br />
+            <span>
+              The centre is a state-of-the-art facility and it will be the
               first-ever, comprehensive BMT centre for Sickle Cell Disease in
-              all of Africa – spanning the entire value chain of the Bone Marrow
-              Transplantation process – from HLA Typing for selection of the
-              best Donor for the patient, through harvesting of the marrow to
-              its infusion into the patient, and finally, a Post-BMT Clinic
-              where patients can continue to be followed up after the procedure.
+              Sub-Saharan Africa.
             </span>
             <br />
             <br />
             <span>
-              A Public-Private-Partnership, our BMT programme brings quality,
-              safe and more affordable cure for sickle cell disorder to
-              Nigerians in Nigeria, for Africans and indeed for the world as a
-              whole.
+              A Public-Private-Partnership, our BMT programme brings excellent,
+              quality, safe and affordable cure for sickle cell disorder to
+              Nigerians and Africans. .
             </span>
             <br />
             <br />
             <span>
-              The SCFN/LUTH BMT Centre was officially opened January 2021 and it
-              is heartwarming to know that the SCFN/LUTH BMT Centre will not
-              only provide safe, quality and affordable cure for sickle cell
-              disorder, but also serve as a Centre of Excellence for BMT
-              training in Africa. In addition, it will usher a new dawn for
-              Nigeria and the concept of Reverse Medical Tourism as Nigeria will
-              be hosting patients from other countries travelling in to access
-              SAFE, QUALITY, MORE AFFORDABLE BONE MARROW TRANSPLANTATION AT THE
-              SCFN/LUTH BMT CENTRE, LAGOS.
+              The SCFN/LUTH BMT Centre was officially opened in January 2022 and
+              it will serve as a Centre of Excellence for BMT training and
+              service provision.
             </span>
           </span>
         </p>
