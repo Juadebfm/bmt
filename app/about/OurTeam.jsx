@@ -29,23 +29,20 @@ const OurTeam = () => {
           <div>
             <TeamMember
               name="Chief Tunde Afolabi, MFR"
-              designation="Chairman, "
+              designation="Chairman"
             />
           </div>
           <div>
-            <TeamMember
-              name="Prof Olu Akinyanju, OFR"
-              designation="Founder, "
-            />
+            <TeamMember name="Prof Olu Akinyanju, OFR" designation="Founder" />
           </div>
           <div>
             <TeamMember
               name="Dr Annette Akinsete"
-              designation="National Director/CEO, "
+              designation="National Director/CEO"
             />
           </div>
           <div>
-            <TeamMember name="Mr. John Momoh" designation="OON" />
+            <TeamMember name="Mr. John Momoh, OON" designation="" />
           </div>
           <div>
             <TeamMember name="Mr. Chidi Ofong" designation="Member" />
@@ -78,7 +75,7 @@ const OurTeam = () => {
             <TeamMember name="Chief Dele Fajemirokun" designation="Member" />
           </div>
           <div>
-            <TeamMember name="Mr. Fola Adeola" designation="Member" />
+            <TeamMember name="Mr. Fola Adeola, OFR" designation="Member" />
           </div>
           <div>
             <TeamMember name="Mr. Olabode Makanjuola" designation="Member" />
