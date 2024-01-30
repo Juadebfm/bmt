@@ -89,7 +89,7 @@ const page = () => {
           </ul>
         </div>
         <div className="mt-10">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.0039438906288!2d3.3515826759381895!3d6.521182093471343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c338965108b%3A0xae04381509ac4eef!2sChildren%20Emergency%20Building!5e0!3m2!1sen!2sng!4v1706652144945!5m2!1sen!2sng" width="600" height="300" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.0039438906288!2d3.3515826759381895!3d6.521182093471343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c338965108b%3A0xae04381509ac4eef!2sChildren%20Emergency%20Building!5e0!3m2!1sen!2sng!4v1706652144945!5m2!1sen!2sng" width="450" height="300" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div className="flex items-start justify-start gap-3 w-full lg:w-[80%] mt-10">
             <CiLocationOn className="text-[10rem] lg:text-[5rem] font-bold" />
             <p className="text-[18px] md:text-[20px]">
