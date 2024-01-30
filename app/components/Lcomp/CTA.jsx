@@ -16,9 +16,9 @@ const CTA = () => {
       data-aos-duration="600"
       className="h-max flex flex-col lg:flex-row items-center justify-center px-[25px] sm:px-16 gap-10 lg:gap-20 mt-10 md:mt-14 lg:mt-28 "
     >
-      <div className="w-full lg:w-1/2 h-full p-0 lg:p-10">
+      <div className="w-full lg:w-1/2 h-full p-0">
         <img
-          src="./assets/bmt/donation_card.png"
+          src="./assets/bmt/donation_latest.png"
           alt=""
           className="object-cover md:w-full lg:w-auto"
         />

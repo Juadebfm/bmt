@@ -211,7 +211,7 @@ const Page = () => {
           className="w-full lg:w-1/2 h-full p-0 mt-24"
         >
           <img
-            src="./assets/bmt/donation_card.png"
+            src="./assets/bmt/donation_latest.png"
             alt=""
             className="object-cover w-full"
           />
