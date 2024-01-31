@@ -42,7 +42,7 @@ const OurTeam = () => {
             />
           </div>
           <div>
-            <TeamMember name="Mr. John Momoh, OON" designation="" />
+            <TeamMember name="Mr. John Momoh, OON" designation="Member" />
           </div>
           <div>
             <TeamMember name="Mr. Chidi Ofong" designation="Member" />
@@ -69,13 +69,13 @@ const OurTeam = () => {
             <TeamMember name="Mr. Funso Sobande" designation="Member" />
           </div>
           <div>
-            <TeamMember name="Otunba Niyi Adebayo, CON" designation="" />
+            <TeamMember name="Otunba Niyi Adebayo, CON" designation="Member" />
           </div>
           <div>
             <TeamMember name="Chief Dele Fajemirokun" designation="Member" />
           </div>
           <div>
-            <TeamMember name="Mr. Fola Adeola, OFR" designation="" />
+            <TeamMember name="Mr. Fola Adeola, OFR" designation="Member" />
           </div>
           <div>
             <TeamMember name="Mr. Olabode Makanjuola" designation="Member" />
@@ -109,7 +109,9 @@ const OurTeam = () => {
               designation="Acting Director of Administration"
             />
           </div>
-          <p className="text-[18px] lg:text-[22px]">TOP MANAGEMENT COMMITTEE SCFN/LUTH BMT PROGRAMME</p>
+          <p className="text-[18px] lg:text-[22px]">
+            TOP MANAGEMENT COMMITTEE SCFN/LUTH BMT PROGRAMME
+          </p>
         </div>
 
         <div className="ml-0 lg:ml-40">
