@@ -75,7 +75,7 @@ const OurTeam = () => {
             <TeamMember name="Chief Dele Fajemirokun" designation="Member" />
           </div>
           <div>
-            <TeamMember name="Mr. Fola Adeola, OFR" designation="Member" />
+            <TeamMember name="Mr. Fola Adeola, mni, OFR" designation="Member" />
           </div>
           <div>
             <TeamMember name="Mr. Olabode Makanjuola" designation="Member" />

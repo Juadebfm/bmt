@@ -14,8 +14,12 @@ const SuccessStory = () => {
 
   return (
     <>
+      <h1 className="w-full text-[34px] lg:text-[44px] text-center mt-10 lg:mt-28 leading-[1.2] capitalize font-[600] text-primary_red">
+        Testimonial
+      </h1>
+
       {showVideo ? (
-        <div className="relative py-10">
+        <div className="relative pb-10">
           <button
             className="text-white text-xl md:text-3xl bg-primary_red rounded-full p-2 md:p-5 w-7 md:w-10 h-7 md:h-10 flex items-center justify-center absolute left-3 md:left-32 top-6 md:top-10 hover:box_shadow_hover trans_animate"
             onClick={handleClose}
@@ -23,7 +27,7 @@ const SuccessStory = () => {
             X
           </button>
           <video
-            className="w-full md:w-[70%] h-auto md:h-[70%] mx-auto mt-8 py-0 md:py-10 px-[10px] md:px-0"
+            className="w-full md:w-[70%] h-auto md:h-[70%] mx-auto mt-8 py-0 md:pb-10 px-[10px] md:px-0"
             src="https://www.sicklecellfoundation.com/scfn-luth-api/storage/public/img/SCFN%20Bone%20Marrow%20Transplant%20Impact%20Story%20%20%20Nothing%20ventured,%20Nothing%20gained_compressed.mp4"
             controls
             autoPlay
@@ -38,7 +42,7 @@ const SuccessStory = () => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
-          className="mt-10 md:mt-5 lg:mt-28 w-[100%] sm:w-auto h-[60vh] md:h-[40vh] lg:h-[90vh] relative p-6 sm:p-14"
+          className="mt-10 md:mt-5 w-[100%] sm:w-auto h-[60vh] md:h-[40vh] lg:h-[90vh] relative p-6 sm:p-14"
         >
           <img
             src="/assets/bmt/playIcon.png"

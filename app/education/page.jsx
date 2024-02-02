@@ -49,9 +49,14 @@ const Page = () => {
           </h2>
           <p className="w-full text-[18px] md:text-[20px] text-start leading-normal mt-8">
             Access in-depth information on haematological conditions like sickle
-            cell disorder and Leukaemias treated with BMT. <span className="text-primary_tomato_red cursor-pointer hover:underline"><a target="_blank" href="https://zc.vg/MFcKl">Stay informed</a></span> and
-            engaged with upcoming webinars and workshops, fostering knowledge of
-            BMT and related health topics.
+            cell disorder and Leukaemias treated with BMT.{" "}
+            <span className="text-primary_tomato_red cursor-pointer underline">
+              <a target="_blank" href="https://zc.vg/MFcKl">
+                Stay informed
+              </a>
+            </span>{" "}
+            and engaged with upcoming webinars and workshops, fostering
+            knowledge of BMT and related health topics.
           </p>
         </div>
         <div
@@ -175,12 +180,12 @@ const Page = () => {
                   Sickle cell disorder
                 </span>
                 <p>
-                  Sickle cell disease is a genetic blood disorder that causes
+                  Sickle cell disorder is a genetic blood disorder that causes
                   red blood cells to sickle or become crescent-shaped. Sickle
                   cells can block blood flow to the body&apos;s tissues and
                   organs, which can cause pain, organ damage, and stroke. BMT is
                   an internationally approved curative treatment for
-                  sickle cell disease.
+                  sickle cell disorder.
                 </p>
               </div>
             </div>

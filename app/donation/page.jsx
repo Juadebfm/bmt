@@ -279,7 +279,7 @@ const Page = () => {
               </span>
               <p className="leading-normal mt-2 text-[18px] md:text-[20px] text-center md:text-start">
                 How much would you like to donate? As a contributor to SCFN /
-                LUTH BMT program, your donation will go directly to subsidizing
+                LUTH BMT program, your donation will go directly to subsidising
                 the transplant procedure
               </p>
             </div>
